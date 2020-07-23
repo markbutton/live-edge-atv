@@ -16,11 +16,11 @@ export class HeaderComponent implements OnInit {
 
   constructor(private userState: UserState) { }
 
-  toggleNavbar() {
+  toggleNavbar(): void {
     this.navbarOpen = !this.navbarOpen;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     // const currentUser = this.userState.getCurrentUser();
     this.userState.user.subscribe((user) => {
       if (user) {

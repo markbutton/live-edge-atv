@@ -6,7 +6,7 @@
       </path>
       <path class="arrow" fill="#0099D8" d="M268.7 17.6v29.3L288 32.3"></path>
     </svg>
-    <a id="title" class="navbar-brand" routerLink="/">Live Edge</a>
+    <a id="title" class="navbar-brand" routerLink="/">Live Edge ATV</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
       (click)="toggleNavbar()">
@@ -18,11 +18,6 @@
         <li class="nav-item" *ngIf="!isDefault">
           <a id="zones" class="nav-link" routerLink="/zones">Zones</a>
         </li>
-        <!--
-        <li class="nav-item">
-          <a id="jobs" class="nav-link" routerLink="/jobs">Jobs</a>
-        </li>
-        -->
         <li class="nav-item" *ngIf="!isDefault">
           <a id="inventory" class="nav-link" routerLink="/inventory">Inventory</a>
         </li>
@@ -41,13 +36,12 @@
       </ul>
       <div class="navbar-expand ml-auto navbar-nav">
         <div class="navbar-nav">
-          <span *ngIf="isOk">
+          <span>
             <a id="logs" class="nav-item nav-link" [matTooltip]="'Logs'" routerLink="/logs">
               <i class="fa fa-wrench"></i>
             </a>
           </span>
-          <!-- <span class="badge badge badge-danger">1</span> -->
-          <span *ngIf="isOk">
+          <span>
             <a id="user" class="nav-item nav-link" [matTooltip]="'Settings'" routerLink="/settings">
               <i class="fa fa-cog"></i>
             </a>
