@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
-const emailService = require('../controllers/email');
+// const emailService = require('../controllers/email');
 
 // Create
 module.exports.userCreate = function (req, res) {
   const newUser = new User(req.body);
   newUser.save(err => {
     if (err) return res.status(500).send(err);
-    emailService.sendNotificationNewUser(newUser.name, newUser.email);
+    // emailService.sendNotificationNewUser(newUser.name, newUser.email);
     return res.status(200).send(newUser);
   });
 }
