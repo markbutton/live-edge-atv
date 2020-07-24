@@ -1,0 +1,17 @@
+[
+  {
+    "name": "default"
+  },
+  {
+    "name": "user"
+  },
+  {
+    "name": "admin"
+  },
+  {
+    "name": "developer"
+  },
+  {
+    "name": "poweruser"
+  }
+]

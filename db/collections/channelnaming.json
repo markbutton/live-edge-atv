@@ -1,0 +1,1580 @@
+[
+    {
+      "hdName": "5MAX",
+      "descriptions": [
+        "5StarMax"
+      ]
+    },
+    {
+      "hdName": "ACTI",
+      "descriptions": [
+        "Encore/Action"
+      ]
+    },
+    {
+      "hdName": "AE",
+      "descriptions": [
+        "A&E Network"
+      ]
+    },
+    {
+      "hdName": "AFRC",
+      "descriptions": [
+        "Africa Channel"
+      ]
+    },
+    {
+      "hdName": "ALTI",
+      "descriptions": [
+        "Altitude Sports & Entrtnmnt"
+      ]
+    },
+    {
+      "hdName": "AMAX",
+      "descriptions": [
+        "ActionMax"
+      ]
+    },
+    {
+      "hdName": "AMC",
+      "descriptions": [
+        "American Movie Classics"
+      ]
+    },
+    {
+      "hdName": "AMER",
+      "descriptions": [
+        "Americanlife TV"
+      ]
+    },
+    {
+      "hdName": "ANPL",
+      "descriptions": [
+        "Animal Planet"
+      ]
+    },
+    {
+      "hdName": "ATMX",
+      "descriptions": [
+        "@Max"
+      ]
+    },
+    {
+      "hdName": "BAND",
+      "descriptions": [
+        "Bandamax"
+      ]
+    },
+    {
+      "hdName": "BBCA",
+      "descriptions": [
+        "BBC Worldwide Americas"
+      ]
+    },
+    {
+      "hdName": "BBCW",
+      "descriptions": [
+        "BBC World News"
+      ]
+    },
+    {
+      "hdName": "BET",
+      "descriptions": [
+        "Black Entertainment TV"
+      ]
+    },
+    {
+      "hdName": "BETG",
+      "descriptions": [
+        "BET Gospel"
+      ]
+    },
+    {
+      "hdName": "BETH",
+      "descriptions": [
+        "BET Hip Hop"
+      ]
+    },
+    {
+      "hdName": "BIO",
+      "descriptions": [
+        "Biography Channel"
+      ]
+    },
+    {
+      "hdName": "BLOM",
+      "descriptions": [
+        "Bloomberg Television"
+      ]
+    },
+    {
+      "hdName": "BLUH",
+      "descriptions": [
+        "Blue Highways TV"
+      ]
+    },
+    {
+      "hdName": "BOOM",
+      "descriptions": [
+        "Boomerang"
+      ]
+    },
+    {
+      "hdName": "BRV",
+      "descriptions": [
+        "Bravo"
+      ]
+    },
+    {
+      "hdName": "BTEN",
+      "descriptions": [
+        "Big Ten Network"
+      ]
+    },
+    {
+      "hdName": "CANA",
+      "descriptions": [
+        "Canal 22 Internacional"
+      ]
+    },
+    {
+      "hdName": "CART",
+      "descriptions": [
+        "Cartoon Network"
+      ]
+    },
+    {
+      "hdName": "CBEE",
+      "descriptions": [
+        "CBeebies"
+      ]
+    },
+    {
+      "hdName": "CCHT",
+      "descriptions": [
+        "Comcast Sportsnet-Mid-Atlantic"
+      ]
+    },
+    {
+      "hdName": "CCSN",
+      "descriptions": [
+        "Comcast Sportsnet-Philadelphia"
+      ]
+    },
+    {
+      "hdName": "CENT",
+      "descriptions": [
+        "CENTRIC"
+      ]
+    },
+    {
+      "hdName": "CH1",
+      "descriptions": [
+        "Channel One"
+      ]
+    },
+    {
+      "hdName": "CHIL",
+      "descriptions": [
+        "TV Chile Internacional"
+      ]
+    },
+    {
+      "hdName": "CHLR",
+      "descriptions": [
+        "Chiller Network"
+      ]
+    },
+    {
+      "hdName": "CMEX",
+      "descriptions": [
+        "Cine Mexicano"
+      ]
+    },
+    {
+      "hdName": "CMPC",
+      "descriptions": [
+        "CMT Pure Country"
+      ]
+    },
+    {
+      "hdName": "CMT",
+      "descriptions": [
+        "Country Music Television"
+      ]
+    },
+    {
+      "hdName": "CNBC",
+      "descriptions": [
+        "CNBC"
+      ]
+    },
+    {
+      "hdName": "CNBW",
+      "descriptions": [
+        "CNBC World"
+      ]
+    },
+    {
+      "hdName": "CNN",
+      "descriptions": [
+        "CNN"
+      ]
+    },
+    {
+      "hdName": "CNNE",
+      "descriptions": [
+        "CNN en Espanol"
+      ]
+    },
+    {
+      "hdName": "CNNI",
+      "descriptions": [
+        "CNN International"
+      ]
+    },
+    {
+      "hdName": "COLS",
+      "descriptions": [
+        "CBS Sports Network"
+      ]
+    },
+    {
+      "hdName": "COM",
+      "descriptions": [
+        "Comedy Central"
+      ]
+    },
+    {
+      "hdName": "CONC",
+      "descriptions": [
+        "Concert TV"
+      ]
+    },
+    {
+      "hdName": "COOK",
+      "descriptions": [
+        "Cooking Channel"
+      ]
+    },
+    {
+      "hdName": "CSBA",
+      "descriptions": [
+        "Comcast SportsNet Bay Area"
+      ]
+    },
+    {
+      "hdName": "CURR",
+      "descriptions": [
+        "Current TV"
+      ]
+    },
+    {
+      "hdName": "DESP",
+      "descriptions": [
+        "Discovery En Espanol"
+      ]
+    },
+    {
+      "hdName": "DFH",
+      "descriptions": [
+        "Discovery Fit & Health"
+      ]
+    },
+    {
+      "hdName": "DIHD",
+      "descriptions": [
+        "Discovery HD Theater"
+      ]
+    },
+    {
+      "hdName": "DINV",
+      "descriptions": [
+        "Investigation Discovery"
+      ]
+    },
+    {
+      "hdName": "DISC",
+      "descriptions": [
+        "Discovery Channel"
+      ]
+    },
+    {
+      "hdName": "DISN",
+      "descriptions": [
+        "Disney Channel"
+      ]
+    },
+    {
+      "hdName": "DIXD",
+      "descriptions": [
+        "Disney XD"
+      ]
+    },
+    {
+      "hdName": "DIY",
+      "descriptions": [
+        "DIY Network"
+      ]
+    },
+    {
+      "hdName": "DPGN",
+      "descriptions": [
+        "Discovery Planet Green"
+      ]
+    },
+    {
+      "hdName": "DWTV",
+      "descriptions": [
+        "Deutsche Welle TV"
+      ]
+    },
+    {
+      "hdName": "ENCD",
+      "descriptions": [
+        "Encore/Drama"
+      ]
+    },
+    {
+      "hdName": "ENCR",
+      "descriptions": [
+        "Encore"
+      ]
+    },
+    {
+      "hdName": "ESNW",
+      "descriptions": [
+        "ESPNEWS"
+      ]
+    },
+    {
+      "hdName": "ESP2",
+      "descriptions": [
+        "ESPN2"
+      ]
+    },
+    {
+      "hdName": "ESPC",
+      "descriptions": [
+        "ESPN Classic"
+      ]
+    },
+    {
+      "hdName": "ESPD",
+      "descriptions": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "hdName": "ESPN",
+      "descriptions": [
+        "ESPN"
+      ]
+    },
+    {
+      "hdName": "ESPU",
+      "descriptions": [
+        "ESPNU"
+      ]
+    },
+    {
+      "hdName": "ETV",
+      "descriptions": [
+        "E! Entertainment Television"
+      ]
+    },
+    {
+      "hdName": "F/X",
+      "descriptions": [
+        "FX"
+      ]
+    },
+    {
+      "hdName": "FAM",
+      "descriptions": [
+        "ABC Family"
+      ]
+    },
+    {
+      "hdName": "FBN",
+      "descriptions": [
+        "Fox Business Network"
+      ]
+    },
+    {
+      "hdName": "FISH",
+      "descriptions": [
+        "World Fishing Network"
+      ]
+    },
+    {
+      "hdName": "FLIX",
+      "descriptions": [
+        "Flix"
+      ]
+    },
+    {
+      "hdName": "FNET",
+      "descriptions": [
+        "Family Net"
+      ]
+    },
+    {
+      "hdName": "FOOD",
+      "descriptions": [
+        "Food Network"
+      ]
+    },
+    {
+      "hdName": "FOOT",
+      "descriptions": [
+        "Foot's Cool"
+      ]
+    },
+    {
+      "hdName": "FSAZ",
+      "descriptions": [
+        "Fox Sports Net Arizona"
+      ]
+    },
+    {
+      "hdName": "FSDA",
+      "descriptions": [
+        "Fox College Sports - Atlantic"
+      ]
+    },
+    {
+      "hdName": "FSDC",
+      "descriptions": [
+        "Fox College Sports - Central"
+      ]
+    },
+    {
+      "hdName": "FSDP",
+      "descriptions": [
+        "Fox College Sports - Pacific"
+      ]
+    },
+    {
+      "hdName": "FSDT",
+      "descriptions": [
+        "Fox Sports Net Detroit"
+      ]
+    },
+    {
+      "hdName": "FSFL",
+      "descriptions": [
+        "Fox Sports Net Florida"
+      ]
+    },
+    {
+      "hdName": "FSHU",
+      "descriptions": [
+        "Fox Sports Houston"
+      ]
+    },
+    {
+      "hdName": "FSMW",
+      "descriptions": [
+        "Fox Sports Net Midwest"
+      ]
+    },
+    {
+      "hdName": "FSN",
+      "descriptions": [
+        "Fox Sports Net North"
+      ]
+    },
+    {
+      "hdName": "FSNE",
+      "descriptions": [
+        "Comcast SportsNet New England"
+      ]
+    },
+    {
+      "hdName": "FSNW",
+      "descriptions": [
+        "Fox Sports Net Northwest"
+      ]
+    },
+    {
+      "hdName": "FSOH",
+      "descriptions": [
+        "Fox Sports Net Ohio"
+      ]
+    },
+    {
+      "hdName": "FSOP",
+      "descriptions": [
+        "Fox Soccer Plus"
+      ]
+    },
+    {
+      "hdName": "FSP",
+      "descriptions": [
+        "Fox Sports Net Pittsburgh"
+      ]
+    },
+    {
+      "hdName": "FSRM",
+      "descriptions": [
+        "Root Sports - Rocky Mountain"
+      ]
+    },
+    {
+      "hdName": "FSS",
+      "descriptions": [
+        "Fox Sports Net South"
+      ]
+    },
+    {
+      "hdName": "FSSW",
+      "descriptions": [
+        "Fox Sports Net Southwest"
+      ]
+    },
+    {
+      "hdName": "FSW",
+      "descriptions": [
+        "Fox Sports Net West"
+      ]
+    },
+    {
+      "hdName": "FSW2",
+      "descriptions": [
+        "Fox Sports Prime Ticket"
+      ]
+    },
+    {
+      "hdName": "FSWE",
+      "descriptions": [
+        "Fox Sports Deportes"
+      ]
+    },
+    {
+      "hdName": "FSWO",
+      "descriptions": [
+        "Fox Soccer Chnl (World)"
+      ]
+    },
+    {
+      "hdName": "FSWS",
+      "descriptions": [
+        "Fox Sports Wisconsin"
+      ]
+    },
+    {
+      "hdName": "FUEL",
+      "descriptions": [
+        "Fuel"
+      ]
+    },
+    {
+      "hdName": "FUNI",
+      "descriptions": [
+        "Funimation"
+      ]
+    },
+    {
+      "hdName": "FUSE",
+      "descriptions": [
+        "Fuse"
+      ]
+    },
+    {
+      "hdName": "FXM",
+      "descriptions": [
+        "Fox Movie Channel"
+      ]
+    },
+    {
+      "hdName": "FXNC",
+      "descriptions": [
+        "Fox News Channel"
+      ]
+    },
+    {
+      "hdName": "FXRC",
+      "descriptions": [
+        "Fox Reality Channel"
+      ]
+    },
+    {
+      "hdName": "GAC",
+      "descriptions": [
+        "Great American Country"
+      ]
+    },
+    {
+      "hdName": "GALA",
+      "descriptions": [
+        "Galavision"
+      ]
+    },
+    {
+      "hdName": "GAME",
+      "descriptions": [
+        "GSN (Game Show Network)"
+      ]
+    },
+    {
+      "hdName": "GCNE",
+      "descriptions": [
+        "Gran Cine"
+      ]
+    },
+    {
+      "hdName": "GEKP",
+      "descriptions": [
+        "German Kino Plus"
+      ]
+    },
+    {
+      "hdName": "GMCN",
+      "descriptions": [
+        "GMC"
+      ]
+    },
+    {
+      "hdName": "GODT",
+      "descriptions": [
+        "God TV"
+      ]
+    },
+    {
+      "hdName": "GOEB",
+      "descriptions": [
+        "Golden Eagle Broadcasting"
+      ]
+    },
+    {
+      "hdName": "GOLF",
+      "descriptions": [
+        "Golf Channel"
+      ]
+    },
+    {
+      "hdName": "GOLT",
+      "descriptions": [
+        "Gol TV"
+      ]
+    },
+    {
+      "hdName": "HALL",
+      "descriptions": [
+        "Hallmark Channel"
+      ]
+    },
+    {
+      "hdName": "HBO",
+      "descriptions": [
+        "HBO"
+      ]
+    },
+    {
+      "hdName": "HBO2",
+      "descriptions": [
+        "HBO 2"
+      ]
+    },
+    {
+      "hdName": "HBOC",
+      "descriptions": [
+        "HBO Comedy"
+      ]
+    },
+    {
+      "hdName": "HBOF",
+      "descriptions": [
+        "HBO Family"
+      ]
+    },
+    {
+      "hdName": "HBOL",
+      "descriptions": [
+        "HBO Latino"
+      ]
+    },
+    {
+      "hdName": "HBOS",
+      "descriptions": [
+        "HBO Signature"
+      ]
+    },
+    {
+      "hdName": "HBOZ",
+      "descriptions": [
+        "HBO Zone"
+      ]
+    },
+    {
+      "hdName": "HDLN",
+      "descriptions": [
+        "Headline News"
+      ]
+    },
+    {
+      "hdName": "HDML",
+      "descriptions": [
+        "A Toda Musica"
+      ]
+    },
+    {
+      "hdName": "HDNM",
+      "descriptions": [
+        "HDNet Movies"
+      ]
+    },
+    {
+      "hdName": "HDNT",
+      "descriptions": [
+        "HDNet"
+      ]
+    },
+    {
+      "hdName": "HGTV",
+      "descriptions": [
+        "HGTV"
+      ]
+    },
+    {
+      "hdName": "HIES",
+      "descriptions": [
+        "History Channel En Espanol"
+      ]
+    },
+    {
+      "hdName": "HIPR",
+      "descriptions": [
+        "History Channel Puerto Rico"
+      ]
+    },
+    {
+      "hdName": "HISI",
+      "descriptions": [
+        "History International"
+      ]
+    },
+    {
+      "hdName": "HIST",
+      "descriptions": [
+        "History Channel"
+      ]
+    },
+    {
+      "hdName": "HITN",
+      "descriptions": [
+        "HITN"
+      ]
+    },
+    {
+      "hdName": "HLMC",
+      "descriptions": [
+        "Hallmark Movie Channel"
+      ]
+    },
+    {
+      "hdName": "HTV",
+      "descriptions": [
+        "Hispanic TV"
+      ]
+    },
+    {
+      "hdName": "HUB",
+      "descriptions": [
+        "The HUB"
+      ]
+    },
+    {
+      "hdName": "IFC",
+      "descriptions": [
+        "Independent Film Channel"
+      ]
+    },
+    {
+      "hdName": "INPX",
+      "descriptions": [
+        "IndiePlex"
+      ]
+    },
+    {
+      "hdName": "INSP",
+      "descriptions": [
+        "The Inspirational Network"
+      ]
+    },
+    {
+      "hdName": "LANO",
+      "descriptions": [
+        "La Telenovela Network"
+      ]
+    },
+    {
+      "hdName": "LIFE",
+      "descriptions": [
+        "Lifetime Television"
+      ]
+    },
+    {
+      "hdName": "LIFM",
+      "descriptions": [
+        "Lifetime Movie Network"
+      ]
+    },
+    {
+      "hdName": "LOGO",
+      "descriptions": [
+        "Logo"
+      ]
+    },
+    {
+      "hdName": "LOVE",
+      "descriptions": [
+        "Encore/Love"
+      ]
+    },
+    {
+      "hdName": "LRW",
+      "descriptions": [
+        "Lifetime Real Women"
+      ]
+    },
+    {
+      "hdName": "MASN",
+      "descriptions": [
+        "Mid-Atlantic Sports Network (MASN)"
+      ]
+    },
+    {
+      "hdName": "MAV",
+      "descriptions": [
+        "Mav TV"
+      ]
+    },
+    {
+      "hdName": "MAX",
+      "descriptions": [
+        "Cinemax"
+      ]
+    },
+    {
+      "hdName": "MCSP",
+      "descriptions": [
+        "Missouri Cable Sports"
+      ]
+    },
+    {
+      "hdName": "MGM",
+      "descriptions": [
+        "MGM HD Network"
+      ]
+    },
+    {
+      "hdName": "MGRK",
+      "descriptions": [
+        "Mag Rack"
+      ]
+    },
+    {
+      "hdName": "MILI",
+      "descriptions": [
+        "Military Channel"
+      ]
+    },
+    {
+      "hdName": "MLBN",
+      "descriptions": [
+        "MLB Network"
+      ]
+    },
+    {
+      "hdName": "MMAX",
+      "descriptions": [
+        "MoreMax"
+      ]
+    },
+    {
+      "hdName": "MSG",
+      "descriptions": [
+        "Madison Square Garden"
+      ]
+    },
+    {
+      "hdName": "MSGP",
+      "descriptions": [
+        "Madison Square Garden Plus"
+      ]
+    },
+    {
+      "hdName": "MSNB",
+      "descriptions": [
+        "MSNBC"
+      ]
+    },
+    {
+      "hdName": "MTSN",
+      "descriptions": [
+        "Mountainwest Sports Network"
+      ]
+    },
+    {
+      "hdName": "MTV",
+      "descriptions": [
+        "MTV: Music Television"
+      ]
+    },
+    {
+      "hdName": "MTV2",
+      "descriptions": [
+        "MTV2"
+      ]
+    },
+    {
+      "hdName": "MTV3",
+      "descriptions": [
+        "MTV TR3S"
+      ]
+    },
+    {
+      "hdName": "MTVH",
+      "descriptions": [
+        "MTV Hits"
+      ]
+    },
+    {
+      "hdName": "MTVJ",
+      "descriptions": [
+        "MTV Jams"
+      ]
+    },
+    {
+      "hdName": "MUN2",
+      "descriptions": [
+        "Mun2"
+      ]
+    },
+    {
+      "hdName": "MYST",
+      "descriptions": [
+        "Encore/Mystery"
+      ]
+    },
+    {
+      "hdName": "NBA",
+      "descriptions": [
+        "NBA TV"
+      ]
+    },
+    {
+      "hdName": "NECN",
+      "descriptions": [
+        "New England Cable News"
+      ]
+    },
+    {
+      "hdName": "NESN",
+      "descriptions": [
+        "New England Sports Network"
+      ]
+    },
+    {
+      "hdName": "NFLC",
+      "descriptions": [
+        "NFL Network"
+      ]
+    },
+    {
+      "hdName": "NFLS",
+      "descriptions": [
+        "NFL Sunday Ticket"
+      ]
+    },
+    {
+      "hdName": "NGC",
+      "descriptions": [
+        "National Geographic"
+      ]
+    },
+    {
+      "hdName": "NGW",
+      "descriptions": [
+        "National Geographic Wild"
+      ]
+    },
+    {
+      "hdName": "NHL",
+      "descriptions": [
+        "NHL Network"
+      ]
+    },
+    {
+      "hdName": "NIC2",
+      "descriptions": [
+        "Nick Too"
+      ]
+    },
+    {
+      "hdName": "NICJ",
+      "descriptions": [
+        "Nick Jr."
+      ]
+    },
+    {
+      "hdName": "NICK",
+      "descriptions": [
+        "Nickelodeon/Nick-at-Nite"
+      ]
+    },
+    {
+      "hdName": "NICT",
+      "descriptions": [
+        "Nicktoons TV"
+      ]
+    },
+    {
+      "hdName": "NTN",
+      "descriptions": [
+        "Nuestra Tele Noticias"
+      ]
+    },
+    {
+      "hdName": "OMAX",
+      "descriptions": [
+        "OuterMax"
+      ]
+    },
+    {
+      "hdName": "OUTD",
+      "descriptions": [
+        "Outdoor Channel"
+      ]
+    },
+    {
+      "hdName": "OVAT",
+      "descriptions": [
+        "Ovation"
+      ]
+    },
+    {
+      "hdName": "OWN",
+      "descriptions": [
+        "Oprah Winfrey Network"
+      ]
+    },
+    {
+      "hdName": "OXY",
+      "descriptions": [
+        "Oxygen Cable"
+      ]
+    },
+    {
+      "hdName": "PALA",
+      "descriptions": [
+        "Palladia"
+      ]
+    },
+    {
+      "hdName": "PBKS",
+      "descriptions": [
+        "PBS Kids Sprout"
+      ]
+    },
+    {
+      "hdName": "PELC",
+      "descriptions": [
+        "De Pelicula Clasico"
+      ]
+    },
+    {
+      "hdName": "PELI",
+      "descriptions": [
+        "De Pelicula"
+      ]
+    },
+    {
+      "hdName": "PLAY",
+      "descriptions": [
+        "Playboy"
+      ]
+    },
+    {
+      "hdName": "PLEX",
+      "descriptions": [
+        "MOVIEplex"
+      ]
+    },
+    {
+      "hdName": "PREV",
+      "descriptions": [
+        "TV Guide Channel"
+      ]
+    },
+    {
+      "hdName": "REEL",
+      "descriptions": [
+        "Reelz Channel"
+      ]
+    },
+    {
+      "hdName": "RETL",
+      "descriptions": [
+        "Retirement Living TV"
+      ]
+    },
+    {
+      "hdName": "RITV",
+      "descriptions": [
+        "Record International"
+      ]
+    },
+    {
+      "hdName": "RTLA",
+      "descriptions": [
+        "Ritmoson Latino"
+      ]
+    },
+    {
+      "hdName": "RTPX",
+      "descriptions": [
+        "RetroPlex"
+      ]
+    },
+    {
+      "hdName": "RTWM",
+      "descriptions": [
+        "Russian TV Network"
+      ]
+    },
+    {
+      "hdName": "SBTN",
+      "descriptions": [
+        "Saigon Broadcasting TV Network"
+      ]
+    },
+    {
+      "hdName": "SCIC",
+      "descriptions": [
+        "Science Channel"
+      ]
+    },
+    {
+      "hdName": "SHO2",
+      "descriptions": [
+        "Showtime Too (2)"
+      ]
+    },
+    {
+      "hdName": "SHOB",
+      "descriptions": [
+        "Showtime Beyond"
+      ]
+    },
+    {
+      "hdName": "SHOE",
+      "descriptions": [
+        "Showtime Extreme"
+      ]
+    },
+    {
+      "hdName": "SHOF",
+      "descriptions": [
+        "Showtime FamilyZone"
+      ]
+    },
+    {
+      "hdName": "SHON",
+      "descriptions": [
+        "Showtime Next"
+      ]
+    },
+    {
+      "hdName": "SHOS",
+      "descriptions": [
+        "Showtime Showcase (3)"
+      ]
+    },
+    {
+      "hdName": "SHOW",
+      "descriptions": [
+        "Showtime"
+      ]
+    },
+    {
+      "hdName": "SHWM",
+      "descriptions": [
+        "Showtime Women"
+      ]
+    },
+    {
+      "hdName": "SITV",
+      "descriptions": [
+        "Si TV"
+      ]
+    },
+    {
+      "hdName": "SLEU",
+      "descriptions": [
+        "Sleuth"
+      ]
+    },
+    {
+      "hdName": "SMIT",
+      "descriptions": [
+        "Smithsonian Networks"
+      ]
+    },
+    {
+      "hdName": "SOAP",
+      "descriptions": [
+        "Soapnet"
+      ]
+    },
+    {
+      "hdName": "SOPR",
+      "descriptions": [
+        "Sorpresa"
+      ]
+    },
+    {
+      "hdName": "SPEE",
+      "descriptions": [
+        "Speed Channel"
+      ]
+    },
+    {
+      "hdName": "SPKE",
+      "descriptions": [
+        "Spike TV"
+      ]
+    },
+    {
+      "hdName": "SPNY",
+      "descriptions": [
+        "Sportsnet New York"
+      ]
+    },
+    {
+      "hdName": "SPSO",
+      "descriptions": [
+        "SportSouth"
+      ]
+    },
+    {
+      "hdName": "STBL",
+      "descriptions": [
+        "Starz/In Black"
+      ]
+    },
+    {
+      "hdName": "STRZ",
+      "descriptions": [
+        "Starz"
+      ]
+    },
+    {
+      "hdName": "STYL",
+      "descriptions": [
+        "Style. Network"
+      ]
+    },
+    {
+      "hdName": "STZC",
+      "descriptions": [
+        "Starz/Cinema"
+      ]
+    },
+    {
+      "hdName": "STZE",
+      "descriptions": [
+        "Starz/Edge"
+      ]
+    },
+    {
+      "hdName": "STZK",
+      "descriptions": [
+        "Starz/Kids & Family"
+      ]
+    },
+    {
+      "hdName": "SUN",
+      "descriptions": [
+        "Sun Sports"
+      ]
+    },
+    {
+      "hdName": "SUND",
+      "descriptions": [
+        "Sundance Channel"
+      ]
+    },
+    {
+      "hdName": "SYFY",
+      "descriptions": [
+        "Syfy"
+      ]
+    },
+    {
+      "hdName": "SZCM",
+      "descriptions": [
+        "Starz/Comedy"
+      ]
+    },
+    {
+      "hdName": "TCM",
+      "descriptions": [
+        "Turner Classic Movies"
+      ]
+    },
+    {
+      "hdName": "TECH",
+      "descriptions": [
+        "G4"
+      ]
+    },
+    {
+      "hdName": "TEEN",
+      "descriptions": [
+        "TeenNick"
+      ]
+    },
+    {
+      "hdName": "TEHT",
+      "descriptions": [
+        "Telehit"
+      ]
+    },
+    {
+      "hdName": "TELC",
+      "descriptions": [
+        "Telecentro"
+      ]
+    },
+    {
+      "hdName": "TELW",
+      "descriptions": [
+        "Telemundo Wisconsin"
+      ]
+    },
+    {
+      "hdName": "TENN",
+      "descriptions": [
+        "Tennis Channel"
+      ]
+    },
+    {
+      "hdName": "TERT",
+      "descriptions": [
+        "Teleritmo"
+      ]
+    },
+    {
+      "hdName": "TLC",
+      "descriptions": [
+        "Learning Channel"
+      ]
+    },
+    {
+      "hdName": "TMAX",
+      "descriptions": [
+        "ThrillerMax"
+      ]
+    },
+    {
+      "hdName": "TMC",
+      "descriptions": [
+        "Movie Channel"
+      ]
+    },
+    {
+      "hdName": "TMCX",
+      "descriptions": [
+        "TMC Xtra"
+      ]
+    },
+    {
+      "hdName": "TNT",
+      "descriptions": [
+        "Turner Network Television"
+      ]
+    },
+    {
+      "hdName": "TRAV",
+      "descriptions": [
+        "Travel Channel"
+      ]
+    },
+    {
+      "hdName": "TRU",
+      "descriptions": [
+        "truTV"
+      ]
+    },
+    {
+      "hdName": "TV24",
+      "descriptions": [
+        "TVN 24"
+      ]
+    },
+    {
+      "hdName": "TV5",
+      "descriptions": [
+        "TV5-The French Channel"
+      ]
+    },
+    {
+      "hdName": "TVCO",
+      "descriptions": [
+        "TV Colombia"
+      ]
+    },
+    {
+      "hdName": "TVGL",
+      "descriptions": [
+        "TV Globo"
+      ]
+    },
+    {
+      "hdName": "TVGN",
+      "descriptions": [
+        "TVG Network"
+      ]
+    },
+    {
+      "hdName": "TVIN",
+      "descriptions": [
+        "TVN International Network"
+      ]
+    },
+    {
+      "hdName": "TVLN",
+      "descriptions": [
+        "TV Land"
+      ]
+    },
+    {
+      "hdName": "TVO",
+      "descriptions": [
+        "TV One"
+      ]
+    },
+    {
+      "hdName": "TVPI",
+      "descriptions": [
+        "TVP Info"
+      ]
+    },
+    {
+      "hdName": "TVPO",
+      "descriptions": [
+        "TV Polonia"
+      ]
+    },
+    {
+      "hdName": "TVRK",
+      "descriptions": [
+        "TV 1000 Russian Kino"
+      ]
+    },
+    {
+      "hdName": "UARM",
+      "descriptions": [
+        "USArmenia"
+      ]
+    },
+    {
+      "hdName": "UNHD",
+      "descriptions": [
+        "Universal HD"
+      ]
+    },
+    {
+      "hdName": "UNSP",
+      "descriptions": [
+        "Untamed Sports TV"
+      ]
+    },
+    {
+      "hdName": "USA",
+      "descriptions": [
+        "USA Network"
+      ]
+    },
+    {
+      "hdName": "VENM",
+      "descriptions": [
+        "Venemovies"
+      ]
+    },
+    {
+      "hdName": "VERS",
+      "descriptions": [
+        "Versus"
+      ]
+    },
+    {
+      "hdName": "VH1",
+      "descriptions": [
+        "VH1"
+      ]
+    },
+    {
+      "hdName": "VH1C",
+      "descriptions": [
+        "VH1 Classic"
+      ]
+    },
+    {
+      "hdName": "VH1S",
+      "descriptions": [
+        "VH1 Soul"
+      ]
+    },
+    {
+      "hdName": "WAM",
+      "descriptions": [
+        "Encore/Wam!"
+      ]
+    },
+    {
+      "hdName": "WEDD",
+      "descriptions": [
+        "Wedding Central"
+      ]
+    },
+    {
+      "hdName": "WEST",
+      "descriptions": [
+        "Encore/Westerns"
+      ]
+    },
+    {
+      "hdName": "WETH",
+      "descriptions": [
+        "Wealth TV"
+      ]
+    },
+    {
+      "hdName": "WMAX",
+      "descriptions": [
+        "WMax"
+      ]
+    },
+    {
+      "hdName": "WOME",
+      "descriptions": [
+        "We:Women's Entertainment Network"
+      ]
+    },
+    {
+      "hdName": "WTBS",
+      "descriptions": [
+        "TBS Superstation"
+      ]
+    },
+    {
+      "hdName": "YES",
+      "descriptions": [
+        "Yes Network"
+      ]
+    }
+  ]

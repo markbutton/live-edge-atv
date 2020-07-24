@@ -1,0 +1,612 @@
+[
+  {
+      "zoneID": "DICFSS2312",
+      "tmcID": "BHAPOPKAFL.TMCSERVER.COM",
+      "jobID": "FL01",
+      "tmcJobID": "a4503922-9134-4e69-a12d-a8005f9cf775",
+      "slotID": "5",
+      "currentStatus": "playing",
+      "runStatus": "",
+      "ignore": false,
+      "jobSchedule": {
+          "name": "TNT",
+          "sch0000": "TNT",
+          "sch0030": "TNT",
+          "sch0100": "TNT",
+          "sch0130": "TNT",
+          "sch0200": "TNT",
+          "sch0230": "TNT",
+          "sch0300": "TNT",
+          "sch0330": "TNT",
+          "sch0400": "TNT",
+          "sch0430": "TNT",
+          "sch0500": "TNT",
+          "sch0530": "TNT",
+          "sch0600": "TNT",
+          "sch0630": "TNT",
+          "sch0700": "TNT",
+          "sch0730": "TNT",
+          "sch0800": "TNT",
+          "sch0830": "TNT",
+          "sch0900": "TNT",
+          "sch0930": "TNT",
+          "sch1000": "TNT",
+          "sch1030": "TNT",
+          "sch1100": "TNT",
+          "sch1130": "TNT",
+          "sch1200": "TNT",
+          "sch1230": "TNT",
+          "sch1300": "TNT",
+          "sch1330": "TNT",
+          "sch1400": "TNT",
+          "sch1430": "TNT",
+          "sch1500": "TNT",
+          "sch1530": "TNT",
+          "sch1600": "TNT",
+          "sch1630": "TNT",
+          "sch1700": "TNT",
+          "sch1730": "TNT",
+          "sch1800": "TNT",
+          "sch1830": "TNT",
+          "sch1900": "TNT",
+          "sch1930": "TNT",
+          "sch2000": "TNT",
+          "sch2030": "TNT",
+          "sch2100": "TNT",
+          "sch2130": "TNT",
+          "sch2200": "TNT",
+          "sch2230": "TNT",
+          "sch2300": "TNT",
+          "sch2330": "TNT"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "CNN",
+                  "channelNumber": "24"
+              },
+              {
+                  "channelName": "TNT",
+                  "channelNumber": "11"
+              },
+              {
+                  "channelName": "TBS",
+                  "channelNumber": "12"
+              },
+              {
+                  "channelName": "MSNBC",
+                  "channelNumber": "26"
+              },
+              {
+                  "channelName": "MTV",
+                  "channelNumber": "73"
+              },
+              {
+                  "channelName": "AHC",
+                  "channelNumber": "83"
+              },
+              {
+                  "channelName": "OWN",
+                  "channelNumber": "52"
+              },
+              {
+                  "channelName": "APL",
+                  "channelNumber": "44"
+              }
+          ],
+          "name": "Orlando FL"
+      }
+  },
+  {
+      "zoneID": "DICFSS2312",
+      "tmcID": "BHAPOPKAFL.TMCSERVER.COM",
+      "jobID": "FL02",
+      "tmcJobID": "d593c08f-af60-45b1-aae1-ea474b40a436",
+      "slotID": "6",
+      "currentStatus": "playing",
+      "runStatus": "",
+      "ignore": false,
+      "jobSchedule": {
+          "name": "MTV",
+          "sch0000": "MTV",
+          "sch0030": "MTV",
+          "sch0100": "MTV",
+          "sch0130": "MTV",
+          "sch0200": "MTV",
+          "sch0230": "MTV",
+          "sch0300": "MTV",
+          "sch0330": "MTV",
+          "sch0400": "MTV",
+          "sch0430": "MTV",
+          "sch0500": "MTV",
+          "sch0530": "MTV",
+          "sch0600": "MTV",
+          "sch0630": "MTV",
+          "sch0700": "MTV",
+          "sch0730": "MTV",
+          "sch0800": "MTV",
+          "sch0830": "MTV",
+          "sch0900": "MTV",
+          "sch0930": "MTV",
+          "sch1000": "MTV",
+          "sch1030": "MTV",
+          "sch1100": "MTV",
+          "sch1130": "MTV",
+          "sch1200": "MTV",
+          "sch1230": "MTV",
+          "sch1300": "MTV",
+          "sch1330": "MTV",
+          "sch1400": "MTV",
+          "sch1430": "MTV",
+          "sch1500": "MTV",
+          "sch1530": "MTV",
+          "sch1600": "MTV",
+          "sch1630": "MTV",
+          "sch1700": "MTV",
+          "sch1730": "MTV",
+          "sch1800": "MTV",
+          "sch1830": "MTV",
+          "sch1900": "MTV",
+          "sch1930": "MTV",
+          "sch2000": "MTV",
+          "sch2030": "MTV",
+          "sch2100": "MTV",
+          "sch2130": "MTV",
+          "sch2200": "MTV",
+          "sch2230": "MTV",
+          "sch2300": "MTV",
+          "sch2330": "MTV"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "CNN",
+                  "channelNumber": "24"
+              },
+              {
+                  "channelName": "TNT",
+                  "channelNumber": "11"
+              },
+              {
+                  "channelName": "TBS",
+                  "channelNumber": "12"
+              },
+              {
+                  "channelName": "MSNBC",
+                  "channelNumber": "26"
+              },
+              {
+                  "channelName": "MTV",
+                  "channelNumber": "73"
+              },
+              {
+                  "channelName": "AHC",
+                  "channelNumber": "83"
+              },
+              {
+                  "channelName": "OWN",
+                  "channelNumber": "52"
+              },
+              {
+                  "channelName": "APL",
+                  "channelNumber": "44"
+              }
+          ],
+          "name": "Orlando FL"
+      }
+  },
+  {
+      "zoneID": "DICFSS2312",
+      "tmcID": "BHAPOPKAFL.TMCSERVER.COM",
+      "jobID": "FL03",
+      "tmcJobID": "getting id",
+      "slotID": "7",
+      "currentStatus": "error",
+      "runStatus": "",
+      "ignore": false,
+      "jobSchedule": {
+          "name": "AHC",
+          "sch0000": "AHC",
+          "sch0030": "AHC",
+          "sch0100": "AHC",
+          "sch0130": "AHC",
+          "sch0200": "AHC",
+          "sch0230": "AHC",
+          "sch0300": "AHC",
+          "sch0330": "AHC",
+          "sch0400": "AHC",
+          "sch0430": "AHC",
+          "sch0500": "AHC",
+          "sch0530": "AHC",
+          "sch0600": "AHC",
+          "sch0630": "AHC",
+          "sch0700": "AHC",
+          "sch0730": "AHC",
+          "sch0800": "AHC",
+          "sch0830": "AHC",
+          "sch0900": "AHC",
+          "sch0930": "AHC",
+          "sch1000": "AHC",
+          "sch1030": "AHC",
+          "sch1100": "AHC",
+          "sch1130": "AHC",
+          "sch1200": "AHC",
+          "sch1230": "AHC",
+          "sch1300": "AHC",
+          "sch1330": "AHC",
+          "sch1400": "AHC",
+          "sch1430": "AHC",
+          "sch1500": "AHC",
+          "sch1530": "AHC",
+          "sch1600": "AHC",
+          "sch1630": "AHC",
+          "sch1700": "AHC",
+          "sch1730": "AHC",
+          "sch1800": "AHC",
+          "sch1830": "AHC",
+          "sch1900": "AHC",
+          "sch1930": "AHC",
+          "sch2000": "AHC",
+          "sch2030": "AHC",
+          "sch2100": "AHC",
+          "sch2130": "AHC",
+          "sch2200": "AHC",
+          "sch2230": "AHC",
+          "sch2300": "AHC",
+          "sch2330": "AHC"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "CNN",
+                  "channelNumber": "24"
+              },
+              {
+                  "channelName": "TNT",
+                  "channelNumber": "11"
+              },
+              {
+                  "channelName": "TBS",
+                  "channelNumber": "12"
+              },
+              {
+                  "channelName": "MSNBC",
+                  "channelNumber": "26"
+              },
+              {
+                  "channelName": "MTV",
+                  "channelNumber": "73"
+              },
+              {
+                  "channelName": "AHC",
+                  "channelNumber": "83"
+              },
+              {
+                  "channelName": "OWN",
+                  "channelNumber": "52"
+              },
+              {
+                  "channelName": "APL",
+                  "channelNumber": "44"
+              }
+          ],
+          "name": "Orlando FL"
+      }
+  },
+  {
+      "zoneID": "DICFSS2312",
+      "tmcID": "BHAPOPKAFL.TMCSERVER.COM",
+      "jobID": "FL04",
+      "tmcJobID": "cfb331a7-d80f-4b7b-9c5d-9377da4b3690",
+      "slotID": "8",
+      "currentStatus": "playing",
+      "runStatus": "",
+      "ignore": false,
+      "jobSchedule": {
+          "name": "OWN",
+          "sch0000": "OWN",
+          "sch0030": "OWN",
+          "sch0100": "OWN",
+          "sch0130": "OWN",
+          "sch0200": "OWN",
+          "sch0230": "OWN",
+          "sch0300": "OWN",
+          "sch0330": "OWN",
+          "sch0400": "OWN",
+          "sch0430": "OWN",
+          "sch0500": "OWN",
+          "sch0530": "OWN",
+          "sch0600": "OWN",
+          "sch0630": "OWN",
+          "sch0700": "OWN",
+          "sch0730": "OWN",
+          "sch0800": "OWN",
+          "sch0830": "OWN",
+          "sch0900": "OWN",
+          "sch0930": "OWN",
+          "sch1000": "OWN",
+          "sch1030": "OWN",
+          "sch1100": "OWN",
+          "sch1130": "OWN",
+          "sch1200": "OWN",
+          "sch1230": "OWN",
+          "sch1300": "OWN",
+          "sch1330": "OWN",
+          "sch1400": "OWN",
+          "sch1430": "OWN",
+          "sch1500": "OWN",
+          "sch1530": "OWN",
+          "sch1600": "OWN",
+          "sch1630": "OWN",
+          "sch1700": "OWN",
+          "sch1730": "OWN",
+          "sch1800": "OWN",
+          "sch1830": "OWN",
+          "sch1900": "OWN",
+          "sch1930": "OWN",
+          "sch2000": "OWN",
+          "sch2030": "OWN",
+          "sch2100": "OWN",
+          "sch2130": "OWN",
+          "sch2200": "OWN",
+          "sch2230": "OWN",
+          "sch2300": "OWN",
+          "sch2330": "OWN"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "CNN",
+                  "channelNumber": "24"
+              },
+              {
+                  "channelName": "TNT",
+                  "channelNumber": "11"
+              },
+              {
+                  "channelName": "TBS",
+                  "channelNumber": "12"
+              },
+              {
+                  "channelName": "MSNBC",
+                  "channelNumber": "26"
+              },
+              {
+                  "channelName": "MTV",
+                  "channelNumber": "73"
+              },
+              {
+                  "channelName": "AHC",
+                  "channelNumber": "83"
+              },
+              {
+                  "channelName": "OWN",
+                  "channelNumber": "52"
+              },
+              {
+                  "channelName": "APL",
+                  "channelNumber": "44"
+              }
+          ],
+          "name": "Orlando FL"
+      }
+  },
+  {
+      "zoneID": "DISBOB3377",
+      "tmcID": "CHSANLUISOBISPOCA.TMCSERVER.COM",
+      "jobID": "CA01",
+      "tmcJobID": "747af430-3ed7-495e-b708-8affd2c78d5e",
+      "slotID": "2",
+      "currentStatus": "playing",
+      "runStatus": "",
+      "ignore": false,
+      "jobSchedule": {
+          "name": "CNN",
+          "sch0000": "CNN",
+          "sch0030": "CNN",
+          "sch0100": "CNN",
+          "sch0130": "CNN",
+          "sch0200": "CNN",
+          "sch0230": "CNN",
+          "sch0300": "CNN",
+          "sch0330": "CNN",
+          "sch0400": "CNN",
+          "sch0430": "CNN",
+          "sch0500": "CNN",
+          "sch0530": "CNN",
+          "sch0600": "CNN",
+          "sch0630": "CNN",
+          "sch0700": "CNN",
+          "sch0730": "CNN",
+          "sch0800": "CNN",
+          "sch0830": "CNN",
+          "sch0900": "CNN",
+          "sch0930": "CNN",
+          "sch1000": "CNN",
+          "sch1030": "CNN",
+          "sch1100": "CNN",
+          "sch1130": "CNN",
+          "sch1200": "CNN",
+          "sch1230": "CNN",
+          "sch1300": "CNN",
+          "sch1330": "CNN",
+          "sch1400": "CNN",
+          "sch1430": "CNN",
+          "sch1500": "CNN",
+          "sch1530": "CNN",
+          "sch1600": "CNN",
+          "sch1630": "CNN",
+          "sch1700": "CNN",
+          "sch1730": "CNN",
+          "sch1800": "CNN",
+          "sch1830": "CNN",
+          "sch1900": "CNN",
+          "sch1930": "CNN",
+          "sch2000": "CNN",
+          "sch2030": "CNN",
+          "sch2100": "CNN",
+          "sch2130": "CNN",
+          "sch2200": "CNN",
+          "sch2230": "CNN",
+          "sch2300": "CNN",
+          "sch2330": "CNN"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "CNN",
+                  "channelNumber": "40"
+              }
+          ],
+          "name": "SAN LUIS OBISPO, CA"
+      }
+  },
+  {
+      "zoneID": "DIRESO1072",
+      "tmcID": "CHSITRENONV.TMCSERVER.COM",
+      "jobID": "NV01",
+      "tmcJobID": "30072fea-289b-46a8-944d-0d6625d33b33",
+      "slotID": "8",
+      "currentStatus": "playing",
+      "runStatus": "",
+      "ignore": false,
+      "jobSchedule": {
+          "name": "TOON",
+          "sch0000": "TOON",
+          "sch0030": "TOON",
+          "sch0100": "TOON",
+          "sch0130": "TOON",
+          "sch0200": "TOON",
+          "sch0230": "TOON",
+          "sch0300": "TOON",
+          "sch0330": "TOON",
+          "sch0400": "TOON",
+          "sch0430": "TOON",
+          "sch0500": "TOON",
+          "sch0530": "TOON",
+          "sch0600": "TOON",
+          "sch0630": "TOON",
+          "sch0700": "TOON",
+          "sch0730": "TOON",
+          "sch0800": "TOON",
+          "sch0830": "TOON",
+          "sch0900": "TOON",
+          "sch0930": "TOON",
+          "sch1000": "TOON",
+          "sch1030": "TOON",
+          "sch1100": "TOON",
+          "sch1130": "TOON",
+          "sch1200": "TOON",
+          "sch1230": "TOON",
+          "sch1300": "TOON",
+          "sch1330": "TOON",
+          "sch1400": "TOON",
+          "sch1430": "TOON",
+          "sch1500": "TOON",
+          "sch1530": "TOON",
+          "sch1600": "TOON",
+          "sch1630": "TOON",
+          "sch1700": "TOON",
+          "sch1730": "TOON",
+          "sch1800": "TOON",
+          "sch1830": "TOON",
+          "sch1900": "TOON",
+          "sch1930": "TOON",
+          "sch2000": "TOON",
+          "sch2030": "TOON",
+          "sch2100": "TOON",
+          "sch2130": "TOON",
+          "sch2200": "TOON",
+          "sch2230": "TOON",
+          "sch2300": "TOON",
+          "sch2330": "TOON"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "CN",
+                  "channelNumber": "41"
+              },
+              {
+                  "channelName": "TOON",
+                  "channelNumber": "41"
+              }
+          ],
+          "name": "RENO, NV"
+      }
+  },
+  {
+      "zoneID": "DITPWP2079",
+      "tmcID": "BHMOONLAKEFL.TMCSERVER.COM",
+      "jobID": "FL05",
+      "tmcJobID": "",
+      "slotID": "2",
+      "currentStatus": "stopped",
+      "runStatus": "",
+      "ignore": true,
+      "jobSchedule": {
+          "name": "DISC",
+          "sch0000": "DISC",
+          "sch0030": "DISC",
+          "sch0100": "DISC",
+          "sch0130": "DISC",
+          "sch0200": "DISC",
+          "sch0230": "DISC",
+          "sch0300": "DISC",
+          "sch0330": "DISC",
+          "sch0400": "DISC",
+          "sch0430": "DISC",
+          "sch0500": "DISC",
+          "sch0530": "DISC",
+          "sch0600": "DISC",
+          "sch0630": "DISC",
+          "sch0700": "DISC",
+          "sch0730": "DISC",
+          "sch0800": "DISC",
+          "sch0830": "DISC",
+          "sch0900": "DISC",
+          "sch0930": "DISC",
+          "sch1000": "DISC",
+          "sch1030": "DISC",
+          "sch1100": "DISC",
+          "sch1130": "DISC",
+          "sch1200": "DISC",
+          "sch1230": "DISC",
+          "sch1300": "DISC",
+          "sch1330": "DISC",
+          "sch1400": "DISC",
+          "sch1430": "DISC",
+          "sch1500": "DISC",
+          "sch1530": "DISC",
+          "sch1600": "DISC",
+          "sch1630": "DISC",
+          "sch1700": "DISC",
+          "sch1730": "DISC",
+          "sch1800": "DISC",
+          "sch1830": "DISC",
+          "sch1900": "DISC",
+          "sch1930": "DISC",
+          "sch2000": "DISC",
+          "sch2030": "DISC",
+          "sch2100": "DISC",
+          "sch2130": "DISC",
+          "sch2200": "DISC",
+          "sch2230": "DISC",
+          "sch2300": "DISC",
+          "sch2330": "DISC"
+      },
+      "channelLineup": {
+          "channels": [
+              {
+                  "channelName": "USA",
+                  "channelNumber": "32"
+              },
+              {
+                  "channelName": "DISC",
+                  "channelNumber": "34"
+              }
+          ],
+          "name": "Moon Lake, FL"
+      }
+  }
+]

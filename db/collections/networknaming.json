@@ -1,0 +1,891 @@
+[
+  {
+    "hdName": "CSNB",
+    "descriptions": [
+      "Comcast Sports Network Bay Area"
+    ]
+  },
+  {
+    "hdName": "AFL",
+    "descriptions": [
+      "Broadcast Affiliate"
+    ]
+  },
+  {
+    "hdName": "DAM",
+    "descriptions": [
+      "Destination America"
+    ]
+  },
+  {
+    "hdName": "AHC",
+    "descriptions": [
+      "American Heroes Channel",
+      "AHC"
+    ]
+  },
+  {
+    "hdName": "CNBC",
+    "descriptions": [
+      "Consumer News & Business Channel"
+    ]
+  },
+  {
+    "hdName": "CMDY",
+    "descriptions": [
+      "Comedy Central"
+    ]
+  },
+  {
+    "hdName": "ENN",
+    "descriptions": [
+      "Entertainment Sports Programming Network News"
+    ]
+  },
+  {
+    "hdName": "CSNC",
+    "descriptions": [
+      "Comcast Sports Network Chicago"
+    ]
+  },
+  {
+    "hdName": "BTN",
+    "descriptions": [
+      "Big Ten Network",
+      "BTEN"
+    ]
+  },
+  {
+    "hdName": "DFAM",
+    "descriptions": [
+      "Discovery Familia"
+    ]
+  },
+  {
+    "hdName": "ESNU",
+    "descriptions": [
+      "Entertainment Sports Programming Network University"
+    ]
+  },
+  {
+    "hdName": "BET",
+    "descriptions": [
+      "Black Entertainment Television"
+    ]
+  },
+  {
+    "hdName": "APL",
+    "descriptions": [
+      "Animal Planet",
+      "ANPL"
+    ]
+  },
+  {
+    "hdName": "BRVO",
+    "descriptions": [
+      "Bravo",
+      "BRV"
+    ]
+  },
+  {
+    "hdName": "ALT",
+    "descriptions": [
+      "Altitude Sports and Entertainment"
+    ]
+  },
+  {
+    "hdName": "ESCL",
+    "descriptions": [
+      "Entertainment Sports Programming Network Classic"
+    ]
+  },
+  {
+    "hdName": "CSN",
+    "descriptions": [
+      "Comcast Sports Network"
+    ]
+  },
+  {
+    "hdName": "DIY",
+    "descriptions": [
+      "Do It Yourself Network"
+    ]
+  },
+  {
+    "hdName": "ESQ",
+    "descriptions": [
+      "Esquire Network"
+    ]
+  },
+  {
+    "hdName": "AFL2",
+    "descriptions": [
+      "Broadcast Affiliate 2"
+    ]
+  },
+  {
+    "hdName": "AEN",
+    "descriptions": [
+      "A&E",
+      "AE",
+      "Arts & Entertainment Network",
+      "AEN"
+    ]
+  },
+  {
+    "hdName": "CMT",
+    "descriptions": [
+      "Country Music Television"
+    ]
+  },
+  {
+    "hdName": "DISC",
+    "descriptions": [
+      "Discovery Channel"
+    ]
+  },
+  {
+    "hdName": "DXD",
+    "descriptions": [
+      "Disney XD"
+    ]
+  },
+  {
+    "hdName": "ESPD",
+    "descriptions": [
+      "Entertainment Sports Programming Network Deportes"
+    ]
+  },
+  {
+    "hdName": "ESPN",
+    "descriptions": [
+      "Entertainment Sports Programming Network"
+    ]
+  },
+  {
+    "hdName": "CC",
+    "descriptions": [
+      "Cooking Channel"
+    ]
+  },
+  {
+    "hdName": "DFC",
+    "descriptions": [
+      "Discovery Family",
+      "The Hub"
+    ]
+  },
+  {
+    "hdName": "DSE",
+    "descriptions": [
+      "Discovery Channel En Espanol"
+    ]
+  },
+  {
+    "hdName": "CNNE",
+    "descriptions": [
+      "Cable News Network En Espanol"
+    ]
+  },
+  {
+    "hdName": "ENT",
+    "descriptions": [
+      "E Entertainment Television"
+    ]
+  },
+  {
+    "hdName": "AMC",
+    "descriptions": [
+      "AMC",
+      "American Movie Classics"
+    ]
+  },
+  {
+    "hdName": "BBCA",
+    "descriptions": [
+      "British Broadcasting America"
+    ]
+  },
+  {
+    "hdName": "AXS",
+    "descriptions": [
+      "AXS TV"
+    ]
+  },
+  {
+    "hdName": "CNN",
+    "descriptions": [
+      "Cable News Network"
+    ]
+  },
+  {
+    "hdName": "ESP2",
+    "descriptions": [
+      "Entertainment Sports Programming Network 2"
+    ]
+  },
+  {
+    "hdName": "BTV",
+    "descriptions": [
+      "Bloomberg Television",
+      "BLOM"
+    ]
+  },
+  {
+    "hdName": "CBSS",
+    "descriptions": [
+      "CBS Sports Network"
+    ]
+  },
+  {
+    "hdName": "MNBC",
+    "descriptions": [
+      "Microsoft National Broadcast Company"
+    ]
+  },
+  {
+    "hdName": "MSGP",
+    "descriptions": [
+      "Madison Square Garden Plus"
+    ]
+  },
+  {
+    "hdName": "INFO",
+    "descriptions": [
+      "InfoMas"
+    ]
+  },
+  {
+    "hdName": "OWN",
+    "descriptions": [
+      "Opera Winfrey Network"
+    ]
+  },
+  {
+    "hdName": "TWSP",
+    "descriptions": [
+      "Spectrum Sports Network"
+    ]
+  },
+  {
+    "hdName": "VEL",
+    "descriptions": [
+      "Velocity"
+    ]
+  },
+  {
+    "hdName": "FX",
+    "descriptions": [
+      "Fox Cable Network"
+    ]
+  },
+  {
+    "hdName": "FS2",
+    "descriptions": [
+      "Fox Sports 2",
+      "FUEL Network"
+    ]
+  },
+  {
+    "hdName": "FSR2",
+    "descriptions": [
+      "Fox Sports Regional 2"
+    ]
+  },
+  {
+    "hdName": "GOLF",
+    "descriptions": [
+      "Golf Channel"
+    ]
+  },
+  {
+    "hdName": "HIST",
+    "descriptions": [
+      "The History Channel"
+    ]
+  },
+  {
+    "hdName": "HALL",
+    "descriptions": [
+      "Hallmark Channel"
+    ]
+  },
+  {
+    "hdName": "NY1N",
+    "descriptions": [
+      "New York 1 Noticias"
+    ]
+  },
+  {
+    "hdName": "LIF",
+    "descriptions": [
+      "Lifetime Television"
+    ]
+  },
+  {
+    "hdName": "LFM3",
+    "descriptions": [
+      "Longform 3"
+    ]
+  },
+  {
+    "hdName": "MSG2",
+    "descriptions": [
+      "Madison Square Garden 2"
+    ]
+  },
+  {
+    "hdName": "NFLN",
+    "descriptions": [
+      "National Football League Network"
+    ]
+  },
+  {
+    "hdName": "OXYG",
+    "descriptions": [
+      "Oxygen Media"
+    ]
+  },
+  {
+    "hdName": "POP",
+    "descriptions": [
+      "POP Full Screen",
+      "TV Guide Network"
+    ]
+  },
+  {
+    "hdName": "FOXD",
+    "descriptions": [
+      "Fox Deportes"
+    ]
+  },
+  {
+    "hdName": "FYI",
+    "descriptions": [
+      "FYI Network",
+      "Biography"
+    ]
+  },
+  {
+    "hdName": "SCI",
+    "descriptions": [
+      "Science Channel"
+    ]
+  },
+  {
+    "hdName": "SPK",
+    "descriptions": [
+      "Spike TV"
+    ]
+  },
+  {
+    "hdName": "TLC",
+    "descriptions": [
+      "The Learning Channel"
+    ]
+  },
+  {
+    "hdName": "TMND",
+    "descriptions": [
+      "Telemundo"
+    ]
+  },
+  {
+    "hdName": "TVL",
+    "descriptions": [
+      "Nickelodeon's TV Land"
+    ]
+  },
+  {
+    "hdName": "FSR",
+    "descriptions": [
+      "Fox Sports Regional"
+    ]
+  },
+  {
+    "hdName": "FXX",
+    "descriptions": [
+      "FXX",
+      "Fox Soccer Network"
+    ]
+  },
+  {
+    "hdName": "ID",
+    "descriptions": [
+      "Investigation Discovery"
+    ]
+  },
+  {
+    "hdName": "P12N",
+    "descriptions": [
+      "PAC 12 Regional Network"
+    ]
+  },
+  {
+    "hdName": "SMIT",
+    "descriptions": [
+      "Smithsonian"
+    ]
+  },
+  {
+    "hdName": "TV1",
+    "descriptions": [
+      "TV One"
+    ]
+  },
+  {
+    "hdName": "TOON",
+    "descriptions": [
+      "Cartoon Network"
+    ]
+  },
+  {
+    "hdName": "UMA",
+    "descriptions": [
+      "Uni Mas"
+    ]
+  },
+  {
+    "hdName": "WETV",
+    "descriptions": [
+      "WETV"
+    ]
+  },
+  {
+    "hdName": "YES",
+    "descriptions": [
+      "Yankees Entertainment and Sports Network"
+    ]
+  },
+  {
+    "hdName": "FSNP",
+    "descriptions": [
+      "Fox Sports Plus"
+    ]
+  },
+  {
+    "hdName": "GALA",
+    "descriptions": [
+      "Galavision"
+    ]
+  },
+  {
+    "hdName": "MTV",
+    "descriptions": [
+      "Music Television"
+    ]
+  },
+  {
+    "hdName": "NESN",
+    "descriptions": [
+      "New England Sports Network"
+    ]
+  },
+  {
+    "hdName": "NY1",
+    "descriptions": [
+      "New York 1 News"
+    ]
+  },
+  {
+    "hdName": "FMC",
+    "descriptions": [
+      "Fox Movie Channel"
+    ]
+  },
+  {
+    "hdName": "FUSE",
+    "descriptions": [
+      "FUSE"
+    ]
+  },
+  {
+    "hdName": "MTV2",
+    "descriptions": [
+      "Music Television 2"
+    ]
+  },
+  {
+    "hdName": "SLA",
+    "descriptions": [
+      "Sports Network LA Dodgers"
+    ]
+  },
+  {
+    "hdName": "FBN",
+    "descriptions": [
+      "Fox Business News"
+    ]
+  },
+  {
+    "hdName": "NGC",
+    "descriptions": [
+      "National Geographic Channel"
+    ]
+  },
+  {
+    "hdName": "OCPP",
+    "descriptions": [
+      "Oceanic Cable Sports Pay Per View"
+    ]
+  },
+  {
+    "hdName": "TWC3",
+    "descriptions": [
+      "The Weather Channel 3"
+    ]
+  },
+  {
+    "hdName": "FOOD",
+    "descriptions": [
+      "Food Network"
+    ]
+  },
+  {
+    "hdName": "TNT",
+    "descriptions": [
+      "Turner Network Television"
+    ]
+  },
+  {
+    "hdName": "TWC",
+    "descriptions": [
+      "The Weather Channel"
+    ]
+  },
+  {
+    "hdName": "MLBN",
+    "descriptions": [
+      "Major League Baseball Network"
+    ]
+  },
+  {
+    "hdName": "UDN",
+    "descriptions": [
+      "Alos Univision Deportes"
+    ]
+  },
+  {
+    "hdName": "VICE",
+    "descriptions": [
+      "Viceland"
+    ]
+  },
+  {
+    "hdName": "MTV3",
+    "descriptions": [
+      "Music Television 3"
+    ]
+  },
+  {
+    "hdName": "NBCS",
+    "descriptions": [
+      "National Broadcast Company Sports Network"
+    ]
+  },
+  {
+    "hdName": "NICK",
+    "descriptions": [
+      "Nickelodeon"
+    ]
+  },
+  {
+    "hdName": "OC16",
+    "descriptions": [
+      "Oceanic Cable 16"
+    ]
+  },
+  {
+    "hdName": "SECN",
+    "descriptions": [
+      "Southeastern Conference Network"
+    ]
+  },
+  {
+    "hdName": "SNY",
+    "descriptions": [
+      "SportsNet New York"
+    ]
+  },
+  {
+    "hdName": "SYFY",
+    "descriptions": [
+      "Science Fiction Channel"
+    ]
+  },
+  {
+    "hdName": "TENN",
+    "descriptions": [
+      "The Tennis Channel"
+    ]
+  },
+  {
+    "hdName": "FXNC",
+    "descriptions": [
+      "Fox News Channel"
+    ]
+  },
+  {
+    "hdName": "GSN",
+    "descriptions": [
+      "Game Show Network"
+    ]
+  },
+  {
+    "hdName": "NGWD",
+    "descriptions": [
+      "National Geographic Wild"
+    ]
+  },
+  {
+    "hdName": "OUTD",
+    "descriptions": [
+      "Outdoor Channel"
+    ]
+  },
+  {
+    "hdName": "ROOT",
+    "descriptions": [
+      "ROOT Sports"
+    ]
+  },
+  {
+    "hdName": "TDEP",
+    "descriptions": [
+      "Spectrum Deportes"
+    ]
+  },
+  {
+    "hdName": "TRAV",
+    "descriptions": [
+      "Travel Channel"
+    ]
+  },
+  {
+    "hdName": "TWC2",
+    "descriptions": [
+      "The Weather Channel 2"
+    ]
+  },
+  {
+    "hdName": "UNIV",
+    "descriptions": [
+      "Univision"
+    ]
+  },
+  {
+    "hdName": "FS1",
+    "descriptions": [
+      "Fox Sports 1"
+    ]
+  },
+  {
+    "hdName": "LFM2",
+    "descriptions": [
+      "Longform 2"
+    ]
+  },
+  {
+    "hdName": "LOGO",
+    "descriptions": [
+      "Logo"
+    ]
+  },
+  {
+    "hdName": "STO",
+    "descriptions": [
+      "Sports Time Ohio"
+    ]
+  },
+  {
+    "hdName": "FRFM",
+    "descriptions": [
+      "Freeform",
+      "ABC Family"
+    ]
+  },
+  {
+    "hdName": "HGTV",
+    "descriptions": [
+      "Home & Garden Television"
+    ]
+  },
+  {
+    "hdName": "SUN",
+    "descriptions": [
+      "SUN Sports"
+    ]
+  },
+  {
+    "hdName": "TMC",
+    "descriptions": [
+      "TMC"
+    ]
+  },
+  {
+    "hdName": "TBSC",
+    "descriptions": [
+      "Turner Broadcast System"
+    ]
+  },
+  {
+    "hdName": "UVSO",
+    "descriptions": [
+      "National Broadcast Company Universo"
+    ]
+  },
+  {
+    "hdName": "FCSP",
+    "descriptions": [
+      "Fox College Sports Pacific"
+    ]
+  },
+  {
+    "hdName": "HSTE",
+    "descriptions": [
+      "The History Channel En Espanol"
+    ]
+  },
+  {
+    "hdName": "LFM4",
+    "descriptions": [
+      "Longform 4"
+    ]
+  },
+  {
+    "hdName": "MSG",
+    "descriptions": [
+      "Madison Square Garden"
+    ]
+  },
+  {
+    "hdName": "NECN",
+    "descriptions": [
+      "New England Cable News"
+    ]
+  },
+  {
+    "hdName": "SPSN",
+    "descriptions": [
+      "Spectrum Sports"
+    ]
+  },
+  {
+    "hdName": "TRU",
+    "descriptions": [
+      "Tru TV"
+    ]
+  },
+  {
+    "hdName": "VH1",
+    "descriptions": [
+      "Video Hits 1"
+    ]
+  },
+  {
+    "hdName": "GAC",
+    "descriptions": [
+      "Great American Country"
+    ]
+  },
+  {
+    "hdName": "HLN",
+    "descriptions": [
+      "Headline News"
+    ]
+  },
+  {
+    "hdName": "HMM",
+    "descriptions": [
+      "Hallmark Movies & Mysteries",
+      "Hallmark Movie Channel"
+    ]
+  },
+  {
+    "hdName": "LFM",
+    "descriptions": [
+      "Longform"
+    ]
+  },
+  {
+    "hdName": "NHLN",
+    "descriptions": [
+      "Nationial Hockey League Network"
+    ]
+  },
+  {
+    "hdName": "SECO",
+    "descriptions": [
+      "Southeastern Conference Overflow Network"
+    ]
+  },
+  {
+    "hdName": "TR3S",
+    "descriptions": [
+      "Tr3s",
+      "Tres 3"
+    ]
+  },
+  {
+    "hdName": "UHD",
+    "descriptions": [
+      "Universal"
+    ]
+  },
+  {
+    "hdName": "USA",
+    "descriptions": [
+      "USA"
+    ]
+  },
+  {
+    "hdName": "ACCN",
+    "descriptions": [
+      "ACC Network",
+      "ACCN"
+    ]
+  },
+  {
+    "hdName": "AFL3",
+    "descriptions": [
+      "Broadcast Affiliate 3"
+    ]
+  },
+  {
+    "hdName": "CSNE",
+    "descriptions": [
+      "Comcast Sports Network New England"
+    ]
+  },
+  {
+    "hdName": "CTRC",
+    "descriptions": [
+      "Centric",
+      "JAZZ"
+    ]
+  },
+  {
+    "hdName": "LHN",
+    "descriptions": [
+      "Longhorn Network"
+    ]
+  },
+  {
+    "hdName": "LMN",
+    "descriptions": [
+      "Lifetime Movie Network"
+    ]
+  },
+  {
+    "hdName": "LRWM",
+    "descriptions": [
+      "Lifetime Real Women"
+    ]
+  },
+  {
+    "hdName": "OCSP",
+    "descriptions": [
+      "Outdoor Channel Sports"
+    ]
+  }
+]

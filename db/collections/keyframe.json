@@ -1,0 +1,69 @@
+{
+  "_id": {
+    "$oid": "5cad5b02aa36ba288864c3ae"
+  },
+  "nodes": [
+    {
+      "id": "464b1461-eea1-a083-676c-5a530a3c5009",
+      "title": "Compare job",
+      "type": "Edge",
+      "x": {
+        "$numberInt": "152"
+      },
+      "y": {
+        "$numberInt": "161"
+      }
+    },
+    {
+      "id": "d8cf7da7-1739-c966-dcad-d6c01984282b",
+      "title": "keyframe matching MS",
+      "type": "Microservice",
+      "x": {
+        "$numberInt": "576"
+      },
+      "y": {
+        "$numberInt": "149"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "fromSide": "right",
+      "toSide": "left",
+      "from": {
+        "id": "464b1461-eea1-a083-676c-5a530a3c5009",
+        "title": "Compare job",
+        "type": "Edge",
+        "x": {
+          "$numberInt": "152"
+        },
+        "y": {
+          "$numberInt": "161"
+        }
+      },
+      "to": {
+        "id": "d8cf7da7-1739-c966-dcad-d6c01984282b",
+        "title": "keyframe matching MS",
+        "type": "Microservice",
+        "x": {
+          "$numberInt": "576"
+        },
+        "y": {
+          "$numberInt": "149"
+        }
+      },
+      "config": {
+        "qname": "keyframeQ",
+        "channel": "taskch",
+        "messageKey": "keyframematching",
+        "payload": ""
+      },
+      "title": "Compare job to keyframe matching MS",
+      "type": "RabbitMQ"
+    }
+  ],
+  "name": "keyframe matching",
+  "__v": {
+    "$numberInt": "0"
+  }
+}

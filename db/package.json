@@ -1,0 +1,15 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "database admin sidecar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "author": "Mark Button",
+  "license": "MIT",
+  "dependencies": {
+    "db-migrate": "^0.11.5",
+    "db-migrate-mongodb": "^1.5.0"
+  }
+}

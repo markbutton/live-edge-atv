@@ -1,0 +1,728 @@
+[
+  {
+      "channels": [
+          {
+              "channelName": "AMCHD",
+              "channelNumber": "31"
+          },
+          {
+              "channelName": "ABCHD",
+              "channelNumber": "12"
+          },
+          {
+              "channelName": "CN",
+              "channelNumber": "39"
+          },
+          {
+              "channelName": "TNT",
+              "channelNumber": "36"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "66"
+          },
+          {
+              "channelName": "NFLHD",
+              "channelNumber": "15"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "30"
+          },
+          {
+              "channelName": "TWC",
+              "channelNumber": "165"
+          }
+      ],
+      "name": "Garden Grove CA"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "ABCHD",
+              "channelNumber": "12"
+          },
+          {
+              "channelName": "NFLHD",
+              "channelNumber": "15"
+          },
+          {
+              "channelName": "VOD",
+              "channelNumber": "1"
+          },
+          {
+              "channelName": "KMOVD",
+              "channelNumber": "4"
+          },
+          {
+              "channelName": "ION",
+              "channelNumber": "7"
+          },
+          {
+              "channelName": "KETCD",
+              "channelNumber": "9"
+          },
+          {
+              "channelName": "KPLRD",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "WPXS",
+              "channelNumber": "13"
+          },
+          {
+              "channelName": "CPN1H",
+              "channelNumber": "16"
+          },
+          {
+              "channelName": "UNIHD",
+              "channelNumber": "17"
+          },
+          {
+              "channelName": "SECND",
+              "channelNumber": "18"
+          },
+          {
+              "channelName": "POPHD",
+              "channelNumber": "19"
+          },
+          {
+              "channelName": "SUNHD",
+              "channelNumber": "20"
+          },
+          {
+              "channelName": "FYIHD",
+              "channelNumber": "21 \t\t"
+          },
+          {
+              "channelName": "IDHD",
+              "channelNumber": "22"
+          },
+          {
+              "channelName": "WGNAD",
+              "channelNumber": "23"
+          },
+          {
+              "channelName": "KNLCD",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "UKDSH",
+              "channelNumber": "25"
+          },
+          {
+              "channelName": "HCHD",
+              "channelNumber": "26"
+          },
+          {
+              "channelName": "OWNHD",
+              "channelNumber": "27"
+          },
+          {
+              "channelName": "USAHD",
+              "channelNumber": "28"
+          },
+          {
+              "channelName": "LIFED",
+              "channelNumber": "29"
+          },
+          {
+              "channelName": "HGTVD",
+              "channelNumber": "30"
+          },
+          {
+              "channelName": "NICHD",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "KTVID",
+              "channelNumber": "2"
+          },
+          {
+              "channelName": "KSDKD",
+              "channelNumber": "5"
+          },
+          {
+              "channelName": "TNT",
+              "channelNumber": "49"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "38"
+          },
+          {
+              "channelName": "TOON",
+              "channelNumber": "45"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "55"
+          },
+          {
+              "channelName": "APL",
+              "channelNumber": "58"
+          },
+          {
+              "channelName": "AMC",
+              "channelNumber": "31"
+          }
+      ],
+      "name": "ST LOUIS MO"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "NFLHD",
+              "channelNumber": "15"
+          },
+          {
+              "channelName": "ABCHD",
+              "channelNumber": "12"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "HGTV",
+              "channelNumber": "46"
+          },
+          {
+              "channelName": "CN",
+              "channelNumber": "53"
+          },
+          {
+              "channelName": "TNT",
+              "channelNumber": "26"
+          },
+          {
+              "channelName": "FOOD",
+              "channelNumber": "55"
+          }
+      ],
+      "name": "Charlotte NC"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "CNN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "TNT",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "TBS",
+              "channelNumber": "12"
+          },
+          {
+              "channelName": "MSNBC",
+              "channelNumber": "26"
+          },
+          {
+              "channelName": "MTV",
+              "channelNumber": "73"
+          },
+          {
+              "channelName": "AHC",
+              "channelNumber": "83"
+          },
+          {
+              "channelName": "OWN",
+              "channelNumber": "52"
+          },
+          {
+              "channelName": "APL",
+              "channelNumber": "44"
+          },
+          {
+              "channelName": "SYFY",
+              "channelNumber": "69"
+          },
+          {
+              "channelName": "OXYG",
+              "channelNumber": "64"
+          },
+          {
+              "channelName": "BET",
+              "channelNumber": "67"
+          },
+          {
+              "channelName": "NICK",
+              "channelNumber": "34"
+          }
+      ],
+      "name": "Orlando FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "CNN",
+              "channelNumber": "40"
+          }
+      ],
+      "name": "SAN LUIS OBISPO, CA"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "TOON",
+              "channelNumber": "41"
+          }
+      ],
+      "name": "RENO, NV"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "USA",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "DISC",
+              "channelNumber": "34"
+          }
+      ],
+      "name": "Moon Lake, FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "SUN",
+              "channelNumber": "31"
+          },
+          {
+              "channelName": "USA",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "29"
+          },
+          {
+              "channelName": "TNT",
+              "channelNumber": "33"
+          },
+          {
+              "channelName": "OWN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "AMC",
+              "channelNumber": "64"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "46"
+          },
+          {
+              "channelName": "APL",
+              "channelNumber": "35"
+          },
+          {
+              "channelName": "MTV",
+              "channelNumber": "66"
+          },
+          {
+              "channelName": "DISC",
+              "channelNumber": "34"
+          },
+          {
+              "channelName": "AHC",
+              "channelNumber": "73"
+          },
+          {
+              "channelName": "ID",
+              "channelNumber": "87"
+          },
+          {
+              "channelName": "AEN",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "ESPN",
+              "channelNumber": "27"
+          },
+          {
+              "channelName": "SECN",
+              "channelNumber": "72"
+          },
+          {
+              "channelName": "LIF",
+              "channelNumber": "38"
+          },
+          {
+              "channelName": "TRU",
+              "channelNumber": "55"
+          }
+      ],
+      "name": "St. Petersburg, FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "TNT",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "TOON",
+              "channelNumber": "36"
+          },
+          {
+              "channelName": "USA",
+              "channelNumber": "39"
+          },
+          {
+              "channelName": "TMC",
+              "channelNumber": "46"
+          },
+          {
+              "channelName": "AMC",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "PAR",
+              "channelNumber": "68"
+          },
+          {
+              "channelName": "CMT",
+              "channelNumber": "71"
+          },
+          {
+              "channelName": "MTV",
+              "channelNumber": "73"
+          },
+          {
+              "channelName": "BET",
+              "channelNumber": "67"
+          },
+          {
+              "channelName": "FS1",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "HLN",
+              "channelNumber": "23"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "45"
+          }
+      ],
+      "name": "Edgewater, FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "TNT",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "TBS",
+              "channelNumber": "12"
+          },
+          {
+              "channelName": "WGN",
+              "channelNumber": "20"
+          },
+          {
+              "channelName": "HLN",
+              "channelNumber": "23"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "CNBC",
+              "channelNumber": "25"
+          },
+          {
+              "channelName": "MNBC",
+              "channelNumber": "26"
+          },
+          {
+              "channelName": "FNC",
+              "channelNumber": "28"
+          },
+          {
+              "channelName": "NICK",
+              "channelNumber": "34"
+          },
+          {
+              "channelName": "DXD",
+              "channelNumber": "35"
+          },
+          {
+              "channelName": "TWC",
+              "channelNumber": "27"
+          },
+          {
+              "channelName": "OWN",
+              "channelNumber": "52"
+          },
+          {
+              "channelName": "PAR",
+              "channelNumber": "68"
+          }
+      ],
+      "name": "DeLand, FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "CNN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "FXNC",
+              "channelNumber": "28"
+          },
+          {
+              "channelName": "TOON",
+              "channelNumber": "36"
+          },
+          {
+              "channelName": "MTV",
+              "channelNumber": "73"
+          },
+          {
+              "channelName": "HLN",
+              "channelNumber": "23"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "45"
+          },
+          {
+              "channelName": "BET",
+              "channelNumber": "67"
+          },
+          {
+              "channelName": "TNT",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "PAR",
+              "channelNumber": "68"
+          },
+          {
+              "channelName": "FS1",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "CMT",
+              "channelNumber": "71"
+          },
+          {
+              "channelName": "AMC",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "USA",
+              "channelNumber": "39"
+          },
+          {
+              "channelName": "TMC",
+              "channelNumber": "46"
+          }
+      ],
+      "name": "Sanford, FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "TNT",
+              "channelNumber": "33"
+          },
+          {
+              "channelName": "HLN",
+              "channelNumber": "30"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "29"
+          },
+          {
+              "channelName": "OWN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "DSC",
+              "channelNumber": "34"
+          },
+          {
+              "channelName": "APL",
+              "channelNumber": "35"
+          },
+          {
+              "channelName": "NICK",
+              "channelNumber": "36"
+          },
+          {
+              "channelName": "FXNC",
+              "channelNumber": "37"
+          },
+          {
+              "channelName": "LIF",
+              "channelNumber": "38"
+          },
+          {
+              "channelName": "DXD",
+              "channelNumber": "40"
+          },
+          {
+              "channelName": "MNBC",
+              "channelNumber": "41"
+          },
+          {
+              "channelName": "CNBC",
+              "channelNumber": "42"
+          },
+          {
+              "channelName": "PAR",
+              "channelNumber": "43"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "46"
+          },
+          {
+              "channelName": "AEN",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "LMN",
+              "channelNumber": "50"
+          }
+      ],
+      "name": "Tamp05, FL"
+  },
+  {
+      "channels": [
+          {
+              "channelName": "TNT",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "TOON",
+              "channelNumber": "36"
+          },
+          {
+              "channelName": "USA",
+              "channelNumber": "39"
+          },
+          {
+              "channelName": "TMC",
+              "channelNumber": "46"
+          },
+          {
+              "channelName": "AMC",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "PAR",
+              "channelNumber": "68"
+          },
+          {
+              "channelName": "CMT",
+              "channelNumber": "71"
+          },
+          {
+              "channelName": "MTV",
+              "channelNumber": "73"
+          },
+          {
+              "channelName": "BET",
+              "channelNumber": "67"
+          },
+          {
+              "channelName": "FS1",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "HLN",
+              "channelNumber": "23"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "45"
+          }
+      ],
+      "name": " PINE CASTLE, FL "
+  },
+  {
+      "channels": [
+          {
+              "channelName": "TNT",
+              "channelNumber": "11"
+          },
+          {
+              "channelName": "CNN",
+              "channelNumber": "24"
+          },
+          {
+              "channelName": "TOON",
+              "channelNumber": "36"
+          },
+          {
+              "channelName": "USA",
+              "channelNumber": "39"
+          },
+          {
+              "channelName": "TMC",
+              "channelNumber": "46"
+          },
+          {
+              "channelName": "AMC",
+              "channelNumber": "48"
+          },
+          {
+              "channelName": "PAR",
+              "channelNumber": "68"
+          },
+          {
+              "channelName": "CMT",
+              "channelNumber": "71"
+          },
+          {
+              "channelName": "MTV",
+              "channelNumber": "73"
+          },
+          {
+              "channelName": "BET",
+              "channelNumber": "67"
+          },
+          {
+              "channelName": "FS1",
+              "channelNumber": "32"
+          },
+          {
+              "channelName": "HLN",
+              "channelNumber": "23"
+          },
+          {
+              "channelName": "TLC",
+              "channelNumber": "45"
+          },
+          {
+              "channelName": "AEN",
+              "channelNumber": "42"
+          }
+      ],
+      "name": " ORMOND BEACH, FL "
+  }
+]

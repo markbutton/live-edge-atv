@@ -1,0 +1,367 @@
+[
+  {
+    "name": "Mark Button",
+    "email": "c-mark.button@charter.com",
+    "group": "developer"
+  },
+  {
+    "name": "Thuy Do",
+    "email": "c-thuy.do@charter.com",
+    "group": "developer"
+  },
+  {
+    "name": "Vu Nguyen",
+    "email": "c-vu.nguyen@charter.com",
+    "group": "developer"
+  },
+  {
+    "name": "Andrew Townson",
+    "email": "andrew.townson@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Nick Hunter",
+    "email": "c-nick.hunter@charter.com",
+    "group": "developer"
+  },
+  {
+    "name": "Dawn Day",
+    "email": "dawn.day@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Gregg Hineline",
+    "email": "gregg.hineline@charter.com",
+    "group": "developer"
+  },
+  {
+    "name": "Shawn Brainard",
+    "email": "shawn.brainard@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Long Nguyen",
+    "email": "c-long.nguyen@charter.com",
+    "group": "developer"
+  },
+  {
+    "name": "Michael Torres",
+    "email": "michael.torres@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Jonathan Harrison",
+    "email": "jonathan.m.harrison@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Troy Laplante",
+    "email": "troy.laplante@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Eric Beach",
+    "email": "c-eric.beach@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Cristian Vyhmeister",
+    "email": "cristian.vyhmeister@charter.com",
+    "group": "default"
+  },
+  {
+    "name": "Jerry Dang",
+    "email": "jerry.dang@charter.com",
+    "group": "default"
+  },
+  {
+    "name": "Marcel Kowynia",
+    "email": "marcel.kowynia@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Jeffrey Bevill",
+    "email": "c-jeffrey.bevill@charter.com",
+    "group": "default"
+  },
+  {
+    "name": "Michael Reid",
+    "email": "michael.reid@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Kris Ellis",
+    "email": "kris.ellis@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "William Beach",
+    "email": "william.beach@charter.com",
+    "group": "default"
+  },
+  {
+    "name": "Amanda Bowen",
+    "email": "amanda.bowen@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Grant Murray",
+    "email": "grant.murray@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Vernon Miller",
+    "email": "vernon.miller@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Jon Henson",
+    "email": "jon.henson@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Doug Kamm",
+    "email": "doug.kamm@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Jason Tuggle",
+    "email": "jason.tuggle@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Bradley North",
+    "email": "bradley.north@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Quinton Woodruff",
+    "email": "quinton.woodruff@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Brent Daniels",
+    "email": "brent.daniels@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Janette Handy",
+    "email": "janette.handy@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Gregery Drayton",
+    "email": "gregery.drayton@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Joao Portal",
+    "email": "joao.portal@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Rikitta Collier",
+    "email": "rikitta.collier@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "test",
+    "email": "test@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Roger Elliott",
+    "email": "roger.elliott@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Mark Zellars",
+    "email": "mark.zellars@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Dennis McWatters",
+    "email": "dennis.mcwatters@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Sean Price",
+    "email": "sean.s.price@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Aaron Craig",
+    "email": "aaron.craig@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Anirudh Maheshwari",
+    "email": "anirudh.maheshwari@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Byron Duell",
+    "email": "byron.duell@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Russell Johnson",
+    "email": "russell.johnson@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Chanda Yim",
+    "email": "chanda.yim@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Scott Lewison",
+    "email": "scott.lewison@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Paul Dillon",
+    "email": "paul.dillon1@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Tom Bissell",
+    "email": "tom.bissell@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Dale Turner",
+    "email": "dale.turner@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Carl Stehler",
+    "email": "carl.stehler@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Kevin Netter",
+    "email": "kevin.netter@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Scott Feldbruegge",
+    "email": "scott.feldbruegge@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Clint Blackburn",
+    "email": "clint.blackburn@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Kevin Rydzynski",
+    "email": "kevin.rydzynski@charter.com",
+    "group": "admin"
+  },
+  {
+    "name": "Matthew Jones",
+    "email": "matthew.jones2@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "John Newton",
+    "email": "john.newton@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Larry Vanderbeck",
+    "email": "larry.vanderbeck@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Travis Rhodes",
+    "email": "travis.rhodes@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Jack Goldie",
+    "email": "jack.goldie@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Tony Gomez",
+    "email": "tony.gomez@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Kenneth Fath",
+    "email": "kenneth.fath@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Michael Carrasco",
+    "email": "michael.carrasco@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Marc Cantara",
+    "email": "marc.cantara@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Kelly Warnken",
+    "email": "kelly.warnken@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Jamie McCloskey",
+    "email": "jamie.mccloskey@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Luis Soto",
+    "email": "luis.soto@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Daniel Aguilar",
+    "email": "daniel.aguilar1@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Terry Allen",
+    "email": "terry.allen@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Jack Bruno",
+    "email": "jack.z.bruno@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Lee Irwin",
+    "email": "lee.irwin@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Corey Davenport",
+    "email": "corey.davenport@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Paul Reimer",
+    "email": "paul.reimer@charter.com",
+    "group": "poweruser"
+  },
+  {
+    "name": "Kyle Yates",
+    "email": "kyle.yates@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Sel Targay",
+    "email": "sel.targay@charter.com",
+    "group": "user"
+  },
+  {
+    "name": "Alan Riddle",
+    "email": "alan.riddle@charter.com",
+    "group": "default"
+  }
+]

@@ -1,0 +1,105 @@
+stages:
+  - build
+  # - test
+  # - deploy
+
+before_script:
+  - type docker >/dev/null 2>&1 && docker login -u gitlab-ci-token -p $CI_JOB_TOKEN panamax.spectrumxg.com || { echo >&2 "Docker not installed"; }
+
+###### BUILD CLIENT
+
+build-dev-client:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --build-arg ANGULAR_ENVIRONMENT="build-dev" --pull -t "$CI_REGISTRY_IMAGE/develop-client:${CI_COMMIT_TAG}" ./client
+    - docker push "$CI_REGISTRY_IMAGE/develop-client:${CI_COMMIT_TAG}"
+  only:
+    - develop
+
+build-test-client:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --build-arg ANGULAR_ENVIRONMENT="build-test" --pull -t "$CI_REGISTRY_IMAGE/test-client:${CI_COMMIT_TAG}" ./client
+    - docker push "$CI_REGISTRY_IMAGE/test-client:${CI_COMMIT_TAG}"
+  only:
+    - master
+
+build-prod-client:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --build-arg ANGULAR_ENVIRONMENT="build-prod" --pull -t "$CI_REGISTRY_IMAGE/production-client:${CI_COMMIT_TAG}" ./client
+    - docker push "$CI_REGISTRY_IMAGE/production-client:${CI_COMMIT_TAG}"
+  only:
+    - tags
+
+###### BUILD SERVER
+
+build-dev-server:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-server:${CI_COMMIT_TAG}" ./server
+    - docker push "$CI_REGISTRY_IMAGE/develop-server:${CI_COMMIT_TAG}"
+  only:
+    - develop
+
+build-test-server:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/test-server:${CI_COMMIT_TAG}" ./server
+    - docker push "$CI_REGISTRY_IMAGE/test-server:${CI_COMMIT_TAG}"
+  only:
+    - master
+
+build-prod-server:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/production-server:${CI_COMMIT_TAG}" ./server
+    - docker push "$CI_REGISTRY_IMAGE/production-server:${CI_COMMIT_TAG}"
+  only:
+    - tags
+
+###### BUILD DATA ADMIN
+
+build-dev-mongo:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_TAG}" ./db
+    - docker push "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_TAG}"
+  only:
+    - develop
+
+build-mongo:
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_TAG}" ./db
+    - docker push "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_TAG}"
+  only:
+    - tags
+
+include:
+  # - './test/test-gitlab-ci.yml'
+  # - '.deploy/deploy-gitlab-ci.yml'

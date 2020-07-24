@@ -1,0 +1,34 @@
+{
+  "dev": {
+    "driver": "mongodb",
+    "database": {"ENV": "DEV_DB"},
+    "username": {"ENV": "DEV_DB_USER"},
+    "password": {"ENV": "DEV_DB_PASSWORD"},
+    "host": {"ENV": "DEV_HOST"},
+    "replicaSet": "rsPde"
+  },
+
+  "test": {
+    "driver": "mongodb",
+    "database": {"ENV": "TEST_DB"},
+    "username": {"ENV": "TEST_DB_USER"},
+    "password": {"ENV": "TEST_DB_PASSWORD"},
+    "host": {"ENV": "TEST_HOST"},
+    "replicaSet": "rsPde"
+  },
+
+  "prod": {
+    "driver": "mongodb",
+    "database": {"ENV": "PROD_DB"},
+    "username": {"ENV": "PROD_DB_USER"},
+    "password": {"ENV": "PROD_DB_PASSWORD"},
+    "host": {"ENV": "PROD_HOST"},
+    "replicaSet": "rsPde"
+  },
+
+  "local": {
+    "driver": "mongodb",
+    "database": "live-edge",
+    "host": "localhost"
+  }
+}

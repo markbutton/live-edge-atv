@@ -1,0 +1,37 @@
+[
+  {
+    "name": "minClipLength",
+    "type": "audiofingerprint",
+    "value": "10"
+  },
+  {
+    "name": "minAcceptedPercentage",
+    "type": "keyframematching",
+    "value": "90"
+  },
+  {
+    "name": "FPS",
+    "type": "insertiontiming",
+    "value": "25"
+  },
+  {
+    "name": "minBlackFrame",
+    "type": "insertiontiming",
+    "value": "2"
+  },
+  {
+    "name": "maxDriftTime",
+    "type": "insertiontiming",
+    "value": "5"
+  },
+  {
+    "name": "minAcceptedBlackPercentage",
+    "type": "insertiontiming",
+    "value": "90"
+  },
+  {
+    "name": "unacceptableSilentDuration",
+    "type": "audioQuality",
+    "value": "5"
+  }
+]
