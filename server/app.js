@@ -1,15 +1,16 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 const cors = require('cors');
-var indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index');
+
 // [SH] Bring in the data model
 require('./api/models/db');
 // [SH] Bring in the routes for the API (delete the default routes)
-var routesApi = require('./api/routes/index');
+const routesApi = require('./api/routes/index');
 
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
