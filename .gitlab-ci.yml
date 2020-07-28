@@ -25,8 +25,8 @@ build-test-client:
   tags:
     - docker
   script:
-    - docker build --build-arg ANGULAR_ENVIRONMENT="build-test" --pull -t "$CI_REGISTRY_IMAGE/test-client:${CI_COMMIT_TAG}" ./client
-    - docker push "$CI_REGISTRY_IMAGE/test-client:${CI_COMMIT_TAG}"
+    - docker build --build-arg ANGULAR_ENVIRONMENT="build-test" --pull -t "$CI_REGISTRY_IMAGE/test-client:${CI_COMMIT_REF_SLUG}" ./client
+    - docker push "$CI_REGISTRY_IMAGE/test-client:${CI_COMMIT_REF_SLUG}"
   only:
     - master
 
@@ -36,8 +36,8 @@ build-prod-client:
   tags:
     - docker
   script:
-    - docker build --build-arg ANGULAR_ENVIRONMENT="build-prod" --pull -t "$CI_REGISTRY_IMAGE/production-client:${CI_COMMIT_TAG}" ./client
-    - docker push "$CI_REGISTRY_IMAGE/production-client:${CI_COMMIT_TAG}"
+    - docker build --build-arg ANGULAR_ENVIRONMENT="build-prod" --pull -t "$CI_REGISTRY_IMAGE/production-client:${CI_COMMIT_REF_SLUG}" ./client
+    - docker push "$CI_REGISTRY_IMAGE/production-client:${CI_COMMIT_REF_SLUG}"
   only:
     - tags
 
@@ -49,8 +49,8 @@ build-dev-server:
   tags:
     - docker
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-server:${CI_COMMIT_TAG}" ./server
-    - docker push "$CI_REGISTRY_IMAGE/develop-server:${CI_COMMIT_TAG}"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-server:${CI_COMMIT_REF_SLUG}" ./server
+    - docker push "$CI_REGISTRY_IMAGE/develop-server:${CI_COMMIT_REF_SLUG}"
   only:
     - develop
 
@@ -60,8 +60,8 @@ build-test-server:
   tags:
     - docker
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/test-server:${CI_COMMIT_TAG}" ./server
-    - docker push "$CI_REGISTRY_IMAGE/test-server:${CI_COMMIT_TAG}"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/test-server:${CI_COMMIT_REF_SLUG}" ./server
+    - docker push "$CI_REGISTRY_IMAGE/test-server:${CI_COMMIT_REF_SLUG}"
   only:
     - master
 
@@ -71,8 +71,8 @@ build-prod-server:
   tags:
     - docker
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/production-server:${CI_COMMIT_TAG}" ./server
-    - docker push "$CI_REGISTRY_IMAGE/production-server:${CI_COMMIT_TAG}"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/production-server:${CI_COMMIT_REF_SLUG}" ./server
+    - docker push "$CI_REGISTRY_IMAGE/production-server:${CI_COMMIT_REF_SLUG}"
   only:
     - tags
 
@@ -84,8 +84,8 @@ build-dev-mongo:
   tags:
     - docker
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_TAG}" ./db
-    - docker push "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_TAG}"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_REF_SLUG}" ./db
+    - docker push "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_REF_SLUG}"
   only:
     - develop
 
@@ -95,8 +95,8 @@ build-mongo:
   tags:
     - docker
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_TAG}" ./db
-    - docker push "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_TAG}"
+    - docker build --pull -t "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_REF_SLUG}" ./db
+    - docker push "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_REF_SLUG}"
   only:
     - tags
 
