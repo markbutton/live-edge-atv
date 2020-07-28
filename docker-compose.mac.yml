@@ -1,0 +1,59 @@
+version: '3.4'
+services:
+  live-edge-client:
+    build: 
+      context: ./client/.
+      args:
+        ANGULAR_ENVIRONMENT: build
+    ports:
+      - 8080:80
+    networks:
+      - my_net
+    container_name: "live-edge-client"
+    image: charter/live-edge-client:latest
+    environment:
+      PORT: 8080
+      API_HOST: "http://localhost/api/"
+  live-edge-server:
+    build: 
+      context: ./server/.
+      args:
+        ANGULAR_ENVIRONMENT: build
+        VERSION: 0.0.0
+        OWNER: c-mark.buttond@charter.com
+    ports:
+      - 3000:3001
+    networks:
+      - my_net
+    restart: on-failure
+    container_name: "live-edge-server"
+    image: "charter/live-edge-server:latest" 
+    environment:
+      PORT: 3001
+      API_HOST: "http://localhost/aop/"
+      DB_HOST: dbhost
+      MONGO_CONNECTION: "mongodb://localhost:27017/live-edge"
+    command: "npm start"
+  live-edge-mongodb:
+    build: 
+      context: ./db/.
+      args:
+        NODE_ENVIRONMENT: build
+    networks:
+      - my_net
+    container_name: "live-edge-mongodb"
+    image: "charter/live-edge-mongodb:latest"
+    volumes:
+      - ../data/liveedge/db:/data/db/
+    environment:
+      DB_HOST: dbhost
+      MONGO_CONNECTION: "mongodb://dbhost:27017/live-edge"
+      ME_CONFIG_MONGODB_SERVER: "mongodb://dbhost:27017/live-edge"
+      PORT: 27017
+    networks:
+      - my_net
+
+networks:
+  my_net:
+    driver: bridge
+    

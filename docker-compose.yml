@@ -1,0 +1,34 @@
+version: '2'
+services:
+  live-egde:
+    build: ./client/.
+    ports:
+      - 8080:80
+    container_name: "live-edge"
+    environment:
+      PORT: 80
+      API_HOST: "https://live-edge.develop.spectrumcluster.com"
+    image: panamax.spectrumxg.com/live-edge/live-edge:dev
+  live-egde-server:
+    build: ./server/.
+    ports:
+      - 3000:3000
+    container_name: "live-edge-server"
+    environment:
+      PORT: 3000
+      API_HOST: "https://live-edge-api.develop.spectrumcluster.com"
+      MONGO_CONNECTION: mongodb://dc2155285dd3afa8aa254a6c:e7724a29d9b2e23dd190303371383afe4ab8f5f2@pde-mongo-mongodb-replicaset-0.pde-mongo-mongodb-replicaset.pde-mongodb.svc.cluster.local:27017,pde-mongo-mongodb-replicaset-1.pde-mongo-mongodb-replicaset.pde-mongodb.svc.cluster.local:27017,pde-mongo-mongodb-replicaset-2.pde-mongo-mongodb-replicaset.pde-mongodb.svc.cluster.local:27017/admin?replicaSet=rsPde/63562a0d6120793b?replicaSet=rsPde
+    image: panamax.spectrumxg.com/live-edge/live-edge-server:dev
+    command: "npm start"
+  live-egde-rabbitmq:
+    image: 'bitnami/rabbitmq:3.7'
+    ports:
+      - 4369:4369
+      - 5672:5672
+      - 25672:25672
+      - 15672:15672
+    volumes:
+      - 'liveegde_rabbitmq_data:/bitnami'
+volumes:
+  liveegde_rabbitmq_data:
+    driver: local

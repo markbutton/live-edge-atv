@@ -1,0 +1,43 @@
+version: '3.4'
+services:
+  live-edge-client:
+    build: 
+      context: ./client/.
+      args:
+        ANGULAR_ENVIRONMENT: build-doc
+        VERSION: 0.0.1
+        OWNER: c-mark.buttond@charter.com
+    ports:
+      - 8080:80
+    networks:
+      - my_net
+    container_name: "live-edge-client"
+    image: charter/live-edge-client:latest
+    environment:
+      PORT: 8080
+      API_HOST: "http://localhost:3001/api/"
+  live-edge-server:
+    build: 
+      context: ./server/.
+      args:
+        ANGULAR_ENVIRONMENT: build-doc
+        VERSION: 0.0.1
+        OWNER: c-mark.buttond@charter.com
+    ports:
+      - 3001:3001
+      - 27017:27017
+    networks:
+      - my_net
+    container_name: "live-edge-server"
+    image: "charter/live-edge-server:latest"
+    environment:
+      PORT: 3001
+      API_HOST: "http://localhost:3001/api/"
+      MONGO_CONNECTION: "mongodb://host.docker.internal/live-edge"
+      RABBIT_CONNECTION: amqp://host.docker.internal
+    command: "npm start"
+
+networks:
+  my_net:
+    driver: bridge
+    
