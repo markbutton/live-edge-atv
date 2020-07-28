@@ -14,8 +14,8 @@ build-dev-client:
   tags:
     - docker
   script:
-    - docker build --build-arg ANGULAR_ENVIRONMENT="build-dev" --pull -t "$CI_REGISTRY_IMAGE/develop-client:${CI_COMMIT_TAG}" ./client
-    - docker push "$CI_REGISTRY_IMAGE/develop-client:${CI_COMMIT_TAG}"
+    - docker build --build-arg ANGULAR_ENVIRONMENT="build-dev" --pull -t "$CI_REGISTRY_IMAGE/develop-client:${CI_COMMIT_REF_SLUG}" ./client
+    - docker push "$CI_REGISTRY_IMAGE/develop-client:${CI_COMMIT_REF_SLUG}"
   only:
     - develop
 
