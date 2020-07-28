@@ -16,8 +16,7 @@ USER node
 
 RUN npm install
 
-COPY --chown=node:node . . 
-COPY --chown=node:node ./.aws /home/node/.aws
+COPY --chown=node:node . .
 
 EXPOSE 3000 3001
 
