@@ -1,0 +1,30 @@
+releaseName: 'api'
+subDomain: 'reach'
+containerPort: 3000
+useCorsReflection:
+   enabled: true
+useAuth:
+   enabled: false
+image:
+  repository: ${CI_REGISTRY_IMAGE}/production-server
+  tag: ${CI_COMMIT_TAG}
+  pullPolicy: Always
+resources:
+  requests: 
+    cpu: 100m
+    memory: 1024Mi
+  limits:
+    cpu: 1000m
+    memory: 2048Mi
+env:
+  MONGO_CONNECTION: mongodb://prod-mongodb-replicaset-0.prod-mongodb-replicaset.mongodb-replicaset.svc.cluster.local:27017,prod-mongodb-replicaset-1.prod-mongodb-replicaset.mongodb-replicaset.svc.cluster.local:27017,prod-mongodb-replicaset-2.prod-mongodb-replicaset.mongodb-replicaset.svc.cluster.local:27017/live-edge?replicaSet=rs0&authSource=admin
+  S3_URL: http://s3.amazonaws.com/spots
+  S3_BUCKET: spectrumreach-data
+cleanup:
+  enabled: false
+replicaCount: 1
+ingress:
+  secretName: wildcard-spectrumtoolbox-com-plus
+  annotations:
+    nginx.ingress.kubernetes.io/custom-http-errors: ""
+    nginx.ingress.kubernetes.io/proxy-body-size: 256m

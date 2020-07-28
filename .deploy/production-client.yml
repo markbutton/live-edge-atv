@@ -1,0 +1,19 @@
+releaseName: 'live-edge'
+subDomain: 'reach'
+containerPort: 80
+useCorsReflection:
+   enabled: true
+useAuth:
+   enabled: true
+image:
+  repository: ${CI_REGISTRY_IMAGE}/production-client
+  tag: ${CI_COMMIT_TAG}
+  pullPolicy: Always
+env:
+  API_HOST: "https://api.reach.spectrumtoolbox.com"
+  ANGULAR_ENVIRONMENT: build-prod
+cleanup:
+  enabled: false
+ingress:
+  secretName: wildcard-spectrumtoolbox-com-plus
+replicaCount: 1

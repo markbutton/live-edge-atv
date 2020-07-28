@@ -1,0 +1,117 @@
+########### DEVELOPMENT
+
+deploy-dev-client:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: client-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/develop-client.yml -r develop-client -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+    - develop
+
+deploy-dev-server:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: server-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/develop-server.yml -r develop-api -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+    - develop
+
+deploy-dev-mongo:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: db-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/develop-mongo.yml -r develop-mongo -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+    - develop
+
+########### TEST
+
+deploy-test-client:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: client-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/test-client.yml -r test-client -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+    - master
+
+deploy-test-server:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: server-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/test-server.yml -r test-api -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+    - master
+
+########### PROD
+
+deploy-production-client:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: client-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/production-client.yml -r production-client -c reach-prod -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+   - tags
+
+deploy-production-server:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: server-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/production-server.yml -r production-api -c reach-prod -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+   - tags
+
+deploy-mongo:
+  image: panamax.spectrumxg.com/spectrum-toolbox-2/pde-cli:develop
+  stage: deploy
+  before_script:
+    - echo "This skips any predefined before scripts to ensure clean environments"
+  tags:
+    - docker
+  environment:
+    name: db-${CI_COMMIT_REF_SLUG}
+  script:
+    - /usr/local/bin/pde-cli -f .deploy/production-mongo.yml -r mongo  -c reach-prod -con https://rancher-prod.spectrumtoolbox.com/v3
+  only:
+    - tags

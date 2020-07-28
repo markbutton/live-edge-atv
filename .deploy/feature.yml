@@ -1,0 +1,7 @@
+releaseName: ${CI_COMMIT_REF_SLUG}
+subDomain: 'reach'
+containerPort: 80
+image:
+  repository: ${CI_REGISTRY_IMAGE}
+  tag: ${CI_COMMIT_SHA}
+  pullPolicy: Always

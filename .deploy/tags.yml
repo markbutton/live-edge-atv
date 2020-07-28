@@ -1,0 +1,9 @@
+releaseName: ${CI_ENVIRONMENT_SLUG}
+subDomain: 'reach'
+containerPort: 80
+image:
+  repository: ${CI_REGISTRY_IMAGE}
+  tag: ${CI_COMMIT_TAG}
+  pullPolicy: Always
+cleanup:
+  TTL: 30

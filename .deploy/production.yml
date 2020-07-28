@@ -1,0 +1,10 @@
+releaseName: production
+subDomain: 'reach'
+subDomainRoot: true
+containerPort: 80
+image:
+  repository: ${CI_REGISTRY_IMAGE}
+  tag: ${CI_COMMIT_TAG}
+  pullPolicy: Always
+cleanup:
+  enabled: false

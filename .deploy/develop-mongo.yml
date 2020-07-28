@@ -1,0 +1,12 @@
+releaseName: mongo
+subDomain: develop
+domain: reach.spectrumtoolbox.com
+useAuth:
+   enabled: false
+image:
+  repository: ${CI_REGISTRY_IMAGE}/develop-mongo
+  tag: ${CI_COMMIT_REF_SLUG}
+  pullPolicy: Always
+cleanup:
+  enabled: false
+replicaCount: 1

@@ -1,0 +1,11 @@
+releaseName: 'mongo'
+subDomain: 'reach'
+useAuth:
+   enabled: false
+image:
+  repository: ${CI_REGISTRY_IMAGE}/mongo
+  tag: ${CI_COMMIT_REF_SLUG}
+  pullPolicy: Always
+cleanup:
+  enabled: false
+replicaCount: 1
