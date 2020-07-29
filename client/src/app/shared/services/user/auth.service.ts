@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { KeycloakService, KeycloakConfig, KeycloakOptions } from 'keycloak-angular';
+import { KeycloakOptions } from 'keycloak-angular';
 
 import { User } from '../../models/user/user.model';
 

@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { KeycloakService, KeycloakConfig } from 'keycloak-angular';
+import { KeycloakService } from 'keycloak-angular';
 import { KeycloakProfile } from 'keycloak-js';
 
 import { User } from '../../models/user/user.model';
@@ -50,7 +50,7 @@ export class UserState {
 
   initKeycloak(keycloak: KeycloakService): Promise<any> {
     return new Promise(async (resolve, reject) => {
-      const keycloakConfig: KeycloakConfig = {
+      const keycloakConfig = {
         url: 'https://keycloak.spectrumtoolbox.com/auth',
         realm: 'spectrumtoolbox',
         clientId: 'live-edge'
