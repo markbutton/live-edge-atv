@@ -23,6 +23,9 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "allowedCommonJsDependencies": [
+              "keycloak-js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -85,9 +88,9 @@
               "extractCss": true,
               "namedChunks": false,
               "aot": true,
-              "extractLicenses": false,
+              "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": false
+              "buildOptimizer": true
             },
             "doc": {
               "budgets": [
