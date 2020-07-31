@@ -49,7 +49,7 @@ FROM nginx:alpine
 
 LABEL maintainer="Mark Button <mark.button@charter.com>"
 
-COPY --from=builder --chown=root:root /home/node/app/dist/live-edge/ /usr/share/nginx/html/
+COPY --from=builder --chown=root:root /home/node/app/dist/live-edge-atv/ /usr/share/nginx/html/
 COPY --from=builder --chown=root:root /home/node/app/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder --chown=root:root /home/node/app/nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80 443
