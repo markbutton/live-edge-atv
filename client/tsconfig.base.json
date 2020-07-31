@@ -11,7 +11,6 @@
     "allowJs": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "enableIvy": false,
     "target": "es2015",
     "module": "es2020",
     "lib": [
