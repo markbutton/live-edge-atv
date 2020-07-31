@@ -24,7 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "allowedCommonJsDependencies": [
-              "keycloak-js"
+              "keycloak-js",
+              "js-sha256"
             ],
             "assets": [
               "src/favicon.ico",
