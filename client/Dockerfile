@@ -1,5 +1,5 @@
 ### Build Container ###
-FROM node:12 as builder
+FROM node:12.18.3 as builder
 
 LABEL maintainer="Mark Button <mark.button@charter.com>"
 
