@@ -24,13 +24,13 @@ USER node
 RUN mkdir -p /home/node/build_node_modules
 COPY --chown=node:node package.json *.lock /home/node/build_node_modules/
 RUN cd /home/node/build_node_modules && \
-    yarn install --frozen-lockfile --non-interactive
+    npm install
 
 ### Production Dependencies
 RUN mkdir -p /home/node/release_node_modules
 COPY --chown=node:node package.json *.lock /home/node/release_node_modules/
 RUN cd /home/node/release_node_modules && \
-    yarn --frozen-lockfile --non-interactive --production
+    npm install
 
 
 # Add the application
@@ -43,7 +43,7 @@ RUN ln -s /home/node/build_node_modules/node_modules /home/node/app/node_modules
 WORKDIR /home/node/app
 
 # Build app
-RUN yarn run ${ANGULAR_ENVIRONMENT}
+RUN npm run ${ANGULAR_ENVIRONMENT}
 
 FROM nginx:alpine
 
