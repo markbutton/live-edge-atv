@@ -8,6 +8,9 @@ import { OrchestratorComponent } from './orchestrator.component';
   declarations: [OrchestratorComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    OrchestratorComponent
   ]
 })
 export class OrchestratorModule { }
