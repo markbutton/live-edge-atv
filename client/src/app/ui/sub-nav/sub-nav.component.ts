@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { NavView } from 'src/app/shared/models/nav/nav-view.model';
 
 @Component({
@@ -7,13 +9,23 @@ import { NavView } from 'src/app/shared/models/nav/nav-view.model';
   styleUrls: ['./sub-nav.component.scss']
 })
 export class SubNavComponent implements OnInit {
+  navbarOpen = false;
+  currentRoute: any;
+  links = new Array();
 
   @Input() navView: NavView;
 
-  constructor() { }
+  constructor(
+    private router: Router) { }
 
   ngOnInit(): void {
-    console.log('get the nav object: ', this.navView.title);
+    this.currentRoute = this.router.url;
+    this.links = this.navView.links;
+    console.log('Links: ', this.navView);
+  }
+
+  toggleNavbar(): void {
+    this.navbarOpen = !this.navbarOpen;
   }
 
 }

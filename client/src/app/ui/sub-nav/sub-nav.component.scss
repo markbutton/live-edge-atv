@@ -3,3 +3,26 @@
   top: 63px;
   width: 100%;
 }
+
+.active {
+  background:#4FA9DC; color:#000;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  left: 0;
+  z-index: 20;
+}
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+  width: inherit;
+}
+
+.navbar-wrapper .navbar {
+  width: 100% !important;
+}
