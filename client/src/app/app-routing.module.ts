@@ -6,6 +6,7 @@ import { Role } from './shared/models/user/role.model';
 import { HomeComponent } from './home/home.component';
 import { VerificationComponent } from './verification/verification.component';
 import { OrchestratorComponent } from './orchestrator/orchestrator.component';
+import { QualityComponent } from './quality/quality.component';
 import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   },
   {
     path: 'verification', component: VerificationComponent, canActivate: [AuthGuard],
+    data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
+  },
+  {
+    path: 'quality', component: QualityComponent, canActivate: [AuthGuard],
     data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
   }
 ];

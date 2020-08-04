@@ -4,11 +4,11 @@ import { NavViewState } from '../shared/state';
 import { NavView } from '../shared/models/nav/nav-view.model';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  selector: 'app-quality',
+  templateUrl: './quality.component.html',
+  styleUrls: ['./quality.component.scss']
 })
-export class MapComponent implements OnInit {
+export class QualityComponent implements OnInit {
 
   constructor(private navViewState: NavViewState) { }
 
