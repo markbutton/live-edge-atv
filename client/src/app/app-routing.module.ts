@@ -32,7 +32,8 @@ const routes: Routes = [
     data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
   },
   {
-    path: 'docs', loadChildren: () => import('./docs/docs.module').then(m => m.DocsModule), canActivate: [AuthGuard]
+    path: 'docs', loadChildren: () => import('./docs/docs.module').then(m => m.DocsModule), canActivate: [AuthGuard],
+    data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
   },
   {
     path: 'verification', component: VerificationComponent, canActivate: [AuthGuard],
