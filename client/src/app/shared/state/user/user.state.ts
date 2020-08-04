@@ -10,6 +10,7 @@ import { UserService } from '../../services/user/user.service';
 export class UserState {
   private userLoaded = false;
   // State Model
+  // tslint:disable-next-line: variable-name
   private _user: BehaviorSubject<User> = new BehaviorSubject(Object());
   public user: Observable<User> = this._user.asObservable();
 
