@@ -5,6 +5,7 @@ import { AuthGuard } from './shared/guards/auth.guard';
 import { Role } from './shared/models/user/role.model';
 import { HomeComponent } from './home/home.component';
 import { VerificationComponent } from './verification/verification.component';
+import { OrchestratorComponent } from './orchestrator/orchestrator.component';
 import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
@@ -14,8 +15,8 @@ const routes: Routes = [
     data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
   },
   {
-    path: 'orchestrator', loadChildren: () => import('./orchestrator/orchestrator.module').then(m => m.OrchestratorModule),
-    canActivate: [AuthGuard], data: { roles: [Role.developer] }
+    path: 'orchestrator', component: OrchestratorComponent, canActivate: [AuthGuard],
+    data: { roles: [Role.developer] }
   },
   {
     path: 'inventory', loadChildren: () => import('./inventory/inventory.module').then(m => m.InventoryModule),

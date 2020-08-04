@@ -18,9 +18,6 @@ export class MapComponent implements OnInit {
 
   subNav(): void {
     const nav = new NavView();
-    nav.subnav = false;
-    nav.title = '';
-    nav.links = [];
     this.navViewState.createNavView(nav);
   }
 

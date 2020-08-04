@@ -21,7 +21,6 @@ export class SubNavComponent implements OnInit {
   ngOnInit(): void {
     this.currentRoute = this.router.url;
     this.links = this.navView.links;
-    console.log('Links: ', this.navView);
   }
 
   toggleNavbar(): void {
