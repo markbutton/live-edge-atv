@@ -5,11 +5,11 @@ import { NavView } from 'src/app/shared/models/nav/nav-view.model';
 import { Link } from 'src/app/shared/models/nav/link.model';
 
 @Component({
-  selector: 'app-tmc',
-  templateUrl: './tmc.component.html',
-  styleUrls: ['./tmc.component.scss']
+  selector: 'app-jobs',
+  templateUrl: './jobs.component.html',
+  styleUrls: ['./jobs.component.scss']
 })
-export class TmcComponent implements OnInit {
+export class JobsComponent implements OnInit {
 
   constructor(private navViewState: state.NavViewState) { }
 
@@ -20,19 +20,19 @@ export class TmcComponent implements OnInit {
   subNav(): void {
     const nav = new NavView();
     nav.subnav = true;
-    nav.title = 'Inventory Manager';
+    nav.title = 'Job Manager';
     nav.links = new Array();
     const l1 = new Link();
-    l1.name = 'TMC';
-    l1.route = '/inventory/tmc';
+    l1.name = 'Jobs';
+    l1.route = '/manager/jobs';
     nav.links.push(l1);
     const l2 = new Link();
-    l2.name = 'Zone';
-    l2.route = '/inventory/zone';
+    l2.name = 'Channel Lineup';
+    l2.route = '/manager/channel-lineup';
     nav.links.push(l2);
     const l3 = new Link();
-    l3.name = 'Add TMC';
-    l3.route = '/inventory/tmc-edit';
+    l3.name = 'Add Job';
+    l3.route = '/manager/job-edit';
     nav.links.push(l3);
     this.navViewState.createNavView(nav);
   }

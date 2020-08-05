@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NavViewState } from '../shared/state';
-import { NavView } from '../shared/models/nav/nav-view.model';
+import * as state from 'src/app/shared/state';
+import { NavView } from 'src/app/shared/models/nav/nav-view.model';
 
 @Component({
   selector: 'app-orchestrator',
@@ -10,7 +10,7 @@ import { NavView } from '../shared/models/nav/nav-view.model';
 })
 export class OrchestratorComponent implements OnInit {
 
-  constructor(private navViewState: NavViewState) { }
+  constructor(private navViewState: state.NavViewState) { }
 
   ngOnInit(): void {
     this.subNav();

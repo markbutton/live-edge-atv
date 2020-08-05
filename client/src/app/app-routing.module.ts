@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'quality', component: QualityComponent, canActivate: [AuthGuard],
     data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
+  },
+  {
+    path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule),
+    canActivate: [AuthGuard], data: { roles: [Role.developer, Role.admin] }
   }
 ];
 
