@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as state from 'src/app/shared/state';
-import { NavView } from 'src/app/shared/models/nav/nav-view.model';
-
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -10,14 +7,9 @@ import { NavView } from 'src/app/shared/models/nav/nav-view.model';
 })
 export class MapComponent implements OnInit {
 
-  constructor(private navViewState: state.NavViewState) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.subNav();
   }
 
-  subNav(): void {
-    const nav = new NavView();
-    this.navViewState.createNavView(nav);
-  }
 }

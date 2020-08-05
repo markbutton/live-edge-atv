@@ -8,6 +8,8 @@ import {
   Router,
 } from '@angular/router';
 
+import * as state from 'src/app/shared/state';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,7 +19,10 @@ export class AppComponent {
   title = 'live-edge-atv';
   loading = false;
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router,
+    private navViewState: state.NavViewState
+  ) {
     this.router.events.subscribe((event: Event) => {
       switch (true) {
         case event instanceof NavigationStart: {
@@ -25,7 +30,10 @@ export class AppComponent {
           break;
         }
 
-        case event instanceof NavigationEnd:
+        case event instanceof NavigationEnd: {
+          this.navViewState.routeChange(router.url);
+          break;
+        }
         case event instanceof NavigationCancel:
         case event instanceof NavigationError: {
           this.loading = false;

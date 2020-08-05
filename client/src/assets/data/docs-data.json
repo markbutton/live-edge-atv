@@ -1,0 +1,18 @@
+    {
+      "subnav": true,
+      "title": "Documentation",
+      "links": [
+        {
+          "name": "User Docs",
+          "route": "/docs/ui-docs"
+        },
+        {
+          "name": "API Docs",
+          "route": "/docs/api-docs"
+        },
+        {
+          "name": "Microservice Docs",
+          "route": "/docs/ms-docs"
+        }
+      ]
+    }

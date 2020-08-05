@@ -1,0 +1,30 @@
+{
+  "subnav": true,
+  "title": "Logs",
+  "links": [
+    {
+      "name": "Fatal",
+      "route": "/logs/fatal-log"
+    },
+    {
+      "name": "Error",
+      "route": "/logs/error-log"
+    },
+    {
+      "name": "Warn",
+      "route": "/logs/warn-log"
+    },
+    {
+      "name": "Info",
+      "route": "/logs/info-log"
+    },
+    {
+      "name": "Debug",
+      "route": "/logs/debug-log"
+    },
+    {
+      "name": "Trap",
+      "route": "/logs/trap-log"
+    }
+  ]
+}

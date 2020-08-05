@@ -1,0 +1,18 @@
+    {
+      "subnav": true,
+      "title": "Job Manager",
+      "links": [
+        {
+          "name": "Jobs",
+          "route": "/manager/jobs"
+        },
+        {
+          "name": "Channel Lineup",
+          "route": "/manager/channel-lineup"
+        },
+        {
+          "name": "Add Job",
+          "route": "/manager/job-edit"
+        }
+      ]
+    }

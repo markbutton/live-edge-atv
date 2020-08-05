@@ -1,0 +1,14 @@
+    {
+      "subnav": true,
+      "title": "Settings",
+      "links": [
+        {
+          "name": "Dashboard",
+          "route": "/settings/dashboard"
+        },
+        {
+          "name": "User Manager",
+          "route": "/settings/user-manager"
+        }
+      ]
+    }

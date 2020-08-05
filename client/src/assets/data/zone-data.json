@@ -1,0 +1,18 @@
+    {
+      "subnav": true,
+      "title": "Inventory Manager",
+      "links": [
+        {
+          "name": "TMC",
+          "route": "/inventory/tmc"
+        },
+        {
+          "name": "Zone",
+          "route": "/inventory/zone"
+        },
+        {
+          "name": "Add Zone",
+          "route": "/inventory/zone-edit"
+        }
+      ]
+    }

@@ -12,4 +12,7 @@ export class InventoryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeOfRoutes(): void {
+    console.log();
+  }
 }
