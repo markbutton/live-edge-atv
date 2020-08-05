@@ -25,8 +25,30 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    browsers: ['Chrome', 'ChromeHeadless', 'Chrome_no_sandbox'],
+    customLaunchers: {
+      Chrome_no_sandbox: {
+        base: 'ChromeHeadless',
+        browserDisconnectTimeout: 10000,
+        browserDisconnectTolerance: 3,
+        browserNoActivityTimeout: 60000,
+        flags: [
+          '--headless',
+          '--disable-web-security',
+          '--disable-gpu',
+          '--no-sandbox',
+          '--remote-debugging-port=9222',
+          '--disable-translate',
+          '--disable-extensions',
+          '--disable-software-rasterizer',
+          '--mute-audio',
+          '--hide-scrollbars',
+          '--disable-dev-shm-usage',
+          '--no-proxy-server'
+        ]
+      }
+    },
   });
 };
