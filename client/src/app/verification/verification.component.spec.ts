@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VerificationComponent } from './verification.component';
+import { NavViewState } from '../shared/state/nav/nav-view.state';
 
 describe('VerificationComponent', () => {
   let component: VerificationComponent;
@@ -8,9 +9,9 @@ describe('VerificationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VerificationComponent ]
-    })
-    .compileComponents();
+      declarations: [VerificationComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

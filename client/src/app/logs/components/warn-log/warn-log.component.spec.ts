@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WarnLogComponent } from './warn-log.component';
+import { NavViewState } from 'src/app/shared/state';
 
 describe('WarnLogComponent', () => {
   let component: WarnLogComponent;
@@ -8,9 +9,9 @@ describe('WarnLogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WarnLogComponent ]
-    })
-    .compileComponents();
+      declarations: [WarnLogComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

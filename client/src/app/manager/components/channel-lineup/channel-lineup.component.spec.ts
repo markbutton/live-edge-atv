@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChannelLineupComponent } from './channel-lineup.component';
+import { NavViewState } from 'src/app/shared/state';
 
 describe('ChannelLineupComponent', () => {
   let component: ChannelLineupComponent;
@@ -8,9 +9,9 @@ describe('ChannelLineupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChannelLineupComponent ]
-    })
-    .compileComponents();
+      declarations: [ChannelLineupComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

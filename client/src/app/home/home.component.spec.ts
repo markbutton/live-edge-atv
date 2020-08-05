@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
+import { NavViewState } from '../shared/state';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -8,9 +9,9 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

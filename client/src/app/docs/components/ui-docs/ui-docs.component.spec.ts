@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UiDocsComponent } from './ui-docs.component';
+import { NavViewState } from 'src/app/shared/state/nav/nav-view.state';
 
 describe('UiDocsComponent', () => {
   let component: UiDocsComponent;
@@ -8,9 +9,9 @@ describe('UiDocsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UiDocsComponent ]
-    })
-    .compileComponents();
+      declarations: [UiDocsComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
