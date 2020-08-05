@@ -6,7 +6,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
-import { UserState } from 'src/app/shared/state';
+import { UserState, NavViewState } from 'src/app/shared/state';
 import { getSessionStorage, getLocalStorage } from '../../app.module';
 import { KeycloakService } from 'keycloak-angular';
 
@@ -16,24 +16,16 @@ describe('LayoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        LayoutComponent,
-        HeaderComponent,
-        FooterComponent
-      ],
-      imports: [
-        HttpClientModule,
-        RouterTestingModule,
-        MatTooltipModule
-      ],
+      declarations: [LayoutComponent, HeaderComponent, FooterComponent],
+      imports: [HttpClientModule, RouterTestingModule, MatTooltipModule],
       providers: [
+        NavViewState,
         KeycloakService,
         UserState,
         { provide: 'SESSIONSTORAGE', useFactory: getSessionStorage },
-        { provide: 'LOCALSTORAGE', useFactory: getLocalStorage }
-      ]
-    })
-    .compileComponents();
+        { provide: 'LOCALSTORAGE', useFactory: getLocalStorage },
+      ],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

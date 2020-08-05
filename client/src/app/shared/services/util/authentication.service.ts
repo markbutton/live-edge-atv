@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { environment } from '../../../environments/environment';
+import { environment } from 'src/environments/environment';
 
 export interface UserDetails {
   _id: string;
@@ -24,13 +24,12 @@ export interface TokenPayload {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class AuthenticationService {
   private token: string;
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) {}
 
   private saveToken(token: string): void {
     window.localStorage.setItem('mean-token', token);
@@ -65,13 +64,19 @@ export class AuthenticationService {
     }
   }
 
-  private request(method: 'post' | 'get', type: 'login' | 'register' | 'profile', user?: TokenPayload): Observable<any> {
+  private request(
+    method: 'post' | 'get',
+    type: 'login' | 'register' | 'profile',
+    user?: TokenPayload
+  ): Observable<any> {
     let base;
 
     if (method === 'post') {
       base = this.http.post(environment.baseUrl + `${type}`, user);
     } else {
-      base = this.http.get(environment.baseUrl + `${type}`, { headers: { Authorization: `Bearer ${this.getToken()}` } });
+      base = this.http.get(environment.baseUrl + `${type}`, {
+        headers: { Authorization: `Bearer ${this.getToken()}` },
+      });
     }
 
     const request = base.pipe(
@@ -103,5 +108,4 @@ export class AuthenticationService {
     window.localStorage.removeItem('mean-token');
     this.router.navigateByUrl('/');
   }
-
 }

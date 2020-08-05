@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ApiDocsComponent } from './api-docs.component';
+import { NavViewState } from 'src/app/shared/state/nav/nav-view.state';
 
 describe('ApiDocsComponent', () => {
   let component: ApiDocsComponent;
@@ -8,9 +9,9 @@ describe('ApiDocsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ApiDocsComponent ]
-    })
-    .compileComponents();
+      declarations: [ApiDocsComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

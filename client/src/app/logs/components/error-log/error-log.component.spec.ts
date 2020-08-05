@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ErrorLogComponent } from './error-log.component';
+import { NavViewState } from 'src/app/shared/state';
 
 describe('ErrorLogComponent', () => {
   let component: ErrorLogComponent;
@@ -8,9 +9,9 @@ describe('ErrorLogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ErrorLogComponent ]
-    })
-    .compileComponents();
+      declarations: [ErrorLogComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

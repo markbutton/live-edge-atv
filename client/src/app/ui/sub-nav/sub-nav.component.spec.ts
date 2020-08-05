@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SubNavComponent } from './sub-nav.component';
+import { NavViewState } from 'src/app/shared/state';
+import { Router, RouterModule } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('SubNavComponent', () => {
   let component: SubNavComponent;
@@ -8,9 +11,10 @@ describe('SubNavComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [SubNavComponent]
-    })
-      .compileComponents();
+      declarations: [SubNavComponent],
+      imports: [RouterTestingModule, RouterModule],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

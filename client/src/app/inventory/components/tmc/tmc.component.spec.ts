@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TmcComponent } from './tmc.component';
+import { NavViewState } from 'src/app/shared/state';
 
 describe('TmcComponent', () => {
   let component: TmcComponent;
@@ -8,9 +9,9 @@ describe('TmcComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TmcComponent ]
-    })
-    .compileComponents();
+      declarations: [TmcComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

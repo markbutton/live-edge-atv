@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
-import { Event, NavigationCancel, NavigationEnd,
-  NavigationError, NavigationStart, Router } from '@angular/router';
+import {
+  Event,
+  NavigationCancel,
+  NavigationEnd,
+  NavigationError,
+  NavigationStart,
+  Router,
+} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'live-edge';
+  title = 'live-edge-atv';
   loading = false;
 
   constructor(private router: Router) {
@@ -31,5 +37,4 @@ export class AppComponent {
       }
     });
   }
-
 }

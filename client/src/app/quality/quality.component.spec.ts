@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QualityComponent } from './quality.component';
+import { NavViewState } from '../shared/state';
 
 describe('QualityComponent', () => {
   let component: QualityComponent;
@@ -8,9 +9,9 @@ describe('QualityComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QualityComponent ]
-    })
-    .compileComponents();
+      declarations: [QualityComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

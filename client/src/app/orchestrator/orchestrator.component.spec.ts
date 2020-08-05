@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OrchestratorComponent } from './orchestrator.component';
+import { NavViewState } from '../shared/state';
 
 describe('OrchestratorComponent', () => {
   let component: OrchestratorComponent;
@@ -8,9 +9,9 @@ describe('OrchestratorComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OrchestratorComponent ]
-    })
-    .compileComponents();
+      declarations: [OrchestratorComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

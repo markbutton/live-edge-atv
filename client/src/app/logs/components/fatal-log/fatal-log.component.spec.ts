@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FatalLogComponent } from './fatal-log.component';
+import { NavViewState } from 'src/app/shared/state';
 
 describe('FatalLogComponent', () => {
   let component: FatalLogComponent;
@@ -8,9 +9,9 @@ describe('FatalLogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FatalLogComponent ]
-    })
-    .compileComponents();
+      declarations: [FatalLogComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

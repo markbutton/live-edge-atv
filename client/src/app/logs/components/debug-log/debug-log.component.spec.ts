@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DebugLogComponent } from './debug-log.component';
+import { NavViewState } from 'src/app/shared/state';
 
 describe('DebugLogComponent', () => {
   let component: DebugLogComponent;
@@ -8,9 +9,9 @@ describe('DebugLogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DebugLogComponent ]
-    })
-    .compileComponents();
+      declarations: [DebugLogComponent],
+      providers: [NavViewState],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

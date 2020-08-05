@@ -20,7 +20,9 @@ export class SubNavComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentRoute = this.router.url;
-    this.links = this.navView.links;
+    if (this.navView) {
+      this.links = this.navView.links;
+    }
   }
 
   toggleNavbar(): void {
