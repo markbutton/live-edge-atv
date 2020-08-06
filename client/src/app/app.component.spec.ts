@@ -1,12 +1,24 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
+
+import * as state from 'src/app/shared/state';
 import { AppComponent } from './app.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [AppComponent],
+      imports: [
+        RouterTestingModule,
+        HttpClientModule
+      ],
+      declarations: [
+        AppComponent
+      ],
+      providers: [
+        state.NavViewState
+      ]
     }).compileComponents();
   }));
 
