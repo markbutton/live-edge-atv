@@ -14,8 +14,8 @@ export class UserState {
   private _user: BehaviorSubject<User> = new BehaviorSubject(Object());
   public user: Observable<User> = this._user.asObservable();
 
-  // protected get isLocal(): boolean { return (document.location.hostname.indexOf('localhost') >= 0); }
-  isLocal = false;
+  protected get isLocal(): boolean { return (document.location.hostname.indexOf('localhost') >= 0); }
+  // isLocal = false;
 
   constructor(
     @Inject('SESSIONSTORAGE') private sessionStorage,
