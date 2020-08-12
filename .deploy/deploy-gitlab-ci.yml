@@ -10,7 +10,7 @@ deploy-dev-client:
   environment:
     name: client-${CI_COMMIT_REF_SLUG}
   script:
-    - /usr/local/bin/pde-cli -f .deploy/develop-client.yml -r develop-client -c atv-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+    - /usr/local/bin/pde-cli -f .deploy/develop-client.yml -r develop-client -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
   only:
     - develop
 
@@ -38,7 +38,7 @@ deploy-dev-mongo:
   environment:
     name: db-${CI_COMMIT_REF_SLUG}
   script:
-    - /usr/local/bin/pde-cli -f .deploy/develop-mongo.yml -r develop-mongo -c atv-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+    - /usr/local/bin/pde-cli -f .deploy/develop-mongo.yml -r develop-mongo -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
   only:
     - develop
 
@@ -54,7 +54,7 @@ deploy-test-client:
   environment:
     name: client-${CI_COMMIT_REF_SLUG}
   script:
-    - /usr/local/bin/pde-cli -f .deploy/test-client.yml -r test-client -c atv-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+    - /usr/local/bin/pde-cli -f .deploy/test-client.yml -r test-client -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
   only:
     - master
 
@@ -68,7 +68,7 @@ deploy-test-server:
   environment:
     name: server-${CI_COMMIT_REF_SLUG}
   script:
-    - /usr/local/bin/pde-cli -f .deploy/test-server.yml -r test-api -c atv-dev -con https://rancher-prod.spectrumtoolbox.com/v3
+    - /usr/local/bin/pde-cli -f .deploy/test-server.yml -r test-api -c reach-dev -con https://rancher-prod.spectrumtoolbox.com/v3
   only:
     - master
 
