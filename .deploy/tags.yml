@@ -1,5 +1,5 @@
 releaseName: ${CI_ENVIRONMENT_SLUG}
-subDomain: atv
+subDomain: reach
 containerPort: 80
 image:
   repository: ${CI_REGISTRY_IMAGE}

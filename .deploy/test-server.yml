@@ -1,6 +1,6 @@
-releaseName: api
+releaseName: atv-api
 subDomain: test
-domain: atv.spectrumtoolbox.com
+domain: reach.spectrumtoolbox.com
 containerPort: 3000
 useCorsReflection:
    enabled: true

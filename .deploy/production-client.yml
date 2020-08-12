@@ -1,5 +1,5 @@
-releaseName: ui
-subDomain: atv
+releaseName: atv
+subDomain: reach
 containerPort: 80
 useCorsReflection:
    enabled: true
@@ -10,7 +10,7 @@ image:
   tag: ${CI_COMMIT_TAG}
   pullPolicy: Always
 env:
-  API_HOST: "https://api.atv.spectrumtoolbox.com"
+  API_HOST: "https://api.reach.spectrumtoolbox.com"
   ANGULAR_ENVIRONMENT: build-prod
 cleanup:
   enabled: false

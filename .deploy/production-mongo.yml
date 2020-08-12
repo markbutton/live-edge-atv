@@ -1,5 +1,5 @@
 releaseName: mongo
-subDomain: atv
+subDomain: reach
 useAuth:
    enabled: false
 image:

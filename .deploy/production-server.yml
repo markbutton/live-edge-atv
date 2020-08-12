@@ -1,5 +1,5 @@
-releaseName: api
-subDomain: atv
+releaseName: atv-api
+subDomain: reach
 containerPort: 3000
 useCorsReflection:
    enabled: true
