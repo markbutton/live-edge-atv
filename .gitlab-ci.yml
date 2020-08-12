@@ -1,7 +1,7 @@
 stages:
   - build
   - test
-  # - deploy
+  - deploy
 
 before_script:
   - type docker >/dev/null 2>&1 && docker login -u gitlab-ci-token -p $CI_JOB_TOKEN panamax.spectrumxg.com || { echo >&2 "Docker not installed"; }
@@ -102,4 +102,4 @@ build-mongo:
 
 include:
   - '.test/test-gitlab-ci.yml'
-  # - '.deploy/deploy-gitlab-ci.yml'
+  - '.deploy/deploy-gitlab-ci.yml'

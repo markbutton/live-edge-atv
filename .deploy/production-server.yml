@@ -1,5 +1,5 @@
-releaseName: 'api'
-subDomain: 'reach'
+releaseName: api
+subDomain: atv
 containerPort: 3000
 useCorsReflection:
    enabled: true
@@ -10,7 +10,7 @@ image:
   tag: ${CI_COMMIT_TAG}
   pullPolicy: Always
 resources:
-  requests: 
+  requests:
     cpu: 100m
     memory: 1024Mi
   limits:

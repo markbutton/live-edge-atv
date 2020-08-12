@@ -1,6 +1,6 @@
 releaseName: mongo
 subDomain: develop
-domain: reach.spectrumtoolbox.com
+domain: atv.spectrumtoolbox.com
 useAuth:
    enabled: false
 image:

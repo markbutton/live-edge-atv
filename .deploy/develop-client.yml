@@ -1,6 +1,6 @@
-releaseName: live-edge
+releaseName: ui
 subDomain: develop
-domain: reach.spectrumtoolbox.com
+domain: atv.spectrumtoolbox.com
 containerPort: 80
 useCorsReflection:
    enabled: true
@@ -11,7 +11,7 @@ image:
   tag: ${CI_COMMIT_REF_SLUG}
   pullPolicy: Always
 env:
-  API_HOST: "https://api.develop.reach.spectrumtoolbox.com"
+  API_HOST: "https://api.develop.atv.spectrumtoolbox.com"
   ANGULAR_ENVIRONMENT: build-dev
 cleanup:
   enabled: false

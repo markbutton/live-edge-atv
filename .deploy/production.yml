@@ -1,5 +1,5 @@
 releaseName: production
-subDomain: 'reach'
+subDomain: atv
 subDomainRoot: true
 containerPort: 80
 image:

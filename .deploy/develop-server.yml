@@ -1,6 +1,6 @@
 releaseName: api
 subDomain: develop
-domain: reach.spectrumtoolbox.com
+domain: atv.spectrumtoolbox.com
 containerPort: 3000
 useCorsReflection:
    enabled: true
@@ -11,7 +11,7 @@ image:
   tag: ${CI_COMMIT_REF_SLUG}
   pullPolicy: Always
 resources:
-  requests: 
+  requests:
     cpu: 100m
     memory: 1024Mi
   limits:
@@ -28,4 +28,4 @@ ingress:
   secretName: wildcard-spectrumtoolbox-com-plus
   annotations:
     nginx.ingress.kubernetes.io/custom-http-errors: ""
-    nginx.ingress.kubernetes.io/proxy-body-size: 256m   
+    nginx.ingress.kubernetes.io/proxy-body-size: 256m
