@@ -8,7 +8,7 @@ export const environment = {
   socketUrl: 'https://api.atv.spectrumtoolbox.com/',
   sourceVideoUrl: 'https://api.atv.spectrumtoolbox.com/api/s3',
   targetVideoUrl: 'https://api.atv.spectrumtoolbox.com/api/s3',
-  baseHref: 'https://live-edge.atv.spectrumtoolbox.com/',
+  baseHref: 'https://ui.atv.spectrumtoolbox.com/',
   logsUrl: 'https://log-api.atv.spectrumtoolbox.com/logs/',
   logSocket: 'https://log-api.atv.spectrumtoolbox.com/',
   apiHeaderKey: 'x-charter-api-key',
