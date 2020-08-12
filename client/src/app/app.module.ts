@@ -3,6 +3,14 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { KeycloakAngularModule } from 'keycloak-angular';
+import { MatButtonModule } from '@angular/material/button';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { ConfirmModalComponent } from './shared/components/confirm-modal/confirm-modal.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { UiModule } from './ui/ui.module';
@@ -12,7 +20,8 @@ import * as state from './shared/state';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ConfirmModalComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -20,14 +29,25 @@ import * as state from './shared/state';
     BrowserAnimationsModule,
     HttpClientModule,
     KeycloakAngularModule,
-    UiModule
+    UiModule,
+    MatButtonModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
   ],
   providers: [
     state.UserState,
+    state.JobsState,
+    state.EquipmentState,
     { provide: 'LOCALSTORAGE', useFactory: getLocalStorage },
     { provide: 'SESSIONSTORAGE', useFactory: getSessionStorage },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ConfirmModalComponent,
+  ]
 })
 export class AppModule { }
 
