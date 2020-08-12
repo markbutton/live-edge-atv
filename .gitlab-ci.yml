@@ -76,30 +76,6 @@ build-prod-server:
   only:
     - tags
 
-###### BUILD DATA ADMIN
-
-build-dev-mongo:
-  stage: build
-  image: docker:latest
-  tags:
-    - docker
-  script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_REF_SLUG}" ./db
-    - docker push "$CI_REGISTRY_IMAGE/develop-mongo:${CI_COMMIT_REF_SLUG}"
-  only:
-    - develop
-
-build-mongo:
-  stage: build
-  image: docker:latest
-  tags:
-    - docker
-  script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_REF_SLUG}" ./db
-    - docker push "$CI_REGISTRY_IMAGE/mongo:${CI_COMMIT_REF_SLUG}"
-  only:
-    - tags
-
 include:
   - '.test/test-gitlab-ci.yml'
   - '.deploy/deploy-gitlab-ci.yml'
