@@ -1,0 +1,48 @@
+table {
+  width: 100%;
+}
+
+.tmc {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav {
+  display: inline;
+  position: fixed;
+  z-index: 999;
+  padding-right: 0;
+}
+
+.actions {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.mat-column-select {
+  overflow: initial;
+}
+
+.pad-right {
+  margin-right: 20px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.fa-play-circle {
+  color:#00ff00;
+}
+
+.fa-pause-circle {
+  color:yellow;
+}
+
+.fa-check-circle {
+  color:#9cc2ff;
+}
+
+.fa-question-circle {
+  color:#dedede;
+}
