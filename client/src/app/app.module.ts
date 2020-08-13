@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { KeycloakAngularModule } from 'keycloak-angular';
@@ -9,6 +10,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { ToastrModule } from 'ngx-toastr';
 
 import { ConfirmModalComponent } from './shared/components/confirm-modal/confirm-modal.component';
 
@@ -27,6 +29,7 @@ import * as state from './shared/state';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     HttpClientModule,
     KeycloakAngularModule,
     UiModule,
@@ -36,6 +39,13 @@ import * as state from './shared/state';
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      preventDuplicates: true,
+      maxOpened: 1,
+      autoDismiss: true,
+      tapToDismiss: true
+    }),
   ],
   providers: [
     state.UserState,
