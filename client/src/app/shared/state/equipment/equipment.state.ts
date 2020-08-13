@@ -82,6 +82,77 @@ export class EquipmentState {
     return lefl;
   }
 
+  getLatestTmc(): Equipment {
+    const latestTmc = this._tmc.getValue();
+    return latestTmc;
+  }
+
+  getEquipmentId(id: string, referenceID?: string): void {
+    if (!id) {
+      if (referenceID) {
+        this.equipmentService.getEquipmentId(referenceID).subscribe(
+          (res: Equipment) => {
+            const newTmc = new Equipment(res);
+            this._tmc.next(newTmc);
+          },
+          err => {
+            console.error('Error retrieving equipment', err);
+          }
+        );
+      } else {
+        const newTmc = new Equipment();
+        this._tmc.next(newTmc);
+      }
+    } else {
+      this.equipmentService.getEquipmentId(id).subscribe(
+        res => {
+          const response = res;
+          this._tmc.next(response);
+
+        },
+        err => {
+          console.error('Error retrieving equipment', err);
+        }
+      );
+    }
+  }
+
+  updateEquipment(nt: any): void {
+    this.setEquipmentUpdating(true);
+    let latestTmc = this.getLatestTmc();
+    latestTmc = Object.assign(latestTmc, nt);
+    this.equipmentService.updateEquipment(latestTmc).subscribe(
+      res => {
+        // tmc was updated in db. now update the equipment state
+        const latestEquipment: Array<Equipment> = this.getLatestEquipment();
+        const index = latestEquipment.findIndex((le) => le._id === latestTmc._id);
+        latestEquipment[index] = latestTmc;
+        this._equipment.next(latestEquipment);
+        this.setEquipmentUpdating(false);
+      },
+      err => {
+        console.error('Error updating equipment', err);
+      }
+    );
+  }
+
+  createEquipment(newTmc: any): void {
+    // const newTmc = this.getLatestTmc();
+    this.setEquipmentUpdating(true);
+    this.equipmentService.createEquipment(newTmc).subscribe(
+      res => {
+        // tmc was created in db. now update the equipment state
+        const latestEquipment: Array<Equipment> = this.getLatestEquipment();
+        latestEquipment.push(res);
+        this._equipment.next(latestEquipment);
+        this.setEquipmentUpdating(false);
+      },
+      err => {
+        console.error('Error inserting equipment', err);
+      }
+    );
+  }
+
   deleteEquipment(id: string): void {
     this.equipmentService.deleteEquipment(id).subscribe(
       res => {
@@ -121,5 +192,35 @@ export class EquipmentState {
 
   getEquipmentUpdating(): boolean {
     return this._equipmentUpdating.getValue();
+  }
+
+  addZone(nz: any): void {
+    const ntmc = this.getLatestTmc();
+    ntmc.zones.push(nz);
+    this._tmc.next(ntmc);
+  }
+
+  removeZone(oz: any): void {
+    const ntmc = this.getLatestTmc();
+    const zones = ntmc.zones;
+    const index: number = zones.findIndex(zone => zone.zone === oz);
+    if (index !== -1) {
+      ntmc.zones.splice(index, 1);
+      this._tmc.next(ntmc);
+    }
+  }
+
+  checkExitEqByTMC(tmcID: string, eqID: string): boolean {
+    const equipments = this._equipment.getValue();
+
+    const existEq = equipments.find(eq => {
+      return eq.automationUnitCode.toLowerCase() === tmcID.toLowerCase() && eq._id !== eqID;
+    });
+
+    if (existEq) {
+      return true;
+    }
+
+    return false;
   }
 }

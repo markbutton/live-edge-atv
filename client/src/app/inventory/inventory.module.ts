@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatButtonModule } from '@angular/material/button';
@@ -9,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSortModule } from '@angular/material/sort';
+import { ToastrModule } from 'ngx-toastr';
 
 import { InventoryRouter } from './inventory.router';
 import { InventoryComponent } from './inventory.component';
@@ -22,6 +24,7 @@ import { InvNavComponent } from './components/inv-nav/inv-nav.component';
 import { SharedModule } from '../shared/modules/shared.module';
 import { EquipmentViewState } from '../shared/state';
 import { PipesModule } from '../shared/pipes/pipes.module';
+import { DirectiveModule } from '../shared/directives/directive.module';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,7 @@ import { PipesModule } from '../shared/pipes/pipes.module';
   imports: [
     CommonModule,
     SharedModule,
+    DirectiveModule,
     InventoryRouter,
     MatButtonModule,
     MatCardModule,
@@ -48,6 +52,8 @@ import { PipesModule } from '../shared/pipes/pipes.module';
     MatSortModule,
     MatTableModule,
     PipesModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   exports: [
     InventoryComponent
