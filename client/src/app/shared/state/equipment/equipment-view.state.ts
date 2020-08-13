@@ -39,7 +39,7 @@ export class EquipmentViewState {
     return evs;
   }
 
-  setEquipmentViewState(viewState: EquipmentView) {
+  setEquipmentViewState(viewState: EquipmentView): void {
     this._equipmentView.next(viewState);
     this.sessionStorage.setItem('equipmentView', JSON.stringify(viewState));
   }

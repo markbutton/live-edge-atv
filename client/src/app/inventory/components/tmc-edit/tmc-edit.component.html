@@ -1,1 +1,98 @@
-<p>tmc-edit works!</p>
+<div class="tmc">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">
+        <span *ngIf="!create">EDIT</span>
+        <span *ngIf="create">ADD</span>
+        TMC
+      </h5>
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <form class="tmc-form" [formGroup]="tmcForm" [appConnectForm]="tmc | async">
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="automationUnitCode" matInput placeholder="Automation Unit Code">
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="addressTitle" matInput placeholder="Address Title">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="addressCode" matInput placeholder="Address Code">
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="city" matInput placeholder="City">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="state" matInput placeholder="State">
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="zip" matInput placeholder="Zip">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="description" matInput placeholder="Description">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="lat" matInput placeholder="Latitude">
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="lon" matInput placeholder="Longitude">
+              </mat-form-field>
+            </div>
+          </div>
+        </form>
+        <div class="row bottom">
+          <div class="col">
+            <div class="label">Zones</div>
+            <div *ngFor="let zone of(tmc | async)?.zones">
+              <a (click)="removeZone(zone.zone)">
+                <i class="fa fa-minus-square add-icon"></i>
+              </a>
+              {{zone.zone}}
+            </div>
+          </div>
+          <div class="col">
+            <form class="tmc-form" [formGroup]="zoneForm">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="zone" matInput placeholder="Add Zone">
+              </mat-form-field>
+              <a (click)="addZone()">
+                <i class="fa fa-plus-square add-icon"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <button mat-raised-button color="primary" (click)="onSave()" [disabled]="!tmcForm.valid"
+        *ngIf="!create">SAVE</button>
+      <button mat-raised-button color="primary" (click)="onAdd()" [disabled]="!tmcForm.valid"
+        *ngIf="create">ADD</button>
+      <button mat-raised-button color="accent" class="right" (click)="onCancel()">CANCEL</button>
+    </div>
+  </div>
+</div>
