@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "build-dev": "ng build --configuration=dev --no-progress",
+    "build-test": "ng build --configuration=qa --no-progress",
+    "build-prod": "ng build --configuration=production --no-progress",
     "test": "ng test",
     "test-ci": "ng test --watch=false --browsers=Chrome_no_sandbox",
     "lint": "ng lint",
