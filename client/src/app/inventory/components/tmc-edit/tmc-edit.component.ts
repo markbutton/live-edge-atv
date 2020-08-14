@@ -23,7 +23,8 @@ export class TmcEditComponent implements OnInit, OnDestroy {
   zoneForm: FormGroup;
   create = false;
 
-  constructor(private route: ActivatedRoute,
+  constructor(
+    private route: ActivatedRoute,
     private equipmentState: EquipmentState,
     private formBuilder: FormBuilder,
     private location: Location,
