@@ -1,0 +1,14 @@
+<form class="mongo-form" name="mongoForm">
+  <div class="form-group">
+    <label for="db">Database</label>
+    <input type="text" class="form-control" id="db" name="'db'" [(ngModel)]="config.db"
+      placeholder="Enter Database">
+  </div>
+  <div class="form-group">
+    <label for="collection">Collection</label>
+    <input type="text" class="form-control" id="collection" name="'collection'" [(ngModel)]="config.collection"
+      placeholder="Enter Collection Name">
+  </div>
+  <button type="button" class="btn btn-secondary" (click)="onSave()">Save</button>
+  <button type="button" class="btn btn-dark right" (click)="onCancel()">Cancel</button>
+</form>

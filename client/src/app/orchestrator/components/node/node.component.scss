@@ -1,0 +1,53 @@
+.node-content {
+  padding: .5em;
+}
+
+.node {
+  background-color: white;
+}
+
+.workflow-cross {
+  background: black;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.0;
+  padding: 0; margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 100%;
+  transform: translateX(50%) translateY(-50%);
+  z-index: 5;
+  display: none;
+}
+
+.workflow-edit {
+  background: black;
+  color: white;
+  position: absolute;
+  left: -18px;
+  top: 0;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.0;
+  padding: 0; margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 100%;
+  transform: translateX(50%) translateY(-50%);
+  z-index: 5;
+  display: none;
+}
+
+.node:hover .workflow-cross {
+  display: block;
+}
+
+.node:hover .workflow-edit {
+  display: block;
+}

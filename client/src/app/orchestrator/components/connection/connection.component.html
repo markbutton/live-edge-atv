@@ -1,0 +1,19 @@
+<div #div>
+  <ng-container *ngIf="points">
+    <app-line *ngIf="connection" [lineColor]="connection.color || color" [toSide]="connection.toSide"
+      [title]="connection.title" [points]="points">
+    </app-line>
+    <div *ngIf="titleCoordinates" [style.borderColor]="color" [style.borderWidth]="width"
+      [style.left.px]="titleCoordinates.x" [style.top.px]="titleCoordinates.y" class="line-label">
+      <div *ngIf="connection.title" class="line-label-title" [style.color]="color">
+        {{ connection.title }}
+      </div>
+      <div class="workflow-edit" appStopPropagation (click)="editConnection(connection)">
+          <i class="fa fa-pencil"></i>
+      </div>
+      <div class="workflow-cross" appStopPropagation (click)="openDeleteModal(connection)">
+          <i class="fa fa-times"></i>
+      </div>
+    </div>
+  </ng-container>
+</div>
