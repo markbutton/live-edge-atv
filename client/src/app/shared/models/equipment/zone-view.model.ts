@@ -1,7 +1,7 @@
 export class ZoneView {
   page: number;
   pageSize: number;
-  length: Number;
+  length: number;
   keywords: string;
   sort: any;
 

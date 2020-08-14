@@ -14,6 +14,7 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { ConfirmModalComponent } from './shared/components/confirm-modal/confirm-modal.component';
 
+import { MapModule } from './map/map.module';
 import { AppRoutingModule } from './app-routing.module';
 import { UiModule } from './ui/ui.module';
 import { AppComponent } from './app.component';
@@ -40,6 +41,7 @@ import * as state from './shared/state';
     MatInputModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    MapModule,
     ToastrModule.forRoot({
       preventDuplicates: true,
       maxOpened: 1,
@@ -51,6 +53,7 @@ import * as state from './shared/state';
     state.UserState,
     state.JobsState,
     state.EquipmentState,
+    state.ZoneState,
     { provide: 'LOCALSTORAGE', useFactory: getLocalStorage },
     { provide: 'SESSIONSTORAGE', useFactory: getSessionStorage },
   ],

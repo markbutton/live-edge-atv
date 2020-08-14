@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { NavView } from 'src/app/shared/models/nav/nav-view.model';
+import { NavView } from '../../shared/models/nav/nav-view.model';
 
 @Component({
   selector: 'app-sub-nav',

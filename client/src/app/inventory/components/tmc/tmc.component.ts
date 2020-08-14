@@ -45,7 +45,6 @@ export class TmcComponent implements OnInit {
   ngOnInit(): void {
     this.equipmentView$ = this.equipmentViewState.equipmentView.subscribe((equipmentView) => {
       if (equipmentView) {
-        console.log(equipmentView);
         this.equipmentView = equipmentView;
         const sortable = this.equipmentView.sort;
         if (!this.defaultSortSet && sortable && sortable.direction !== '') {
@@ -75,7 +74,6 @@ export class TmcComponent implements OnInit {
         this.dataSource = new MatTableDataSource(eqs);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
-        console.log(this.dataSource);
       }
     });
   }

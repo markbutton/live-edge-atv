@@ -24,7 +24,7 @@ export class MapViewState {
     return mvs;
   }
 
-  setMapViewState(viewState: MapView) {
+  setMapViewState(viewState: MapView): void {
     this._mapView.next(viewState);
   }
 

@@ -87,6 +87,10 @@ export class EquipmentState {
     return latestTmc;
   }
 
+  setTmc(tmc: Equipment): void {
+    this._tmc.next(tmc);
+  }
+
   getEquipmentId(id: string, referenceID?: string): void {
     if (!id) {
       if (referenceID) {

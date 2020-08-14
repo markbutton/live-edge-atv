@@ -1,7 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
 
+import { EquipmentState, JobsState, ZoneState, MapViewState } from '../shared/state';
+import { getSessionStorage } from '../app.module';
 import { MapComponent } from './map.component';
-import { NavViewState } from '../shared/state/nav/nav-view.state';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('MapComponent', () => {
   let component: MapComponent;
@@ -9,9 +12,22 @@ describe('MapComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MapComponent],
-      providers: [NavViewState],
-    }).compileComponents();
+      declarations: [
+        MapComponent
+      ],
+      imports: [
+        HttpClientModule,
+        RouterTestingModule
+      ],
+      providers: [
+        EquipmentState,
+        ZoneState,
+        JobsState,
+        MapViewState,
+        { provide: 'SESSIONSTORAGE', useFactory: getSessionStorage }
+      ]
+    })
+      .compileComponents();
   }));
 
   beforeEach(() => {
