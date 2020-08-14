@@ -1,0 +1,165 @@
+<div class="tools">
+  <div *ngIf="ideView | async as iv">
+
+    <!-- Select Workflow View -->
+    <div class="form-group" *ngIf="iv.view === 'select'">
+      <label id="workflow-label" for="workflow">Manage Workflow</label>
+      <form class="tools-form" [formGroup]="selectForm">
+        <select id="workflowselect" class="form-control" [formControlName]="'workflow'">
+          <option *ngFor="let workflow of workflows | async" [value]="workflow._id"
+            [selected]="(selectedWorkflow | async)?._id == workflow._id">
+            {{workflow.name}}
+          </option>
+        </select>
+      </form>
+      <div class="edit-workflow" *ngIf="(selectedWorkflow | async)?._id">
+        <span>
+          <a id="edit" (click)="editWorkflow()">
+            <i class="fa fa-pencil"></i>
+          </a>
+        </span>
+        Edit Workflow
+      </div>
+      <div class="delete-workflow" *ngIf="(selectedWorkflow | async)?._id">
+        <span>
+          <a id="add" (click)="openDeleteModal()">
+            <i class="fa fa-minus"></i>
+          </a>
+        </span>
+        Delete Workflow
+      </div>
+      <div class="add-node">
+        <span>
+          <a id="add-node" (click)="addNode()">
+            <i class="fa fa-plus"></i>
+          </a>
+        </span>
+        Add Node
+      </div>
+      <div class="add-workflow">
+        <span>
+          <a id="add-workflow" (click)="addWorkflow()">
+            <i class="fa fa-plus"></i>
+          </a>
+        </span>
+        Add Workflow
+      </div>
+    </div>
+
+    <!-- Edit Workflow Connection View -->
+    <div *ngIf="iv.view === 'editConnection'">
+      <form class="tools-form" [formGroup]="editConnectionForm" [appConnectForm]="selectedWorkflowConnection | async">
+        <!-- Connection Type -->
+        <div class="form-group">
+          <label for="type">Connection Type</label>
+          <select class="form-control" [formControlName]="'type'">
+            <option *ngFor="let t of iv.connectionTypes" [value]="t"
+            [selected]="(selectedWorkflowConnection | async)?.type == t">
+              {{t}}
+            </option>
+          </select>
+        </div>
+      </form>
+
+      <!-- Config Selection -->
+      <div *ngIf="selectedWorkflowConnection | async as swfc">
+        <!-- Rabbit MQ Configuration  -->
+        <div *ngIf="swfc.type === 'RabbitMQ'">
+          <app-rabbitmq-config [config]="swfc.config"></app-rabbitmq-config>
+        </div>
+        <!-- Mongo DB Configuration  -->
+        <div *ngIf="swfc.type === 'MongoDB'">
+          <app-mongodb-config [config]="swfc.config"></app-mongodb-config>
+        </div>
+        <!-- Splunk Configuration  -->
+        <div *ngIf="swfc.type === 'Splunk'">
+          <app-splunk-config [config]="swfc.config"></app-splunk-config>
+        </div>
+        <!-- API Configuration  -->
+        <div *ngIf="swfc.type === 'API'">
+          <app-api-config [config]="swfc.config"></app-api-config>
+        </div>
+        <!-- SNMP Configuration  -->
+        <div *ngIf="swfc.type === 'SNMP'">
+          <app-snmp-config [config]="swfc.config"></app-snmp-config>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Edit Workflow Node View -->
+    <div *ngIf="iv.view === 'editNode'">
+      <form class="tools-form" [formGroup]="editNodeForm" [appConnectForm]="selectedWorkflowNode | async">
+        <div class="form-group">
+          <label for="id">Node ID</label>
+          <input type="text" class="form-control" [formControlName]="'id'" [readonly]="true"
+            placeholder="Enter Node ID">
+        </div>
+        <!-- Node Type -->
+        <div class="form-group">
+          <label for="type">Node Type</label>
+          <select class="form-control" [formControlName]="'type'">
+            <option *ngFor="let t of iv.nodeTypes">
+              {{t}}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="title">Node Title</label>
+          <input type="text" class="form-control" [formControlName]="'title'" placeholder="Enter Node Title">
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="onNodeSave()">Save</button>
+        <button type="button" class="btn btn-dark right" (click)="onCancel()">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Add New Workflow View -->
+    <div *ngIf="iv.view === 'addWorkflow'">
+      <!-- Add Workflow -->
+      <form class="tools-form" [formGroup]="addWorkflowForm">
+        <div class="form-group">
+          <label for="name">Add Workflow</label>
+          <input type="text" class="form-control" [formControlName]="'name'" placeholder="Enter Workflow Name">
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="onWorkflowAdd()">Add</button>
+        <button type="button" class="btn btn-dark right" (click)="onCancel()">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Edit New Workflow View -->
+    <div *ngIf="iv.view === 'editWorkflow'">
+      <!-- Edit Workflow -->
+      <form class="tools-form" [formGroup]="editWorkflowForm">
+        <div class="form-group">
+          <label for="name">Edit Workflow</label>
+          <input type="text" class="form-control" [formControlName]="'name'" placeholder="Enter Workflow Name">
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="onWorkflowEdit()">Save</button>
+        <button type="button" class="btn btn-dark right" (click)="onCancel()">Cancel</button>
+      </form>
+    </div>
+
+    <!-- Add New Node View -->
+    <div *ngIf="iv.view === 'addNode'">
+      <!-- Add Workflow -->
+      <form class="tools-form" [formGroup]="addNodeForm">
+        <div class="form-group">
+          <label for="title">Add Node</label>
+          <input type="text" class="form-control" [formControlName]="'title'" placeholder="Enter Node Name">
+        </div>
+        <!-- Node Type -->
+        <div class="form-group">
+          <label for="type">Node Type</label>
+          <select class="form-control" [formControlName]="'type'">
+            <option *ngFor="let t of iv.nodeTypes">
+              {{t}}
+            </option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="onNodeAdd()">Add</button>
+        <button type="button" class="btn btn-dark right" (click)="onCancel()">Cancel</button>
+      </form>
+    </div>
+
+  </div>
+</div>

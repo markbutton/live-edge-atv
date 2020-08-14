@@ -18,12 +18,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { UiModule } from './ui/ui.module';
 import { AppComponent } from './app.component';
 import * as state from './shared/state';
+import { MessageModalComponent } from './shared/components/message-modal/message-modal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ConfirmModalComponent,
+    MessageModalComponent
   ],
   imports: [
     AppRoutingModule,

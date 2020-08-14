@@ -6,3 +6,5 @@ export { EquipmentState } from './equipment/equipment.state';
 export { EquipmentViewState } from './equipment/equipment-view.state';
 export { ZoneState } from './zone/zone.state';
 export { ZoneViewState } from './zone/zone-view.state';
+export { WorkflowState } from './ide/workflow.state';
+export { IdeViewState } from './ide/ide-view.state';
