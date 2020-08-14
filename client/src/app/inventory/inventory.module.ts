@@ -20,7 +20,6 @@ import { TmcEditComponent } from './components/tmc-edit/tmc-edit.component';
 import { TmcFilterComponent } from './components/tmc-filter/tmc-filter.component';
 import { ZoneEditComponent } from './components/zone-edit/zone-edit.component';
 import { ZoneFilterComponent } from './components/zone-filter/zone-filter.component';
-import { InvNavComponent } from './components/inv-nav/inv-nav.component';
 import { SharedModule } from '../shared/modules/shared.module';
 import { EquipmentViewState } from '../shared/state';
 import { PipesModule } from '../shared/pipes/pipes.module';
@@ -33,7 +32,6 @@ import { DirectiveModule } from '../shared/directives/directive.module';
     ZoneComponent,
     TmcEditComponent,
     TmcFilterComponent,
-    InvNavComponent,
     ZoneEditComponent,
     ZoneFilterComponent
   ],
