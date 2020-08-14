@@ -16,7 +16,6 @@ import { EquipmentState, JobsState, EquipmentViewState } from '../../../shared/s
 import { PipesModule } from '../../../shared/pipes/pipes.module';
 import { SharedModule } from '../../../shared/modules/shared.module';
 import { getSessionStorage } from '../../../app.module';
-import { InvNavComponent } from '../inv-nav/inv-nav.component';
 
 describe('TmcComponent', () => {
   let component: TmcComponent;
@@ -25,8 +24,7 @@ describe('TmcComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        TmcComponent,
-        InvNavComponent
+        TmcComponent
       ],
       imports: [
         BrowserAnimationsModule,
