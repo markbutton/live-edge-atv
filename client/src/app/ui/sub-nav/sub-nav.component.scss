@@ -2,10 +2,12 @@
   position: fixed;
   top: 63px;
   width: 100%;
+  z-index: 999;
 }
 
 .active {
-  background:#4FA9DC; color:#000;
+  background: #4FA9DC;
+  color: #000;
 }
 
 .navbar-wrapper {
@@ -17,7 +19,7 @@
   z-index: 20;
 }
 
-.navbar-wrapper > .container {
+.navbar-wrapper>.container {
   padding-right: 0;
   padding-left: 0;
   width: inherit;
