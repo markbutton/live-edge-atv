@@ -2,6 +2,7 @@ export const environment = {
   production: true,
   appId: 'f9ae7ad578a6d06724a140168b4dfc95',
   baseUrl: 'https://atv-api.reach.spectrumtoolbox.com/api/',
+  liveEdgeUrl: 'https://api.reach.spectrumtoolbox.com/api/',
   jobAPIUrl: 'https://schedule-job.reach.spectrumtoolbox.com/api/',
   docsUrl: 'https://atv-api.reach.spectrumtoolbox.com/api-docs/',
   busUrl: 'https://live-edge-bus.reach.spectrumtoolbox.com/',

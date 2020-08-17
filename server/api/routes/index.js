@@ -10,6 +10,7 @@ const ctrlProfile = require('../controllers/profile');
 const ctrlAuth = require('../controllers/authentication');
 const ctrlUser = require('../controllers/user');
 const ctrlUserGroup = require('../controllers/userGroup');
+const ctrlWorkflow = require('../controllers/workflow');
 
 // profile
 router.get('/profile', auth, ctrlProfile.profileRead);
@@ -34,5 +35,13 @@ router.get('/user-groups/:_id', ctrlUserGroup.userGroupId);
 router.get('/user-groups/name/:name', ctrlUserGroup.userGroupName);
 router.put('/user-groups/:_id', ctrlUserGroup.userGroupUpdate);
 router.delete('/user-groups/:_id', ctrlUserGroup.userGroupDelete);
+
+// workflow
+router.post('/workflow', ctrlWorkflow.workflowCreate);
+router.get('/workflow', ctrlWorkflow.workflowRead);
+router.get('/workflow/:_id', ctrlWorkflow.workflowId);
+router.get('/workflow/name/:name', ctrlWorkflow.workflowName);
+router.put('/workflow/:_id', ctrlWorkflow.workflowUpdate);
+router.delete('/workflow/:_id', ctrlWorkflow.workflowDelete);
 
 module.exports = router;
