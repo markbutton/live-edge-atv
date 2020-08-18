@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 
-import { environment } from '../../../../environments/environment';
 import { Equipment } from '../../models/equipment/equipment.model';
 import { APIService } from '../api.service';
+import { LiveEdgeApiConstants } from '../../../libs/live-edge-api-constants';
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +37,10 @@ export class EquipmentService extends APIService {
 
   deleteEquipment(id: string): Observable<Equipment> {
     return super.apiDelete<Equipment>('equipment/' + id);
+  }
+
+  appendUrl(path: string) {
+    return `${LiveEdgeApiConstants.URL}${path}`;
   }
 
 }
