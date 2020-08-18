@@ -21,7 +21,7 @@ import { TmcFilterComponent } from './components/tmc-filter/tmc-filter.component
 import { ZoneEditComponent } from './components/zone-edit/zone-edit.component';
 import { ZoneFilterComponent } from './components/zone-filter/zone-filter.component';
 import { SharedModule } from '../shared/modules/shared.module';
-import { EquipmentViewState } from '../shared/state';
+import { EquipmentViewState, ZoneState, ZoneViewState } from '../shared/state';
 import { PipesModule } from '../shared/pipes/pipes.module';
 import { DirectiveModule } from '../shared/directives/directive.module';
 
@@ -57,7 +57,9 @@ import { DirectiveModule } from '../shared/directives/directive.module';
     InventoryComponent
   ],
   providers: [
-    EquipmentViewState
+    EquipmentViewState,
+    ZoneState,
+    ZoneViewState
   ]
 })
 export class InventoryModule { }

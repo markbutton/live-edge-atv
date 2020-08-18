@@ -1,0 +1,12 @@
+<div class="ide">
+  <div class="row">
+    <div class="toolbar">
+      <app-tools></app-tools>
+    </div>
+    <div class="col" *ngIf="selectedWorkflow | async as wf">
+      <app-workflow [lineColor]="'black'" [nodes]="wf.nodes"
+        [allowCircular]="false" [connections]="wf.connections" [workflow]="wf">
+      </app-workflow>
+    </div>
+  </div>
+</div>
