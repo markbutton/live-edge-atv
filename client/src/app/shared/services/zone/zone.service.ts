@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { APIService } from '../api.service';
 import { Zone } from '../../models/jobs/zone.model';
-import { LiveEdgeApiConstants } from 'src/app/libs/live-edge-api-constants';
+import { LiveEdgeApiConstants } from '../../../libs/live-edge-api-constants';
 
 @Injectable({
   providedIn: 'root'

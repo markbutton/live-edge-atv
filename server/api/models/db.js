@@ -50,3 +50,4 @@ process.on('SIGTERM', function () {
 require('./users');
 require('./userGroup');
 require('./workflows');
+require('./jobManagement');

@@ -264,7 +264,7 @@ export class MapComponent implements OnInit {
             // Set the selected zones
             this.zoneState.setSelectedZones(zna);
             // Navigate to zone picker
-            this.router.navigateByUrl('/inventory/zne-filter');
+            this.router.navigateByUrl('/inventory/zone-filter');
           } else if (gt instanceof Point) {
             // Set the next tmc on the observable chain
             this.equipmentState.setTmc(props);

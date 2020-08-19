@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
 
 import { ZoneFilterComponent } from './zone-filter.component';
+import { ZoneState } from 'src/app/shared/state';
 
 describe('ZoneFilterComponent', () => {
   let component: ZoneFilterComponent;
@@ -8,9 +13,20 @@ describe('ZoneFilterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZoneFilterComponent ]
+      declarations: [
+        ZoneFilterComponent
+      ],
+      imports: [
+        HttpClientModule,
+        MatDialogModule,
+        MatTableModule,
+        RouterTestingModule
+      ],
+      providers: [
+        ZoneState
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -181,6 +181,17 @@ export class EquipmentState {
     );
   }
 
+  searchEquipment(data: any): void {
+    this.equipmentService.searchEquipment(data).subscribe(
+      res => {
+        this._equipmentFilteredList.next(res);
+      },
+      err => {
+        console.error('Error retrieving equipment', err);
+      }
+    );
+  }
+
   setPage(page: number): void {
     this._page.next(page);
   }
