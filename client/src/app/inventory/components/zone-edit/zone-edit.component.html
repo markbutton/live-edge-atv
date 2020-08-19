@@ -1,1 +1,88 @@
-<p>zone-edit works!</p>
+<div class="zne">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">
+        <span *ngIf="!create">EDIT</span>
+        <span *ngIf="create">ADD</span>
+        ZONE
+      </h5>
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <form class="zne-form" [formGroup]="zneForm" [appConnectForm]="zone | async">
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="zoneName" matInput placeholder="Zone">
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <select [formControlName]="'zoneType'" matNativeControl class="form-control" matInput
+                  placeholder="Zone Type">
+                  <option *ngFor="let zoneType of zoneTypes" [value]="zoneType">
+                    {{ zoneType }}
+                  </option>
+                </select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="syscode" matInput placeholder="Syscode">
+              </mat-form-field>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col">
+            <form class="zne-form" [formGroup]="networkForm">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="network" matInput placeholder="Add Network">
+              </mat-form-field>
+              <a (click)="addNetwork()">
+                <i class="fa fa-plus-square add-icon"></i>
+              </a>
+            </form>
+          </div>
+          <div class="col">
+            <form class="zne-form" [formGroup]="zipForm">
+              <mat-form-field style="width:250px !important">
+                <input formControlName="zip" matInput placeholder="Add Zip Code">
+              </mat-form-field>
+              <a (click)="addZip()">
+                <i class="fa fa-plus-square add-icon"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col">
+            <div class="label">Networks</div>
+            <div *ngFor="let network of(zone | async)?.networks">
+              <a (click)="removeNetwork(network)">
+                <i class="fa fa-minus-square add-icon"></i>
+              </a>
+              {{network}}
+            </div>
+          </div>
+          <div class="col">
+            <div class="label">Zip Codes</div>
+            <div *ngFor="let zip of(zone | async)?.zips">
+              <a (click)="removeZip(zip)">
+                <i class="fa fa-minus-square add-icon"></i>
+              </a>
+              {{zip}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <button mat-raised-button color="primary" (click)="onSave()" [disabled]="!zneForm.valid"
+        *ngIf="!create">SAVE</button>
+      <button mat-raised-button color="primary" (click)="onAdd()" [disabled]="!zneForm.valid"
+        *ngIf="create">ADD</button>
+      <button mat-raised-button color="accent" class="right" (click)="onCancel()">CANCEL</button>
+    </div>
+  </div>
+</div>

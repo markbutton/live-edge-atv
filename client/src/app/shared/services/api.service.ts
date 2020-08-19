@@ -57,7 +57,7 @@ export class APIService {
     }
   }
 
-  private appendUrl(path: string) {
+  protected appendUrl(path: string) {
     if (path.startsWith('/')) {
       return `${ApiConstants.URL}${path}`;
     }

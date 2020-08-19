@@ -1,0 +1,43 @@
+<div class="orch">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">
+        <span>Order Item</span>
+      </h5>
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <form class="orch-form" [formGroup]="orchForm">
+          <div class="row">
+            <div class="col">
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker" [formControlName]="'date'" placeholder="Choose a date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input [formControlName]="'type'" matInput placeholder="Type">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input [formControlName]="'desc'" matInput placeholder="Description">
+              </mat-form-field>
+            </div>
+            <div class="col">
+              <mat-form-field style="width:250px !important">
+                <input [formControlName]="'status'" matInput placeholder="Status">
+              </mat-form-field>
+            </div>
+          </div>
+        </form>
+      </div>
+      <button mat-raised-button color="primary" (click)="onOrder()">ORDER</button>
+      <button mat-raised-button color="accent" class="right" (click)="onCancel()">CANCEL</button>
+    </div>
+  </div>
+</div>

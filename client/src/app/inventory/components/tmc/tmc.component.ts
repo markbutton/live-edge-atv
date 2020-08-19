@@ -38,7 +38,8 @@ export class TmcComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 
-  constructor(private equipmentState: state.EquipmentState, private jobState: state.JobsState,
+  constructor(
+    private equipmentState: state.EquipmentState, private jobState: state.JobsState,
     private equipmentViewState: state.EquipmentViewState,
     public dialog: MatDialog) { }
 

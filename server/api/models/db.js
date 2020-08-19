@@ -4,7 +4,9 @@ const dbURI = 'mongodb://localhost/atv';
 const mongo_connection = process.env.MONGO_CONNECTION || dbURI;
 
 mongoose.set('useCreateIndex', true);
-mongoose.connect(mongo_connection, { useNewUrlParser: true });
+mongoose.connect(mongo_connection, {
+  useNewUrlParser: true
+});
 
 // CONNECTION EVENTS
 mongoose.connection.on('connected', function () {
@@ -47,3 +49,4 @@ process.on('SIGTERM', function () {
 // BRING IN YOUR SCHEMAS & MODELS
 require('./users');
 require('./userGroup');
+require('./workflows');

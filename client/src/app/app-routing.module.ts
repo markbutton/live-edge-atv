@@ -16,8 +16,8 @@ const routes: Routes = [
     data: { roles: [Role.developer, Role.admin, Role.user, Role.poweruser] }
   },
   {
-    path: 'orchestrator', component: OrchestratorComponent, canActivate: [AuthGuard],
-    data: { roles: [Role.developer] }
+    path: 'orchestrator', loadChildren: () => import('./orchestrator/orchestrator.module').then(m => m.OrchestratorModule),
+    canActivate: [AuthGuard], data: { roles: [Role.developer] }
   },
   {
     path: 'inventory', loadChildren: () => import('./inventory/inventory.module').then(m => m.InventoryModule),

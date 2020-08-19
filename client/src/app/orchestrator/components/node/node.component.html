@@ -1,0 +1,42 @@
+<div *ngIf="node && workflow" #nodeView [id]="node.id" [inBounds]="true" [style.top.px]="" [style.left.px]=""
+  [bounds]="container" (movingOffset)="onMove($event)" (stopped)="onRelease($event)"
+  [position]="{x: xOffset, y: yOffset}" class="node" [handle]="dragHandle" appDraggable>
+
+  <span class="connector connector-left" (mousedown)="connectorSelected($event)"
+    (mouseup)="connectorReleased($event)"></span>
+  <span class="connector connector-bottom" (mousedown)="connectorSelected($event)"
+    (mouseup)="connectorReleased($event)"></span>
+  <span class="connector connector-top" (mousedown)="connectorSelected($event)"
+    (mouseup)="connectorReleased($event)"></span>
+  <span class="connector connector-right" (mousedown)="connectorSelected($event)"
+    (mouseup)="connectorReleased($event)"></span>
+
+  <div #dragHandle>
+      <a [ngClass]="{
+        'btn': true,
+        'btn-warning': node.type === 'Microservice',
+        'btn-success': node.type === 'Splunk',
+        'btn-primary': node.type === 'MongoDB',
+        'btn-secondary': node.type === 'Edge',
+        'btn-info': node.type === 'API'
+      }">
+      <i [ngClass]="{
+        'fa': 1 === 1,
+        'fa-cog': node.type === 'Microservice',
+        'fa-file-code-o': node.type === 'Splunk',
+        'fa-database': node.type === 'MongoDB',
+        'fa-external-link-square': node.type === 'Edge',
+        'fa-share-alt': node.type === 'API',
+        'fa-lg': 1 === 1
+      }"></i> {{ node.title }}</a>
+  </div>
+
+  <div class="workflow-cross" (click)="openDeleteModal(node)">
+    <i class="fa fa-times"></i>
+  </div>
+
+  <div class="workflow-edit" (click)="editNode(node)">
+    <i class="fa fa-pencil"></i>
+  </div>
+
+</div>

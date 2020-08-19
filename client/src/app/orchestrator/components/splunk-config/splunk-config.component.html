@@ -1,0 +1,14 @@
+<form class="splunk-form" name="splunkForm">
+  <div class="form-group">
+    <label for="file">File Name</label>
+    <input type="text" class="form-control" name="'file'" [(ngModel)]="config.file"
+      placeholder="Enter File Name">
+  </div>
+  <div class="form-group">
+    <label for="location">Location</label>
+    <input type="text" class="form-control" name="'location'" [(ngModel)]="config.location"
+      placeholder="Enter File location">
+  </div>
+  <button type="button" class="btn btn-secondary" (click)="onSave()">Save</button>
+  <button type="button" class="btn btn-dark right" (click)="onCancel()">Cancel</button>
+</form>
