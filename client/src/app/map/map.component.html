@@ -1,1 +1,63 @@
-<p>map works!</p>
+<a id="map" class="map">
+  <a id="legend" class="legend">
+    <a *ngFor="let x of selectedFilter; let i = index" class="cust_delay delay"
+      [class.active-filter]="selectedItem === i" (click)="doFilter(x.type, i)">
+      <span *ngIf="x.type === 'noZoneConfigured'" class="fa-stack">
+        <i class="fa fa-circle fa-stack-1x grey"></i>
+        <i class="fa fa-question-circle-o fa-stack-1x"></i>
+      </span>
+      <span *ngIf="x.type === 'notMonitored'" class="fa-stack">
+        <i class="fa fa-circle fa-stack-1x blue"></i>
+        <i class="fa fa-check-circle-o fa-stack-1x"></i>
+      </span>
+      <span *ngIf="x.type === 'monitoredOff'" class="fa-stack">
+        <i class="fa fa-circle fa-stack-1x yellow"></i>
+        <i class="fa fa-pause-circle-o fa-stack-1x"></i>
+      </span>
+      <span *ngIf="x.type === 'monitoredOn'" class="fa-stack">
+        <i class="fa fa-circle fa-stack-1x green"></i>
+        <i class="fa fa-play-circle-o fa-stack-1x"></i>
+      </span>
+      <span *ngIf="x.type === 'allEquipment'" class="fa-stack">
+        <i class="fa fa-stack-1x"></i>
+        <i class="fa fa-bars fa-stack-1x"></i>
+      </span>
+      <span class="label">{{x.title}}</span>
+      <span class="label right">{{x.count}}</span>
+      <br>
+    </a>
+    <hr />
+    <!-- Master Zone -->
+    <a id="masterPoly" (click)="showMaster()">
+      <span class="fa-stack">
+        <i class="fa fa-star fa-stack-1x blue"></i>
+        <i class="fa fa-star-o fa-stack-1x"></i>
+      </span>
+      <span class="label">Master Zone</span>
+      <span class="label right">{{totalMasterFeatures}}</span>
+      <br>
+    </a>
+    <!-- Local Zone -->
+    <a id="localPoly" (click)="showLocal()">
+      <span class="fa-stack">
+        <i class="fa fa-star fa-stack-1x pink"></i>
+        <i class="fa fa-star-o fa-stack-1x"></i>
+      </span>
+      <span class="label">Local Zone</span>
+      <span class="label right">{{totalLocalFeatures}}</span>
+      <br>
+    </a>
+    <!-- State Zone -->
+    <a id="statePoly" (click)="showState()">
+      <span class="fa-stack">
+        <i class="fa fa-star fa-stack-1x green"></i>
+        <i class="fa fa-star-o fa-stack-1x"></i>
+      </span>
+      <span class="label">State Zone</span>
+      <span class="label right">{{totalStateFeatures}}</span>
+      <br>
+    </a>
+  </a>
+</a>
+
+<span id="tooltip" class="tooltip"></span>

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { APIService } from '../api.service';
 import { ZonePoly } from '../../models/equipment/zone-poly.model';
 import { environment } from '../../../../environments/environment';
+import { LiveEdgeApiConstants } from '../../../libs/live-edge-api-constants';
 
 @Injectable({
   providedIn: 'root'
@@ -44,4 +45,7 @@ export class ZonePolyService extends APIService {
     return this.http.get<any>(url);
   }
 
+  appendUrl(path: string) {
+    return `${LiveEdgeApiConstants.URL}${path}`;
+  }
 }

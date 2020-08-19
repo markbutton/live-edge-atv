@@ -11,6 +11,7 @@ const ctrlAuth = require('../controllers/authentication');
 const ctrlUser = require('../controllers/user');
 const ctrlUserGroup = require('../controllers/userGroup');
 const ctrlWorkflow = require('../controllers/workflow');
+const ctrlJobManagement = require('../controllers/jobManagement');
 
 // profile
 router.get('/profile', auth, ctrlProfile.profileRead);
@@ -43,5 +44,18 @@ router.get('/workflow/:_id', ctrlWorkflow.workflowId);
 router.get('/workflow/name/:name', ctrlWorkflow.workflowName);
 router.put('/workflow/:_id', ctrlWorkflow.workflowUpdate);
 router.delete('/workflow/:_id', ctrlWorkflow.workflowDelete);
+
+// jobManagement
+router.post('/job-management', ctrlJobManagement.jobManagementCreate);
+router.post('/job-management-ui', ctrlJobManagement.jobManagementUICreate);
+router.get('/job-management', ctrlJobManagement.jobManagementRead);
+router.get('/job-management/playing', ctrlJobManagement.jobManagementPlaying);
+router.get('/job-management/:_id', ctrlJobManagement.jobManagementId);
+router.put('/job-management/:_id', ctrlJobManagement.jobManagementUpdate);
+router.get('/job-management/zone/:zoneID', ctrlJobManagement.jobManagementZone);
+router.put('/job-management/is-correct-zone/:zoneID/:tmcID', ctrlJobManagement.jobManagementsUpdate);
+router.put('/job-management-ui/:_id', ctrlJobManagement.jobManagementUIUpdate);
+router.delete('/job-management/:_id', ctrlJobManagement.jobManagementDelete);
+router.delete('/job-management-ui/:_id', ctrlJobManagement.jobManagementUIDelete);
 
 module.exports = router;

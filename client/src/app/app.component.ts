@@ -8,7 +8,7 @@ import {
   Router,
 } from '@angular/router';
 
-import * as state from 'src/app/shared/state';
+import * as state from './shared/state';
 
 @Component({
   selector: 'app-root',

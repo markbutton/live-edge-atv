@@ -87,6 +87,10 @@ export class EquipmentState {
     return latestTmc;
   }
 
+  setTmc(tmc: Equipment): void {
+    this._tmc.next(tmc);
+  }
+
   getEquipmentId(id: string, referenceID?: string): void {
     if (!id) {
       if (referenceID) {
@@ -173,6 +177,17 @@ export class EquipmentState {
       },
       err => {
         console.error('Error deleting equipment', err);
+      }
+    );
+  }
+
+  searchEquipment(data: any): void {
+    this.equipmentService.searchEquipment(data).subscribe(
+      res => {
+        this._equipmentFilteredList.next(res);
+      },
+      err => {
+        console.error('Error retrieving equipment', err);
       }
     );
   }

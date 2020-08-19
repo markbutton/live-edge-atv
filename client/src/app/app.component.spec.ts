@@ -2,21 +2,23 @@ import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 
-import * as state from 'src/app/shared/state';
+import * as state from './shared/state';
 import { AppComponent } from './app.component';
-
+import { MapModule } from './map/map.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        HttpClientModule
+        HttpClientModule,
+        MapModule
       ],
       declarations: [
         AppComponent
       ],
       providers: [
+        state.ZoneState,
         state.NavViewState
       ]
     }).compileComponents();

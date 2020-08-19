@@ -33,16 +33,14 @@ export class TmcEditComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.sub = this.route.params.subscribe(params => {
-      this.tmc_id = params['id'];
+      this.tmc_id = params.id;
       if (!this.tmc_id) {
         this.create = true;
       }
     });
 
     this.querySub = this.route.queryParams.subscribe(params => {
-      this.referenceID = params['referenceID'];
-      console.log(this.referenceID);
-
+      this.referenceID = params.referenceID;
     });
 
     this.tmc = this.equipmentState.tmc;
