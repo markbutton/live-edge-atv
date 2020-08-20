@@ -1,0 +1,5364 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Live Edge API",
+    "description": "Internal Live Edge API",
+    "version": "0.1",
+    "contact": {
+      "name": "Pure Integration",
+      "email": "mark.button@pureintegration.com",
+      "url": "http://pureintegration.com"
+    },
+    "license": {
+      "url": "https://opensource.org/licenses/MIT",
+      "name": "MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.reach.spectrumtoolbox.com"
+    },
+    {
+      "url": "https://api.test.reach.spectrumtoolbox.com"
+    },
+    {
+      "url": "https://api.develop.reach.spectrumtoolbox.com"
+    }
+  ],
+  "tags": [
+    {
+      "name": "users",
+      "description": "Manage users in live-edge"
+    },
+    {
+      "name": "user-groups",
+      "description": "Manage user groups in live-edge"
+    },
+    {
+      "name": "equipment",
+      "description": "Manage tmc equipment in live-edge"
+    },
+    {
+      "name": "job-management",
+      "description": "Manage job-managment in live-edge"
+    },
+    {
+      "name": "extracted-video",
+      "description": "Manage extracted-video in live-edge"
+    },
+    {
+      "name": "workflows",
+      "description": "Manage micro service workflows in live-edge"
+    },
+    {
+      "name": "channel-lineups",
+      "description": "Manage channel-lineups in live-edge"
+    },
+    {
+      "name": "videoquality",
+      "description": "Manage videoquality in live-edge"
+    },
+    {
+      "name": "verifications",
+      "description": "Manage verifications in live-edge"
+    },
+    {
+      "name": "aws-s3",
+      "description": "Download video from aws-s3 in live-edge"
+    },
+    {
+      "name": "zones",
+      "description": "Manage zones in live-edge"
+    },
+    {
+      "name": "job-schedule",
+      "description": "Manage job-schedules in live-edge"
+    },
+    {
+      "name": "hpe",
+      "description": "Manage high priority events in live-edge"
+    },
+    {
+      "name": "channel-naming",
+      "description": "Manage channel-naming in live-edge"
+    },
+    {
+      "name": "settings",
+      "description": "Manage settings in live-edge"
+    }
+  ],
+  "paths": {
+    "/api/settings/type/{type}": {
+      "get": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Get settings by type",
+        "description": "Get settings by type settings in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "audioQuality"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/settings/name/{name}": {
+      "get": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Get settings by name",
+        "description": "Get settings by name in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "unacceptableSilentDuration"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/settings/{id}": {
+      "get": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Get settings by id",
+        "description": "Get settings by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Update settings",
+        "description": "Update settings in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/setting"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"name\": \"test\",\n        \"type\": \"test\",\n        \"value\": \"1\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Delete settings",
+        "description": "Delete settings in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/settings": {
+      "post": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Create settings",
+        "description": "Create settings in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/setting"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"name\": \"test\",\n        \"type\": \"test\",\n        \"value\": \"1\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Get settings",
+        "description": "List settings in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/settings/update-all": {
+      "put": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Update all settings",
+        "description": "Update all settings in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/setting"
+              },
+              "examples": {
+                "0": {
+                  "value": "    [\n        {\n            \"id\": \"7r675majjz4fjxa1\",\n            \"name\": \"debugEnabled\",\n            \"value\": \"false\",\n            \"type\": \"logs\"\n        },\n        {\n            \"id\": \"1231231234\",\n            \"name\": \"silenceThreshold\",\n            \"type\": \"quality\",\n            \"value\": \"4\"\n        },\n        {\n            \"name\": \"minClipLength\",\n            \"type\": \"audiofingerprint\",\n            \"value\": \"10\"\n        },\n        {\n            \"name\": \"minBlackFrame\",\n            \"type\": \"insertiontiming\",\n            \"value\": \"2\"\n        },\n        {\n            \"name\": \"minAcceptedBlackPercentage\",\n            \"type\": \"insertiontiming\",\n            \"value\": \"90\"\n        },\n        {\n            \"name\": \"FPS\",\n            \"type\": \"insertiontiming\",\n            \"value\": \"25\"\n        },\n        {\n            \"name\": \"maxDriftTime\",\n            \"type\": \"insertiontiming\",\n            \"value\": \"5\"\n        },\n        {\n            \"name\": \"minAcceptedPercentage\",\n            \"type\": \"keyframematching\",\n            \"value\": \"90\"\n        },\n        {\n            \"name\": \"unacceptableSilentDuration\",\n            \"type\": \"audioQuality\",\n            \"value\": \"5\"\n        }\n    ]"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/channel-naming": {
+      "get": {
+        "tags": [
+          "channel-naming"
+        ],
+        "summary": "Get channel-naming",
+        "description": "List channel-naming in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "channel-naming"
+        ],
+        "summary": "Create channel-naming",
+        "description": "Create channel-naming in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/channel-naming"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"hdName\": \"TEST\",\n        \"description\": \"TEST Network\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/channel-naming/{id}": {
+      "get": {
+        "tags": [
+          "channel-naming"
+        ],
+        "summary": "Get channel-naming by id",
+        "description": "Get channel-naming by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "channel-naming"
+        ],
+        "summary": "Update channel-naming",
+        "description": "Update channel-naming in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/channel-naming"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"hdName\": \"TEST\",\n        \"description\": \"TEST Network\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "channel-naming"
+        ],
+        "summary": "Delete channel-naming",
+        "description": "Delete channel-naming in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/hpe/{id}": {
+      "get": {
+        "tags": [
+          "hpe"
+        ],
+        "summary": "Get hpe by id",
+        "description": "Get hpe by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "hpe"
+        ],
+        "summary": "Update hpe",
+        "description": "Update hpe in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/hpe"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"market\": \"St. Louis\",\n        \"event\": \"NBA Playoffs\",\n        \"description\": \"NBA Playoffs Rnd 1 - Milwaukee Bucks at Detroit Pistons\",\n        \"startDate\": \"10/23/2019\",\n        \"endDate\": \"10/24/2019\",\n        \"startTime\": \"00:00 AM\",\n        \"endTime\": \"01:30 AM\",\n        \"network\": \"MTV\",\n        \"syscode\": \"6665\",\n        \"syscodeName\": \"St. Louis IC\",\n        \"revenue\": \"4439\",\n        \"zone\": \"DITPSP3465\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "hpe"
+        ],
+        "summary": "Delete hpe",
+        "description": "Delete hpe in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/hpe": {
+      "post": {
+        "tags": [
+          "hpe"
+        ],
+        "summary": "Create hpe",
+        "description": "Create hpe in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/hpe"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"market\": \"St. Louis\",\n        \"event\": \"NBA Playoffs\",\n        \"description\": \"NBA Playoffs Rnd 1 - Milwaukee Bucks at Detroit Pistons\",\n        \"startDate\": \"10/23/2019\",\n        \"endDate\": \"10/24/2019\",\n        \"startTime\": \"00:00 AM\",\n        \"endTime\": \"01:30 AM\",\n        \"network\": \"MTV\",\n        \"syscode\": \"6665\",\n        \"syscodeName\": \"St. Louis IC\",\n        \"revenue\": \"4439\",\n        \"zone\": \"DITPSP3465\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "hpe"
+        ],
+        "summary": "Get hpe",
+        "description": "List hpes in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/s3/{video}/download": {
+      "get": {
+        "description": "Download videos from aws-s3 in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "video",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "SRAJS995_web.mp4"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Download video",
+        "tags": [
+          "aws-s3"
+        ]
+      }
+    },
+    "/api/videoquality/tmc-job-id/{tmcJobId}": {
+      "get": {
+        "description": "Get videoquality by tmcjobid in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "tmcJobId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "687d54ad-a9aa-4f6a-b6ed-b2503c8c26b2"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get videoquality by tmcjobid",
+        "tags": [
+          "videoquality"
+        ]
+      }
+    },
+    "/api/videoquality": {
+      "post": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/videoquality"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"zoneID\": \"DIRESO1072\",\n        \"tmcID\": \"TEST.TMCSERVER.COM\",\n        \"tmcJobID\": \"687d54ad-a9aa-4f6a-b6ed-b2503c8c26b2\",\n        \"jobID\": \"59\",\n        \"slotID\": \"4\",\n        \"sourceVideoName\": \"JCZC1796_web.mp4\",\n        \"targetVideoName\": \"https://charter-testworkbench-com.s3.us-west-2.amazonaws.com/tmc/jobs/687d54ad-a9aa-4f6a-b6ed-b2503c8c26b2/1/iteration_1_device_4_201912160856369041749.mp4\",\n        \"type\": \"audioquality\",\n        \"spotID\": \"JCZC1796_i\",\n        \"playTime\": \"1576515398\",\n        \"schedPlayTime\": \"1576515480\",\n        \"winOpenTime\": \"1576513800\",\n        \"winDuration\": \"1800\",\n        \"winSchedDuration\": \"30\",\n        \"spotDuration\": \"30000\",\n        \"networkName\": \"MTV2\",\n        \"channelNumber\": 65,\n        \"spotList\": \":\\n<191>community\",\n        \"maxVolume\": \"-5.1\",\n        \"minVolume\": \"-30.7\",\n        \"silentParts\": [\n            {\n                \"start\": \"1.164\",\n                \"end\": \"1.70667\",\n                \"duration\": \"0.542667\"\n            },\n            {\n                \"start\": \"7.13733\",\n                \"end\": \"7.91467\",\n                \"duration\": \"0.777333\"\n            },\n            {\n                \"start\": \"36.4707\",\n                \"end\": \"37.5893\",\n                \"duration\": \"1.11867\"\n            }\n        ],\n        \"problem\": null,\n        \"createdDate\": \"2019-12-16T16:58:38.889Z\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Create videoquality",
+        "tags": [
+          "videoquality"
+        ],
+        "description": "Create videoquality in live-edge"
+      }
+    },
+    "/api/videoquality/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get videoquality by id",
+        "tags": [
+          "videoquality"
+        ],
+        "description": "Get videoquality by id in live-edge"
+      },
+      "put": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/videoquality"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"zoneID\": \"DIRESO1072\",\n        \"tmcID\": \"TEST.TMCSERVER.COM\",\n        \"tmcJobID\": \"687d54ad-a9aa-4f6a-b6ed-b2503c8c26b2\",\n        \"jobID\": \"59\",\n        \"slotID\": \"4\",\n        \"sourceVideoName\": \"JCZC1796_web.mp4\",\n        \"targetVideoName\": \"https://charter-testworkbench-com.s3.us-west-2.amazonaws.com/tmc/jobs/687d54ad-a9aa-4f6a-b6ed-b2503c8c26b2/1/iteration_1_device_4_201912160856369041749.mp4\",\n        \"type\": \"audioquality\",\n        \"spotID\": \"JCZC1796_i\",\n        \"playTime\": \"1576515398\",\n        \"schedPlayTime\": \"1576515480\",\n        \"winOpenTime\": \"1576513800\",\n        \"winDuration\": \"1800\",\n        \"winSchedDuration\": \"30\",\n        \"spotDuration\": \"30000\",\n        \"networkName\": \"MTV2\",\n        \"channelNumber\": 65,\n        \"spotList\": \":\\n<191>community\",\n        \"maxVolume\": \"-5.1\",\n        \"minVolume\": \"-30.7\",\n        \"silentParts\": [\n            {\n                \"start\": \"1.164\",\n                \"end\": \"1.70667\",\n                \"duration\": \"0.542667\"\n            },\n            {\n                \"start\": \"7.13733\",\n                \"end\": \"7.91467\",\n                \"duration\": \"0.777333\"\n            },\n            {\n                \"start\": \"36.4707\",\n                \"end\": \"37.5893\",\n                \"duration\": \"1.11867\"\n            }\n        ],\n        \"problem\": null,\n        \"createdDate\": \"2019-12-16T16:58:38.889Z\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Update videoquality",
+        "tags": [
+          "videoquality"
+        ],
+        "description": "Update videoquality in live-edge"
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Delete videoquality",
+        "tags": [
+          "videoquality"
+        ],
+        "description": "Delte videoquality in live-edge"
+      }
+    },
+    "/api/videoqualityagg": {
+      "get": {
+        "description": "Get videoquality using page and pagesize in live-edge",
+        "parameters": [
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "10"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "0"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get videoquality",
+        "tags": [
+          "videoquality"
+        ]
+      }
+    },
+    "/api/verification": {
+      "post": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/verification"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"ID\": \"hkszyik5ce4d3s\",\n        \"jobManagementID\": \"5d956a6010c5e100123cbe8d\",\n        \"zoneID\": \"DICFSS2312\",\n        \"networkName\": \"VH1\",\n        \"channelNumber\": 72,\n        \"tmcID\": \"TEST.TMCSERVER.COM\",\n        \"tmcJobID\": \"2a05913a-7134-46fc-9d36-9208b96e91c9\",\n        \"jobID\": \"15\",\n        \"slotID\": \"8\",\n        \"type\": \"audiofingerprint\",\n        \"sourceVideoName\": \"SRAP3031_web.mp4\",\n        \"targetVideoName\": \"https://charter-testworkbench-com.s3.us-west-2.amazonaws.com/tmc/jobs/2a05913a-7134-46fc-9d36-9208b96e91c9/1/iteration_1_device_8_202001130653195519730.mp4\",\n        \"score\": \"100\",\n        \"problem\": null,\n        \"spotOrder\": 1,\n        \"match\": true,\n        \"spotID\": \"SRAP3031_i\",\n        \"playTime\": \"1578916403\",\n        \"schedPlayTime\": \"1578916680\",\n        \"winOpenTime\": \"1578915000\",\n        \"winDuration\": \"1800\",\n        \"winSchedDuration\": \"30\",\n        \"spotDuration\": \"30000\",\n        \"spotList\": \":\\n<191>community\",\n        \"receivedTime\": \"2020-01-13T11:53:13.715Z\",\n        \"startRecordTime\": \"2020-01-13T11:53:15.057Z\",\n        \"createdDate\": \"2020-01-13T11:55:05.975Z\",\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Create verification",
+        "tags": [
+          "verifications"
+        ],
+        "description": "Create verifications in live-edge"
+      }
+    },
+    "/api/verification/tmc-job-id/{tmcJobId}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "tmcJobId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2a05913a-7134-46fc-9d36-9208b96e91c9"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get verification by tmc job id",
+        "tags": [
+          "verifications"
+        ],
+        "description": "Get verifcation by tmc job id in live-edge"
+      }
+    },
+    "/api/verification/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get verification by id",
+        "tags": [
+          "verifications"
+        ],
+        "description": "Get verification by id in live-edge"
+      },
+      "put": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/verification"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"ID\": \"hkszyik5ce4d3s\",\n        \"jobManagementID\": \"5d956a6010c5e100123cbe8d\",\n        \"zoneID\": \"DICFSS2312\",\n        \"networkName\": \"VH1\",\n        \"channelNumber\": 72,\n        \"tmcID\": \"TEST.TMCSERVER.COM\",\n        \"tmcJobID\": \"2a05913a-7134-46fc-9d36-9208b96e91c9\",\n        \"jobID\": \"15\",\n        \"slotID\": \"8\",\n        \"type\": \"audiofingerprint\",\n        \"sourceVideoName\": \"SRAP3031_web.mp4\",\n        \"targetVideoName\": \"https://charter-testworkbench-com.s3.us-west-2.amazonaws.com/tmc/jobs/2a05913a-7134-46fc-9d36-9208b96e91c9/1/iteration_1_device_8_202001130653195519730.mp4\",\n        \"score\": \"100\",\n        \"problem\": null,\n        \"spotOrder\": 1,\n        \"match\": true,\n        \"spotID\": \"SRAP3031_i\",\n        \"playTime\": \"1578916403\",\n        \"schedPlayTime\": \"1578916680\",\n        \"winOpenTime\": \"1578915000\",\n        \"winDuration\": \"1800\",\n        \"winSchedDuration\": \"30\",\n        \"spotDuration\": \"30000\",\n        \"spotList\": \":\\n<191>community\",\n        \"receivedTime\": \"2020-01-13T11:53:13.715Z\",\n        \"startRecordTime\": \"2020-01-13T11:53:15.057Z\",\n        \"createdDate\": \"2020-01-13T11:55:05.975Z\",\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Update verification",
+        "tags": [
+          "verifications"
+        ],
+        "description": "Update verification in live-edge"
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "tags": [
+          "verifications"
+        ],
+        "summary": "Delete verification",
+        "description": "Delete verification in live-edge"
+      }
+    },
+    "/api/verificationagg": {
+      "post": {
+        "description": "Get verification with page and page size in live-edge",
+        "parameters": [
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "10"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "0"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get verification",
+        "tags": [
+          "verifications"
+        ]
+      }
+    },
+    "/api/zones/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "tags": [
+          "zones"
+        ],
+        "summary": "Get zone by id",
+        "description": "Get zone by id in live-edge"
+      },
+      "put": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/zone"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"zoneName\": \"TEST\",\n        \"networks\": [\n            \"ACCN\"\n        ]\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "tags": [
+          "zones"
+        ],
+        "summary": "Update zone",
+        "description": "Update zone in live-edge"
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "tags": [
+          "zones"
+        ],
+        "summary": "Delete zone",
+        "description": "Delete zone in live-edge"
+      }
+    },
+    "/api/zones": {
+      "get": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "tags": [
+          "zones"
+        ],
+        "summary": "Get zones",
+        "description": "List zones in live-edge"
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/zone"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"zoneName\": \"TEST\",\n        \"networks\": [\n            \"ACCN\"\n        ]\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "description": "Create zone in live edge",
+        "tags": [
+          "zones"
+        ],
+        "summary": "Create zone"
+      }
+    },
+    "/api/zones/name/{name}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "test"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "description": "Get zone by name in live-edge",
+        "tags": [
+          "zones"
+        ],
+        "summary": "Get zone by name"
+      }
+    },
+    "/api/channel-lineup/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1e55bdaa290f0012cd9fb5"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get channel-lineups",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Get channel-lineups in live-edge"
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1e55bdaa290f0012cd9fb5"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Delete channel-lineup",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Delete channel-lineup in live-edge"
+      },
+      "put": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1e55bdaa290f0012cd9fb5"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/channelLineup"
+              },
+              "examples": {
+                "0": {
+                  "value": "    \"channels\": [\n        {\n            \"channelName\": \"NGC\",\n            \"channelNumber\": \"22\"\n        },\n        {\n            \"channelName\": \"TNT\",\n            \"channelNumber\": \"23\"\n        },\n        {\n            \"channelName\": \"USA\",\n            \"channelNumber\": \"25\"\n        },\n        {\n            \"channelName\": \"ESPN\",\n            \"channelNumber\": \"26\"\n        },\n        {\n            \"channelName\": \"ESP2\",\n            \"channelNumber\": \"27\"\n        },\n        {\n            \"channelName\": \"CNN\",\n            \"channelNumber\": \"33\"\n        },\n        {\n            \"channelName\": \"HLN\",\n            \"channelNumber\": \"34\"\n        },\n        {\n            \"channelName\": \"CNBC\",\n            \"channelNumber\": \"35\"\n        },\n        {\n            \"channelName\": \"TRU\",\n            \"channelNumber\": \"38\"\n        },\n        {\n            \"channelName\": \"HGTV\",\n            \"channelNumber\": \"39\"\n        },\n        {\n            \"channelName\": \"FOOD\",\n            \"channelNumber\": \"40\"\n        },\n        {\n            \"channelName\": \"DISC\",\n            \"channelNumber\": \"42\"\n        },\n        {\n            \"channelName\": \"TLC\",\n            \"channelNumber\": \"43\"\n        },\n        {\n            \"channelName\": \"AMC\",\n            \"channelNumber\": \"48\"\n        },\n        {\n            \"channelName\": \"HALL\",\n            \"channelNumber\": \"52\"\n        },\n        {\n            \"channelName\": \"SYFY\",\n            \"channelNumber\": \"58\"\n        },\n        {\n            \"channelName\": \"MTV\",\n            \"channelNumber\": \"59\"\n        },\n        {\n            \"channelName\": \"VH1\",\n            \"channelNumber\": \"60\"\n        },\n        {\n            \"channelName\": \"BET\",\n            \"channelNumber\": \"61\"\n        },\n        {\n            \"channelName\": \"CMT\",\n            \"channelNumber\": \"62\"\n        },\n        {\n            \"channelName\": \"LMN\",\n            \"channelNumber\": \"66\"\n        },\n        {\n            \"channelName\": \"GOLF\",\n            \"channelNumber\": \"69\"\n        },\n        {\n            \"channelName\": \"OUTD\",\n            \"channelNumber\": \"408\"\n        },\n        {\n            \"channelName\": \"ESPD\",\n            \"channelNumber\": \"950\"\n        },\n        {\n            \"channelName\": \"OWN\",\n            \"channelNumber\": \"72\"\n        },\n        {\n            \"channelName\": \"FX\",\n            \"channelNumber\": \"90\"\n        }\n    ],\n    \"name\": \"Test\",\n    \"lineupID\": \"9999\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Update channel-lineup",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Update channel-lineup in live-edge"
+      }
+    },
+    "/api/channel-lineup/reference/{reference}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "reference",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": 1
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get channel-lineup by reference",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Get channel-lineup by reference id in live-edge"
+      }
+    },
+    "/api/channel-lineup/lineup-id/{lineupId}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "lineupId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "9999/Test/null"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get channel-lineup by lineup-id",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Get channel-lineup by lineup-id in live-edge"
+      }
+    },
+    "/api/channel-lineup/name/{name}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Test, CO, 29063"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get channel-lineup by name",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Get channel-lineup by name in live-edge"
+      }
+    },
+    "/api/channel-lineup": {
+      "get": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get channel-lineups",
+        "description": "List channel-lineups in live-edge",
+        "tags": [
+          "channel-lineups"
+        ]
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/channelLineup"
+              },
+              "examples": {
+                "0": {
+                  "value": "    \"channels\": [\n        {\n            \"channelName\": \"NGC\",\n            \"channelNumber\": \"22\"\n        },\n        {\n            \"channelName\": \"TNT\",\n            \"channelNumber\": \"23\"\n        },\n        {\n            \"channelName\": \"USA\",\n            \"channelNumber\": \"25\"\n        },\n        {\n            \"channelName\": \"ESPN\",\n            \"channelNumber\": \"26\"\n        },\n        {\n            \"channelName\": \"ESP2\",\n            \"channelNumber\": \"27\"\n        },\n        {\n            \"channelName\": \"CNN\",\n            \"channelNumber\": \"33\"\n        },\n        {\n            \"channelName\": \"HLN\",\n            \"channelNumber\": \"34\"\n        },\n        {\n            \"channelName\": \"CNBC\",\n            \"channelNumber\": \"35\"\n        },\n        {\n            \"channelName\": \"TRU\",\n            \"channelNumber\": \"38\"\n        },\n        {\n            \"channelName\": \"HGTV\",\n            \"channelNumber\": \"39\"\n        },\n        {\n            \"channelName\": \"FOOD\",\n            \"channelNumber\": \"40\"\n        },\n        {\n            \"channelName\": \"DISC\",\n            \"channelNumber\": \"42\"\n        },\n        {\n            \"channelName\": \"TLC\",\n            \"channelNumber\": \"43\"\n        },\n        {\n            \"channelName\": \"AMC\",\n            \"channelNumber\": \"48\"\n        },\n        {\n            \"channelName\": \"HALL\",\n            \"channelNumber\": \"52\"\n        },\n        {\n            \"channelName\": \"SYFY\",\n            \"channelNumber\": \"58\"\n        },\n        {\n            \"channelName\": \"MTV\",\n            \"channelNumber\": \"59\"\n        },\n        {\n            \"channelName\": \"VH1\",\n            \"channelNumber\": \"60\"\n        },\n        {\n            \"channelName\": \"BET\",\n            \"channelNumber\": \"61\"\n        },\n        {\n            \"channelName\": \"CMT\",\n            \"channelNumber\": \"62\"\n        },\n        {\n            \"channelName\": \"LMN\",\n            \"channelNumber\": \"66\"\n        },\n        {\n            \"channelName\": \"GOLF\",\n            \"channelNumber\": \"69\"\n        },\n        {\n            \"channelName\": \"OUTD\",\n            \"channelNumber\": \"408\"\n        },\n        {\n            \"channelName\": \"ESPD\",\n            \"channelNumber\": \"950\"\n        },\n        {\n            \"channelName\": \"OWN\",\n            \"channelNumber\": \"72\"\n        },\n        {\n            \"channelName\": \"FX\",\n            \"channelNumber\": \"90\"\n        }\n    ],\n    \"name\": \"Test\",\n    \"lineupID\": \"9999\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Create channel-lineup",
+        "tags": [
+          "channel-lineups"
+        ],
+        "description": "Creat channel-lineup in live-edge"
+      }
+    },
+    "/api/job-schedule/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get job-schedule by id",
+        "tags": [
+          "job-schedule"
+        ],
+        "description": "Get job-schedule by id from live-edge"
+      },
+      "put": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/job-schedule"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n    \"name\": \"TEST\",\n    \"sch0000\": \"TRU\",\n    \"sch0030\": \"MTV2\",\n    \"sch0100\": \"FOXD\",\n    \"sch0130\": \"MNBC\",\n    \"sch0200\": \"MNBC\",\n    \"sch0230\": \"FX\",\n    \"sch0300\": \"HGTV\",\n    \"sch0330\": \"MTV\",\n    \"sch0400\": \"PAR\",\n    \"sch0430\": \"TRAV\",\n    \"sch0500\": \"CMDY\",\n    \"sch0530\": \"FRF\",\n    \"sch0600\": \"DISC\",\n    \"sch0630\": \"SYFY\",\n    \"sch0700\": \"CMT\",\n    \"sch0730\": \"VH1\",\n    \"sch0800\": \"BRVO\",\n    \"sch0830\": \"TLC\",\n    \"sch0900\": \"USA\",\n    \"sch0930\": \"CNN\",\n    \"sch1000\": \"NBS\",\n    \"sch1030\": \"MT2\",\n    \"sch1100\": \"TBSC\",\n    \"sch1130\": \"TRU\",\n    \"sch1200\": \"GOLF\",\n    \"sch1230\": \"SYFY\",\n    \"sch1300\": \"ESPN\",\n    \"sch1330\": \"VH1\",\n    \"sch1400\": \"FXN\",\n    \"sch1430\": \"TLC\",\n    \"sch1500\": \"AMC\",\n    \"sch1530\": \"TBS\",\n    \"sch1600\": \"GOLF\",\n    \"sch1630\": \"FRFM\",\n    \"sch1700\": \"CNBC\",\n    \"sch1730\": \"MTV\",\n    \"sch1800\": \"LIF\",\n    \"sch1830\": \"APL\",\n    \"sch1900\": \"CNN\",\n    \"sch1930\": \"AEN\",\n    \"sch2000\": \"DIS\",\n    \"sch2030\": \"ENT\",\n    \"sch2100\": \"TRAV\",\n    \"sch2130\": \"AEN\",\n    \"sch2200\": \"NFL\",\n    \"sch2230\": \"HIST\",\n    \"sch2300\": \"HLN\",\n    \"sch2330\": \"HLN\",\n    \"__v\": 0\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Update job-schedule",
+        "tags": [
+          "job-schedule"
+        ],
+        "description": "Update job-schedule in live-edge"
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Delete job-schedule",
+        "tags": [
+          "job-schedule"
+        ],
+        "description": "Delete job-scheule in live-edge"
+      }
+    },
+    "/api/job-schedule": {
+      "get": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector"
+          }
+        },
+        "summary": "Get job schedule",
+        "tags": [
+          "job-schedule"
+        ],
+        "description": "List job-schedules in live-edge"
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workflows"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n    \"name\": \"TEST\",\n    \"sch0000\": \"TRU\",\n    \"sch0030\": \"MTV2\",\n    \"sch0100\": \"FOXD\",\n    \"sch0130\": \"MNBC\",\n    \"sch0200\": \"MNBC\",\n    \"sch0230\": \"FX\",\n    \"sch0300\": \"HGTV\",\n    \"sch0330\": \"MTV\",\n    \"sch0400\": \"PAR\",\n    \"sch0430\": \"TRAV\",\n    \"sch0500\": \"CMDY\",\n    \"sch0530\": \"FRF\",\n    \"sch0600\": \"DISC\",\n    \"sch0630\": \"SYFY\",\n    \"sch0700\": \"CMT\",\n    \"sch0730\": \"VH1\",\n    \"sch0800\": \"BRVO\",\n    \"sch0830\": \"TLC\",\n    \"sch0900\": \"USA\",\n    \"sch0930\": \"CNN\",\n    \"sch1000\": \"NBS\",\n    \"sch1030\": \"MT2\",\n    \"sch1100\": \"TBSC\",\n    \"sch1130\": \"TRU\",\n    \"sch1200\": \"GOLF\",\n    \"sch1230\": \"SYFY\",\n    \"sch1300\": \"ESPN\",\n    \"sch1330\": \"VH1\",\n    \"sch1400\": \"FXN\",\n    \"sch1430\": \"TLC\",\n    \"sch1500\": \"AMC\",\n    \"sch1530\": \"TBS\",\n    \"sch1600\": \"GOLF\",\n    \"sch1630\": \"FRFM\",\n    \"sch1700\": \"CNBC\",\n    \"sch1730\": \"MTV\",\n    \"sch1800\": \"LIF\",\n    \"sch1830\": \"APL\",\n    \"sch1900\": \"CNN\",\n    \"sch1930\": \"AEN\",\n    \"sch2000\": \"DIS\",\n    \"sch2030\": \"ENT\",\n    \"sch2100\": \"TRAV\",\n    \"sch2130\": \"AEN\",\n    \"sch2200\": \"NFL\",\n    \"sch2230\": \"HIST\",\n    \"sch2300\": \"HLN\",\n    \"sch2330\": \"HLN\",\n    \"__v\": 0\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Create job-schedule",
+        "tags": [
+          "job-schedule"
+        ],
+        "description": "Create job-schedule in live-edge"
+      }
+    },
+    "/api/workflow/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get workflows by id",
+        "tags": [
+          "workflows"
+        ],
+        "description": "Get workflows by id in live-edge"
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Delete workflow",
+        "tags": [
+          "workflows"
+        ],
+        "description": "Delete workflow in live-edge"
+      },
+      "put": {
+        "description": "Update workflow in live-edge",
+        "tags": [
+          "workflows"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workflows"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n    \"nodes\": [\n        {\n            \"id\": \"d1361584-c47c-fc57-9122-473d77acff21\",\n            \"title\": \"test1\",\n            \"type\": \"Microservice\",\n            \"x\": 97,\n            \"y\": 99\n        },\n        {\n            \"id\": \"61c7b3a5-0aa7-6568-46f2-63c7d8b639ab\",\n            \"title\": \"test2\",\n            \"type\": \"Microservice\",\n            \"x\": 501,\n            \"y\": 99\n        }\n    ],\n    \"connections\": [\n        {\n            \"fromSide\": \"right\",\n            \"toSide\": \"left\",\n            \"from\": {\n                \"id\": \"d1361584-c47c-fc57-9122-473d77acff21\",\n                \"title\": \"test1\",\n                \"type\": \"Microservice\",\n                \"x\": 97,\n                \"y\": 99\n            },\n            \"to\": {\n                \"id\": \"61c7b3a5-0aa7-6568-46f2-63c7d8b639ab\",\n                \"title\": \"test2\",\n                \"type\": \"Microservice\",\n                \"x\": 501,\n                \"y\": 99\n            },\n            \"config\": {\n                \"name\": \"RabbitMQ\",\n                \"qname\": \"testQ\",\n                \"channel\": \"testCH\",\n                \"messageKey\": \"testMK\",\n                \"payload\": \"\"\n            },\n            \"title\": \"test1 to test2\",\n            \"type\": \"RabbitMQ\"\n        }\n    ],\n    \"name\": \"test\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Update workflow"
+      }
+    },
+    "/api/workflow/name/{name}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "test"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Definition generated from Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get workflow by name",
+        "tags": [
+          "workflows"
+        ],
+        "description": "Get workflow by name in live-edge"
+      }
+    },
+    "/api/extracted-video": {
+      "get": {
+        "description": "Get extracted-video in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "tags": [
+          "extracted-video"
+        ],
+        "summary": "Get extracted-video"
+      },
+      "post": {
+        "description": "Create extracted-video in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/extracted-video"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"fileName\": \"SRB00918_web.mp4\",\n        \"spotId\": \"test\",\n        \"acrID\": \"6d86c9c17a85c5dec9757ff7a554771a\",\n        \"status\": \"success\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "500": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Create extracted-video",
+        "tags": [
+          "extracted-video"
+        ]
+      }
+    },
+    "/api/extracted-video/spotId/{spotId}": {
+      "servers": [
+        {
+          "url": "https://api.reach.spectrumtoolbox.com"
+        },
+        {
+          "url": "https://api.test.reach.spectrumtoolbox.com"
+        },
+        {
+          "url": "https://api.develop.reach.spectrumtoolbox.com"
+        }
+      ],
+      "get": {
+        "tags": [
+          "extracted-video"
+        ],
+        "summary": "Get extracted-video by spotId",
+        "description": "Get extracted-video by spotId in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "spotId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "test"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/job-management/playing": {
+      "get": {
+        "description": "Get job managers that are playing in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "tags": [
+          "job-management"
+        ],
+        "summary": "Get job-management playing"
+      }
+    },
+    "/api/job-management": {
+      "get": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get job-management",
+        "tags": [
+          "job-management"
+        ],
+        "description": "List job-management in live-edge"
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/job-management"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n            \"zoneID\": \"TEST\",\n            \"tmcID\": \"TEST1.TMCSERVER.COM\",\n            \"jobID\": 192,\n            \"tmcJobID\": \"test\",\n            \"slotID\": \"1\",\n            \"currentStatus\": \"stopped\",\n            \"runStatus\": \"\",\n            \"ignore\": false,\n            \"jobSchedule\": {\n                \"name\": \"TEST\",\n                \"sch0000\": \"TRU\",\n                \"sch0030\": \"MTV2\",\n                \"sch0100\": \"FOXD\",\n                \"sch0130\": \"MNBC\",\n                \"sch0200\": \"MNB\",\n                \"sch0230\": \"FX\",\n                \"sch0300\": \"HGT\",\n                \"sch0330\": \"MTV\",\n                \"sch0400\": \"PAR\",\n                \"sch0430\": \"TRA\",\n                \"sch0500\": \"CMDY\",\n                \"sch0530\": \"FRF\",\n                \"sch0600\": \"DISC\",\n                \"sch0630\": \"SYF\",\n                \"sch0700\": \"CMT\",\n                \"sch0730\": \"VH1\",\n                \"sch0800\": \"BRVO\",\n                \"sch0830\": \"TLC\",\n                \"sch0900\": \"USA\",\n                \"sch0930\": \"CNN\",\n                \"sch1000\": \"NBS\",\n                \"sch1030\": \"MT2\",\n                \"sch1100\": \"TBSC\",\n                \"sch1130\": \"TRU\",\n                \"sch1200\": \"GOLF\",\n                \"sch1230\": \"SYFY\",\n                \"sch1300\": \"ESPN\",\n                \"sch1330\": \"VH1\",\n                \"sch1400\": \"FXN\",\n                \"sch1430\": \"TLC\",\n                \"sch1500\": \"AMC\",\n                \"sch1530\": \"TBS\",\n                \"sch1600\": \"GOL\",\n                \"sch1630\": \"FRFM\",\n                \"sch1700\": \"CNB\",\n                \"sch1730\": \"MTV\",\n                \"sch1800\": \"LIF\",\n                \"sch1830\": \"APL\",\n                \"sch1900\": \"CNN\",\n                \"sch1930\": \"AEN\",\n                \"sch2000\": \"DIS\",\n                \"sch2030\": \"ENT\",\n                \"sch2100\": \"TRAV\",\n                \"sch2130\": \"AEN\",\n                \"sch2200\": \"NFL\",\n                \"sch2230\": \"HIST\",\n                \"sch2300\": \"HLN\",\n                \"sch2330\": \"HLN\",\n                \"__v\": 0\n            },\n            \"channelLineup\": {\n                \"channels\": [\n                    {\n                        \"channelName\": \"GOLF\",\n                        \"channelNumber\": 15\n                    },\n                    {\n                        \"channelName\": \"OWN\",\n                        \"channelNumber\": 26\n                    },\n                    {\n                        \"channelName\": \"ESPN\",\n                        \"channelNumber\": 33\n                    },\n                    {\n                        \"channelName\": \"ESP2\",\n                        \"channelNumber\": 34\n                    },\n                    {\n                        \"channelName\": \"DISC\",\n                        \"channelNumber\": \"42\"\n                    },\n                    {\n                        \"channelName\": \"NGC\",\n                        \"channelNumber\": 43\n                    },\n                    {\n                        \"channelName\": \"CNN\",\n                        \"channelNumber\": 44\n                    },\n                    {\n                        \"channelName\": \"HLN\",\n                        \"channelNumber\": 45\n                    },\n                    {\n                        \"channelName\": \"CNBC\",\n                        \"channelNumber\": \"48\"\n                    },\n                    {\n                        \"channelName\": \"FOOD\",\n                        \"channelNumber\": \"51\"\n                    },\n                    {\n                        \"channelName\": \"HGTV\",\n                        \"channelNumber\": 52\n                    },\n                    {\n                        \"channelName\": \"TLC\",\n                        \"channelNumber\": 53\n                    },\n                    {\n                        \"channelName\": \"TRAV\",\n                        \"channelNumber\": 54\n                    },\n                    {\n                        \"channelName\": \"TNT\",\n                        \"channelNumber\": 55\n                    },\n                    {\n                        \"channelName\": \"USA\",\n                        \"channelNumber\": 56\n                    },\n                    {\n                        \"channelName\": \"AMC\",\n                        \"channelNumber\": 58\n                    },\n                    {\n                        \"channelName\": \"LMN\",\n                        \"channelNumber\": \"59\"\n                    },\n                    {\n                        \"channelName\": \"MTV\",\n                        \"channelNumber\": \"64\"\n                    },\n                    {\n                        \"channelName\": \"MTV2\",\n                        \"channelNumber\": 65\n                    },\n                    {\n                        \"channelName\": \"VH1\",\n                        \"channelNumber\": \"66\"\n                    },\n                    {\n                        \"channelName\": \"BET\",\n                        \"channelNumber\": \"67\"\n                    },\n                    {\n                        \"channelName\": \"CMT\",\n                        \"channelNumber\": \"68\"\n                    },\n                    {\n                        \"channelName\": \"SYFY\",\n                        \"channelNumber\": 72\n                    },\n                    {\n                        \"channelName\": \"TRU\",\n                        \"channelNumber\": 73\n                    },\n                    {\n                        \"channelName\": \"VICE\",\n                        \"channelNumber\": \"77\"\n                    },\n                    {\n                        \"channelName\": \"MLBN\",\n                        \"channelNumber\": 81\n                    },\n                    {\n                        \"channelName\": \"GSN\",\n                        \"channelNumber\": 84\n                    },\n                    {\n                        \"channelName\": \"DIY\",\n                        \"channelNumber\": \"85\"\n                    },\n                    {\n                        \"channelName\": \"FXX\",\n                        \"channelNumber\": \"87\"\n                    },\n                    {\n                        \"channelName\": \"TOON\",\n                        \"channelNumber\": \"41\"\n                    },\n                    {\n                        \"channelName\": \"FRFM\",\n                        \"channelNumber\": \"36\"\n                    },\n                    {\n                        \"channelName\": \"PAR\",\n                        \"channelNumber\": \"71\"\n                    }\n                ],\n                \"name\": \"Reno, NV, 89521\",\n                \"lineupID\": \"2369\"\n            },\n            \"currentNetwork\": \"APL\",\n            \"isHpe\": false\n        }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Create job-managment",
+        "tags": [
+          "job-management"
+        ],
+        "description": "Create new job-management in live-edge"
+      }
+    },
+    "/api/job-management/{id}": {
+      "get": {
+        "description": "Get job-management by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1cc4a7e938f100190df91e"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Get job-management by id",
+        "tags": [
+          "job-management"
+        ]
+      },
+      "put": {
+        "description": "Update job-management in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1cc4a7e938f100190df91e"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/job-management"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n            \"zoneID\": \"TEST\",\n            \"tmcID\": \"TEST1.TMCSERVER.COM\",\n            \"jobID\": 192,\n            \"tmcJobID\": \"test\",\n            \"slotID\": \"1\",\n            \"currentStatus\": \"stopped\",\n            \"runStatus\": \"\",\n            \"ignore\": false,\n            \"jobSchedule\": {\n                \"name\": \"TEST\",\n                \"sch0000\": \"TRU\",\n                \"sch0030\": \"MTV2\",\n                \"sch0100\": \"FOXD\",\n                \"sch0130\": \"MNBC\",\n                \"sch0200\": \"MNB\",\n                \"sch0230\": \"FX\",\n                \"sch0300\": \"HGT\",\n                \"sch0330\": \"MTV\",\n                \"sch0400\": \"PAR\",\n                \"sch0430\": \"TRA\",\n                \"sch0500\": \"CMDY\",\n                \"sch0530\": \"FRF\",\n                \"sch0600\": \"DISC\",\n                \"sch0630\": \"SYF\",\n                \"sch0700\": \"CMT\",\n                \"sch0730\": \"VH1\",\n                \"sch0800\": \"BRVO\",\n                \"sch0830\": \"TLC\",\n                \"sch0900\": \"USA\",\n                \"sch0930\": \"CNN\",\n                \"sch1000\": \"NBS\",\n                \"sch1030\": \"MT2\",\n                \"sch1100\": \"TBSC\",\n                \"sch1130\": \"TRU\",\n                \"sch1200\": \"GOLF\",\n                \"sch1230\": \"SYFY\",\n                \"sch1300\": \"ESPN\",\n                \"sch1330\": \"VH1\",\n                \"sch1400\": \"FXN\",\n                \"sch1430\": \"TLC\",\n                \"sch1500\": \"AMC\",\n                \"sch1530\": \"TBS\",\n                \"sch1600\": \"GOL\",\n                \"sch1630\": \"FRFM\",\n                \"sch1700\": \"CNB\",\n                \"sch1730\": \"MTV\",\n                \"sch1800\": \"LIF\",\n                \"sch1830\": \"APL\",\n                \"sch1900\": \"CNN\",\n                \"sch1930\": \"AEN\",\n                \"sch2000\": \"DIS\",\n                \"sch2030\": \"ENT\",\n                \"sch2100\": \"TRAV\",\n                \"sch2130\": \"AEN\",\n                \"sch2200\": \"NFL\",\n                \"sch2230\": \"HIST\",\n                \"sch2300\": \"HLN\",\n                \"sch2330\": \"HLN\",\n                \"__v\": 0\n            },\n            \"channelLineup\": {\n                \"channels\": [\n                    {\n                        \"channelName\": \"GOLF\",\n                        \"channelNumber\": 15\n                    },\n                    {\n                        \"channelName\": \"OWN\",\n                        \"channelNumber\": 26\n                    },\n                    {\n                        \"channelName\": \"ESPN\",\n                        \"channelNumber\": 33\n                    },\n                    {\n                        \"channelName\": \"ESP2\",\n                        \"channelNumber\": 34\n                    },\n                    {\n                        \"channelName\": \"DISC\",\n                        \"channelNumber\": \"42\"\n                    },\n                    {\n                        \"channelName\": \"NGC\",\n                        \"channelNumber\": 43\n                    },\n                    {\n                        \"channelName\": \"CNN\",\n                        \"channelNumber\": 44\n                    },\n                    {\n                        \"channelName\": \"HLN\",\n                        \"channelNumber\": 45\n                    },\n                    {\n                        \"channelName\": \"CNBC\",\n                        \"channelNumber\": \"48\"\n                    },\n                    {\n                        \"channelName\": \"FOOD\",\n                        \"channelNumber\": \"51\"\n                    },\n                    {\n                        \"channelName\": \"HGTV\",\n                        \"channelNumber\": 52\n                    },\n                    {\n                        \"channelName\": \"TLC\",\n                        \"channelNumber\": 53\n                    },\n                    {\n                        \"channelName\": \"TRAV\",\n                        \"channelNumber\": 54\n                    },\n                    {\n                        \"channelName\": \"TNT\",\n                        \"channelNumber\": 55\n                    },\n                    {\n                        \"channelName\": \"USA\",\n                        \"channelNumber\": 56\n                    },\n                    {\n                        \"channelName\": \"AMC\",\n                        \"channelNumber\": 58\n                    },\n                    {\n                        \"channelName\": \"LMN\",\n                        \"channelNumber\": \"59\"\n                    },\n                    {\n                        \"channelName\": \"MTV\",\n                        \"channelNumber\": \"64\"\n                    },\n                    {\n                        \"channelName\": \"MTV2\",\n                        \"channelNumber\": 65\n                    },\n                    {\n                        \"channelName\": \"VH1\",\n                        \"channelNumber\": \"66\"\n                    },\n                    {\n                        \"channelName\": \"BET\",\n                        \"channelNumber\": \"67\"\n                    },\n                    {\n                        \"channelName\": \"CMT\",\n                        \"channelNumber\": \"68\"\n                    },\n                    {\n                        \"channelName\": \"SYFY\",\n                        \"channelNumber\": 72\n                    },\n                    {\n                        \"channelName\": \"TRU\",\n                        \"channelNumber\": 73\n                    },\n                    {\n                        \"channelName\": \"VICE\",\n                        \"channelNumber\": \"77\"\n                    },\n                    {\n                        \"channelName\": \"MLBN\",\n                        \"channelNumber\": 81\n                    },\n                    {\n                        \"channelName\": \"GSN\",\n                        \"channelNumber\": 84\n                    },\n                    {\n                        \"channelName\": \"DIY\",\n                        \"channelNumber\": \"85\"\n                    },\n                    {\n                        \"channelName\": \"FXX\",\n                        \"channelNumber\": \"87\"\n                    },\n                    {\n                        \"channelName\": \"TOON\",\n                        \"channelNumber\": \"41\"\n                    },\n                    {\n                        \"channelName\": \"FRFM\",\n                        \"channelNumber\": \"36\"\n                    },\n                    {\n                        \"channelName\": \"PAR\",\n                        \"channelNumber\": \"71\"\n                    }\n                ],\n                \"name\": \"Reno, NV, 89521\",\n                \"lineupID\": \"2369\"\n            },\n            \"currentNetwork\": \"APL\",\n            \"isHpe\": false\n        }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Update job-management",
+        "tags": [
+          "job-management"
+        ]
+      },
+      "delete": {
+        "description": "Delete job-management in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1cc4a7e938f100190df91e"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ],
+        "summary": "Delete job-management",
+        "tags": [
+          "job-management"
+        ]
+      }
+    },
+    "/api/users/group/{id}": {
+      "put": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Update user",
+        "description": "Update user in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n    \"group\": \"user\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/users": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Get users",
+        "description": "List users in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Create user",
+        "description": "Create new user in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"name\": \"test\",\n        \"email\": \"test@charter.com\",\n        \"group\": \"default\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/equipment/{id}": {
+      "get": {
+        "tags": [
+          "equipment"
+        ],
+        "summary": "Get equipment by id",
+        "description": "Get tmc equipment by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1a330f875fd300190274b5"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "equipment"
+        ],
+        "summary": "Update equipment",
+        "description": "Update tmc equipment in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1a330f875fd300190274b5"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/equipment"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"zones\": [],\n        \"automationUnitCode\": \"TEST2\",\n        \"addressCode\": \"TEST2\",\n        \"addressTitle\": \"TEST1\",\n        \"description\": \"Denver\",\n        \"city\": \"Denver\",\n        \"state\": \"CO\",\n        \"syscode\": \"1112\",\n        \"zip\": \"80448\",\n        \"lat\": \"42.353583\",\n        \"lon\": \"-85.563941\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "equipment"
+        ],
+        "summary": "Delete equipment",
+        "description": "Delete tmc equipment in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1a330f875fd300190274b5"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/user-groups/name/{name}": {
+      "get": {
+        "tags": [
+          "user-groups"
+        ],
+        "summary": "Get user-group by name",
+        "description": "Get user-group by name in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "User"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/user-groups/{id}": {
+      "get": {
+        "tags": [
+          "user-groups"
+        ],
+        "summary": "Get user-group by id",
+        "description": "Get user-group by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c9e62b80d390019b4cdc3"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "user-groups"
+        ],
+        "summary": "Update user-group",
+        "description": "Update user-group in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c9e62b80d390019b4cdc3"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user-group"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"name\": \"test2\"\n    }"
+                },
+                "1": {
+                  "value": "    {\n        \"name\": \"test2\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "user-groups"
+        ],
+        "summary": "Delete user-group",
+        "description": "Delete user-group in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c9e62b80d390019b4cdc3"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/users/{id}": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Get user by id",
+        "description": "Get user by id in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Delete user",
+        "description": "Delete user in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "5e1c94a5875fd3001904864a"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/users/name/{name}": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Get user by name",
+        "description": "Get user by name in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Test User"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/users/email/{email}": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Get user by email",
+        "description": "Get user by email in live-edge",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "email",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "test@charter.com"
+          },
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/equipment": {
+      "get": {
+        "tags": [
+          "equipment"
+        ],
+        "summary": "Get eqipment",
+        "description": "List tmc equipment in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Auto generated using Swagger Inspector"
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "equipment"
+        ],
+        "summary": "Create equipment",
+        "description": "Create tmc equipment in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/equipment"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"zones\": [],\n        \"automationUnitCode\": \"TEST\",\n        \"addressCode\": \"TEST\",\n        \"addressTitle\": \"TEST\",\n        \"description\": \"Denver\",\n        \"city\": \"Denver\",\n        \"state\": \"CO\",\n        \"syscode\": \"1112\",\n        \"zip\": \"80448\",\n        \"lat\": \"42.353583\",\n        \"lon\": \"-85.563941\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/user-groups": {
+      "get": {
+        "tags": [
+          "user-groups"
+        ],
+        "summary": "Get user-groups",
+        "description": "List user-groups in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "user-groups"
+        ],
+        "summary": "Create user-group",
+        "description": "Create user-group in live-edge",
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/user-group"
+              },
+              "examples": {
+                "0": {
+                  "value": "    {\n        \"name\": \"test\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    },
+    "/api/workflow": {
+      "get": {
+        "description": "List workflows in live-edge",
+        "summary": "Get workflows",
+        "tags": [
+          "workflows"
+        ],
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "required": false,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "live_edge@2019"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      },
+      "post": {
+        "description": "Update workflow in live-edge",
+        "summary": "Update workflows",
+        "tags": [
+          "workflows"
+        ],
+        "parameters": [
+          {
+            "name": "x-charter-api-key",
+            "in": "header",
+            "description": "Generated header parameter. Example value ='live_edge@2019'",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "x-example": "live_edge@2019"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/workflows"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\n    \"nodes\": [\n        {\n            \"id\": \"d1361584-c47c-fc57-9122-473d77acff21\",\n            \"title\": \"test1\",\n            \"type\": \"Microservice\",\n            \"x\": 97,\n            \"y\": 99\n        },\n        {\n            \"id\": \"61c7b3a5-0aa7-6568-46f2-63c7d8b639ab\",\n            \"title\": \"test2\",\n            \"type\": \"Microservice\",\n            \"x\": 501,\n            \"y\": 99\n        }\n    ],\n    \"connections\": [\n        {\n            \"fromSide\": \"right\",\n            \"toSide\": \"left\",\n            \"from\": {\n                \"id\": \"d1361584-c47c-fc57-9122-473d77acff21\",\n                \"title\": \"test1\",\n                \"type\": \"Microservice\",\n                \"x\": 97,\n                \"y\": 99\n            },\n            \"to\": {\n                \"id\": \"61c7b3a5-0aa7-6568-46f2-63c7d8b639ab\",\n                \"title\": \"test2\",\n                \"type\": \"Microservice\",\n                \"x\": 501,\n                \"y\": 99\n            },\n            \"config\": {\n                \"name\": \"RabbitMQ\",\n                \"qname\": \"testQ\",\n                \"channel\": \"testCH\",\n                \"messageKey\": \"testMK\",\n                \"payload\": \"\"\n            },\n            \"title\": \"test1 to test2\",\n            \"type\": \"RabbitMQ\"\n        }\n    ],\n    \"name\": \"test\"\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "type": "string"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://api.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.test.reach.spectrumtoolbox.com"
+          },
+          {
+            "url": "https://api.develop.reach.spectrumtoolbox.com"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "user-group": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "type": "string"
+          }
+        }
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          }
+        }
+      },
+      "extracted-video": {
+        "type": "object",
+        "properties": {
+          "fileName": {
+            "type": "string"
+          },
+          "spotId": {
+            "type": "string"
+          },
+          "acrID": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "equipment": {
+        "type": "object",
+        "properties": {
+          "syscode": {
+            "type": "string"
+          },
+          "zip": {
+            "type": "string"
+          },
+          "addressCode": {
+            "type": "string"
+          },
+          "addressTitle": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "lon": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "zones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "automationUnitCode": {
+            "type": "string"
+          },
+          "lat": {
+            "type": "string"
+          }
+        }
+      },
+      "job-schedule": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "sch0000": {
+            "type": "string"
+          },
+          "sch0030": {
+            "type": "string"
+          },
+          "sch0100": {
+            "type": "string"
+          },
+          "sch0130": {
+            "type": "string"
+          },
+          "sch0200": {
+            "type": "string"
+          },
+          "sch0230": {
+            "type": "string"
+          },
+          "sch0300": {
+            "type": "string"
+          },
+          "sch0330": {
+            "type": "string"
+          },
+          "sch0400": {
+            "type": "string"
+          },
+          "sch0430": {
+            "type": "string"
+          },
+          "sch0500": {
+            "type": "string"
+          },
+          "sch0530": {
+            "type": "string"
+          },
+          "sch0600": {
+            "type": "string"
+          },
+          "sch0630": {
+            "type": "string"
+          },
+          "sch0700": {
+            "type": "string"
+          },
+          "sch0730": {
+            "type": "string"
+          },
+          "sch0800": {
+            "type": "string"
+          },
+          "sch0830": {
+            "type": "string"
+          },
+          "sch0900": {
+            "type": "string"
+          },
+          "sch0930": {
+            "type": "string"
+          },
+          "sch1000": {
+            "type": "string"
+          },
+          "sch1030": {
+            "type": "string"
+          },
+          "sch1100": {
+            "type": "string"
+          },
+          "sch1130": {
+            "type": "string"
+          },
+          "sch1200": {
+            "type": "string"
+          },
+          "sch1230": {
+            "type": "string"
+          },
+          "sch1300": {
+            "type": "string"
+          },
+          "sch1330": {
+            "type": "string"
+          },
+          "sch1400": {
+            "type": "string"
+          },
+          "sch1430": {
+            "type": "string"
+          },
+          "sch1500": {
+            "type": "string"
+          },
+          "sch1530": {
+            "type": "string"
+          },
+          "sch1600": {
+            "type": "string"
+          },
+          "sch1630": {
+            "type": "string"
+          },
+          "sch1700": {
+            "type": "string"
+          },
+          "sch1730": {
+            "type": "string"
+          },
+          "sch1800": {
+            "type": "string"
+          },
+          "sch1830": {
+            "type": "string"
+          },
+          "sch1900": {
+            "type": "string"
+          },
+          "sch1930": {
+            "type": "string"
+          },
+          "sch2000": {
+            "type": "string"
+          },
+          "sch2030": {
+            "type": "string"
+          },
+          "sch2100": {
+            "type": "string"
+          },
+          "sch2130": {
+            "type": "string"
+          },
+          "sch2200": {
+            "type": "string"
+          },
+          "sch2230": {
+            "type": "string"
+          },
+          "sch2300": {
+            "type": "string"
+          },
+          "sch2330": {
+            "type": "string"
+          }
+        }
+      },
+      "workflows": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "connections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fromSide": {
+                  "type": "string"
+                },
+                "toSide": {
+                  "type": "string"
+                },
+                "from": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "y": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                },
+                "to": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "x": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "y": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                },
+                "config": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "qname": {
+                      "type": "string"
+                    },
+                    "channel": {
+                      "type": "string"
+                    },
+                    "messageKey": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "title": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "channel": {
+        "properties": {
+          "channelName": {
+            "type": "string"
+          },
+          "channelNumber": {
+            "type": "string"
+          }
+        }
+      },
+      "channelLineup": {
+        "type": "object",
+        "properties": {
+          "channels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/channel"
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "lineupID": {
+            "type": "string"
+          }
+        }
+      },
+      "job-management": {
+        "type": "object",
+        "properties": {
+          "tmcID": {
+            "type": "string"
+          },
+          "jobID": {
+            "type": "integer"
+          },
+          "currentStatus": {
+            "type": "string"
+          },
+          "channelLineup": {
+            "type": "object",
+            "properties": {
+              "lineupID": {
+                "type": "string"
+              },
+              "channels": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "channelNumber": {
+                      "type": "integer"
+                    },
+                    "channelName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "tmcJobID": {
+            "type": "string"
+          },
+          "currentNetwork": {
+            "type": "string"
+          },
+          "zoneID": {
+            "type": "string"
+          },
+          "ignore": {
+            "type": "boolean"
+          },
+          "jobSchedule": {
+            "type": "object",
+            "properties": {
+              "sch0800": {
+                "type": "string"
+              },
+              "sch0730": {
+                "type": "string"
+              },
+              "sch1500": {
+                "type": "string"
+              },
+              "sch0930": {
+                "type": "string"
+              },
+              "sch1700": {
+                "type": "string"
+              },
+              "sch0330": {
+                "type": "string"
+              },
+              "sch1100": {
+                "type": "string"
+              },
+              "sch0530": {
+                "type": "string"
+              },
+              "sch1300": {
+                "type": "string"
+              },
+              "__v": {
+                "type": "integer"
+              },
+              "sch2230": {
+                "type": "string"
+              },
+              "sch0130": {
+                "type": "string"
+              },
+              "sch2030": {
+                "type": "string"
+              },
+              "sch0400": {
+                "type": "string"
+              },
+              "sch1930": {
+                "type": "string"
+              },
+              "sch0600": {
+                "type": "string"
+              },
+              "sch0000": {
+                "type": "string"
+              },
+              "sch1530": {
+                "type": "string"
+              },
+              "sch2300": {
+                "type": "string"
+              },
+              "sch0200": {
+                "type": "string"
+              },
+              "sch1730": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "sch1130": {
+                "type": "string"
+              },
+              "sch2100": {
+                "type": "string"
+              },
+              "sch1330": {
+                "type": "string"
+              },
+              "sch0900": {
+                "type": "string"
+              },
+              "sch1600": {
+                "type": "string"
+              },
+              "sch0830": {
+                "type": "string"
+              },
+              "sch1800": {
+                "type": "string"
+              },
+              "sch0430": {
+                "type": "string"
+              },
+              "sch1200": {
+                "type": "string"
+              },
+              "sch0630": {
+                "type": "string"
+              },
+              "sch1400": {
+                "type": "string"
+              },
+              "sch0030": {
+                "type": "string"
+              },
+              "sch2130": {
+                "type": "string"
+              },
+              "sch0230": {
+                "type": "string"
+              },
+              "sch1000": {
+                "type": "string"
+              },
+              "sch2330": {
+                "type": "string"
+              },
+              "sch1900": {
+                "type": "string"
+              },
+              "sch0500": {
+                "type": "string"
+              },
+              "sch1830": {
+                "type": "string"
+              },
+              "sch0700": {
+                "type": "string"
+              },
+              "sch1430": {
+                "type": "string"
+              },
+              "sch0100": {
+                "type": "string"
+              },
+              "sch2200": {
+                "type": "string"
+              },
+              "sch0300": {
+                "type": "string"
+              },
+              "sch1630": {
+                "type": "string"
+              },
+              "sch1030": {
+                "type": "string"
+              },
+              "sch1230": {
+                "type": "string"
+              },
+              "sch2000": {
+                "type": "string"
+              }
+            }
+          },
+          "slotID": {
+            "type": "string"
+          },
+          "runStatus": {
+            "type": "string"
+          },
+          "isHpe": {
+            "type": "boolean"
+          }
+        }
+      },
+      "zone": {
+        "type": "object",
+        "properties": {
+          "zoneName": {
+            "type": "string"
+          },
+          "networks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "verification": {
+        "type": "object",
+        "properties": {
+          "channelNumber": {
+            "type": "integer"
+          },
+          "spotID": {
+            "type": "string"
+          },
+          "networkName": {
+            "type": "string"
+          },
+          "jobManagementID": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "sourceVideoName": {
+            "type": "string"
+          },
+          "jobID": {
+            "type": "string"
+          },
+          "score": {
+            "type": "string"
+          },
+          "spotList": {
+            "type": "string"
+          },
+          "startRecordTime": {
+            "type": "string"
+          },
+          "problem": {},
+          "playTime": {
+            "type": "string"
+          },
+          "ID": {
+            "type": "string"
+          },
+          "spotDuration": {
+            "type": "string"
+          },
+          "winDuration": {
+            "type": "string"
+          },
+          "tmcJobID": {
+            "type": "string"
+          },
+          "match": {
+            "type": "boolean"
+          },
+          "winSchedDuration": {
+            "type": "string"
+          },
+          "winOpenTime": {
+            "type": "string"
+          },
+          "tmcID": {
+            "type": "string"
+          },
+          "createdDate": {
+            "type": "string"
+          },
+          "receivedTime": {
+            "type": "string"
+          },
+          "zoneID": {
+            "type": "string"
+          },
+          "targetVideoName": {
+            "type": "string"
+          },
+          "spotOrder": {
+            "type": "integer"
+          },
+          "slotID": {
+            "type": "string"
+          },
+          "schedPlayTime": {
+            "type": "string"
+          }
+        }
+      },
+      "videoquality": {
+        "type": "object",
+        "properties": {
+          "spotDuration": {
+            "type": "string"
+          },
+          "winDuration": {
+            "type": "string"
+          },
+          "spotID": {
+            "type": "string"
+          },
+          "channelNumber": {
+            "type": "integer"
+          },
+          "tmcJobID": {
+            "type": "string"
+          },
+          "networkName": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "winSchedDuration": {
+            "type": "string"
+          },
+          "silentParts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "duration": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "string"
+                },
+                "end": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "sourceVideoName": {
+            "type": "string"
+          },
+          "maxVolume": {
+            "type": "string"
+          },
+          "winOpenTime": {
+            "type": "string"
+          },
+          "tmcID": {
+            "type": "string"
+          },
+          "jobID": {
+            "type": "string"
+          },
+          "spotList": {
+            "type": "string"
+          },
+          "problem": {},
+          "createdDate": {
+            "type": "string"
+          },
+          "minVolume": {
+            "type": "string"
+          },
+          "zoneID": {
+            "type": "string"
+          },
+          "targetVideoName": {
+            "type": "string"
+          },
+          "slotID": {
+            "type": "string"
+          },
+          "playTime": {
+            "type": "string"
+          },
+          "schedPlayTime": {
+            "type": "string"
+          }
+        }
+      },
+      "hpe": {
+        "type": "object",
+        "properties": {
+          "market": {
+            "type": "string"
+          },
+          "event": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
+            "type": "string"
+          },
+          "startTime": {
+            "type": "string"
+          },
+          "endTime": {
+            "type": "string"
+          },
+          "network": {
+            "type": "string"
+          },
+          "syscode": {
+            "type": "string"
+          },
+          "syscodeName": {
+            "type": "string"
+          },
+          "revenue": {
+            "type": "string"
+          },
+          "zone": {
+            "type": "string"
+          }
+        }
+      },
+      "channel-naming": {
+        "type": "object",
+        "properties": {
+          "hdName": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "setting": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
